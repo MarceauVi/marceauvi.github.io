@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="TERRAFORMING MARS GAMES STATS">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/history.css">
+  <link rel="stylesheet" href="css/solo.css">
+  <link rel="stylesheet" href="css/odometer.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/odometer-stats.css">
+  <meta name="viewport" content='width=500, user-scalable=0'>
+  <title>TM Solo</title>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116626580-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116626580-1');
+</script>
+
+</head>
+
+<body background="images/mars.jpg" style="background-color:black;background-repeat:no-repeat; background-size:100%">
+  <div class="layout">
+    <div class="column">
+
+      <div id="title-auth">
+        <img class="astronaut" src="images/astronaut.png">
+        <div id="account-name">Authenticating...</div>
+      </div>
+
+      <div id="submit-container" class="form box">
+        <div class="ribbon"><span>SOLO</span></div>
+        <form id="form" name="submit-to-google-sheet">
+          <div id="title">
+            <div style="transform:scale(2,1);margin-top:6px;width:100px;margin-left:130px;">TERRAFORMING<br> <span style="font-size:26px;transform: scale(2,1);margin-left:15px;">MARS</span></div>
+           </div>
+           <br><br>
+
+            <fieldset class="fieldset-alignment" style="display:inline-block;width:90px;padding-bottom:15px; border-bottom:none">
+              <legend class="fieldset2">MODE</legend>
+              <input class="checkbox" type="radio" id="tf_all" value="TFALL" name="mode">
+              <label for="tf_all" class="mode btn-mode">TF ALL</label>
+              <input class="checkbox" type="radio" id="tr_63" value="TR63" name="mode">
+              <label for="tr_63" class="mode btn-mode" style="background-image:url('images/63.png');">63 TR</label>
+           </fieldset>
+
+           <fieldset class="fieldset-alignment" style="display:inline-block;width:134px;padding-bottom:15px; border-bottom:none;margin-left:-8px;">
+             <legend class="fieldset2">MAPS</legend>
+             <input class="checkbox" type="radio" id="tharsis" value="THARSIS" name="map">
+             <label for="tharsis" class="map">
+               <div class="btn-map-background">THARSIS</div></label>
+             <input class="checkbox" type="radio" id="hellas" value="HELLAS" name="map">
+             <label for="hellas" class="map">
+               <div class="btn-map-background" style="    background: #3b9ae3;">HELLAS</div></label>
+             <input class="checkbox" type="radio" id="elysium" value="ELYSIUM" name="map">
+             <label for="elysium" class="map">
+               <div class="btn-map-background" style="    background: #09aa09;">ELYSIUM</div></label>
+          </fieldset>
+
+             <fieldset class="fieldset-alignment" style="display:inline-block; width:90px;padding-bottom:15px; border-bottom:none;margin-left:-8px;">
+               <legend class="fieldset2">EXPANSIONS</legend>
+               <input class="checkbox" checked disabled type="checkbox" id="corporate" value="corporate" name="expansions">
+               <label style="cursor:not-allowed;filter:none;" for="corporate" class="expansion btn-expansions"><div class="icon corporate-era-icon icon-align-solo"></div></label>
+               <input class="checkbox" type="checkbox" id="venus" value="VENUS" name="expansions">
+               <label  for="venus" class="expansion btn-expansions"><div class="icon venus-icon icon-align-solo"></div></label>
+               <input class="checkbox" type="checkbox" id="prelude" value="PRELUDE" name="expansions">
+               <label  for="prelude" class="expansion btn-expansions" ><div class="icon prelude-icon icon-align-solo"></div></label>
+               <input class="checkbox" type="checkbox" id="colonies" value="COLONIES" name="expansions">
+               <label  for="colonies" class="expansion btn-expansions"><div class="icon colonies-icon icon-align-solo"></div></label>
+               <input class="checkbox" type="checkbox" id="turmoil" value="TURMOIL" name="expansions">
+               <label  for="turmoil" class="expansion btn-expansions"><div class="icon turmoil-icon icon-align-solo"></div></label>
+            </fieldset>
+
+
+
+             <fieldset class="fieldset-alignment" style="width:366px;padding-bottom: 15px;display:inline-block;border-bottom: none;padding-bottom:15px;">
+              <legend class="fieldset2">CORPORATION</legend>
+              <select  id="corporation" class="drop-down3" name="corporations" size="1" onchange="changeColours2(id)">
+                <option value disabled selected class="selected-option">choose corporation</option>
+                <option value="APHRODITE">APHRODITE</option>
+                <option value="ARCADIAN COMMUNITIES">ARCADIAN COMMUNITIES</option>
+                <option value="ARIDOR">ARIDOR</option>
+                <option value="ARKLIGHT">ARKLIGHT</option>
+                <option value="ASTRODRILL">ASTRODRILL</option>
+                <option value="CELESTIC">CELESTIC</option>
+                <option value="CHEUNG SHING MARS">CHEUNG SHING MARS</option>
+                <option value="CREDICOR">CREDICOR</option>
+                <option value="ECOLINE">ECOLINE</option>
+                <option value="FACTORUM">FACTORUM</option>
+                <option value="HELION">HELION</option>
+                <option value="INTERPLAN. CINEMATICS">INTERPLAN. CINEMATICS</option>
+                <option value="INVENTRIX">INVENTRIX</option>
+                <option value="LAKEFRONT RESORTS">LAKEFRONT RESORTS</option>
+                <option value="MANUTECH">MANUTECH</option>
+                <option value="MINING GUILD">MINING GUILD</option>
+                <option value="MONS INSURANCE">MONS INSURANCE</option>
+                <option value="MORNING STAR">MORNING STAR</option>
+                <option value="PHARMACY">PHARMACY UNION</option>
+                <option value="PHILARES">PHILARES</option>
+                <option value="PHOBOLOG">PHOBOLOG</option>
+                <option value="POINT LUNA">POINT LUNA</option>
+                <option value="POLYPHEMOS">POLYPHEMOS</option>
+                <option value="POSEIDON">POSEIDON</option>
+                <option value="PRISTAR">PRISTAR</option>
+                <option value="RECYCLON">RECYCLON</option>
+                <option value="ROBINSON INDUSTRIES">ROBINSON INDUSTRIES</option>
+                <option value="SATURN SYSTEMS">SATURN SYSTEMS</option>
+                <option value="SEPTEM TRIBUS">SEPTEM TRIBUS</option>
+                <option value="SPLICE">SPLICE</option>
+                <option value="STORMCRAFT">STORMCRAFT</option>
+                <option value="TERACTOR">TERACTOR</option>
+                <option value="TERALABS">TERRALABS</option>
+                <option value="THARSIS REPUBLIC">THARSIS REPUBLIC</option>
+                <option value="THORGATE">THORGATE</option>
+                <option value="UNMI">U.N.M.I.</option>
+                <option value="UTOPIA">UTOPIA</option>
+                <option value="VALLEY TRUST">VALLEY TRUST</option>
+                <option value="VIRON">VIRON</option>
+                <option value="VITOR">VITOR</option>
+                <option value disabled>Prelude 2</option>
+                <option value="TYCHO MAGNETICS">TYCHO MAGNETICS</option>
+                <option value="SPIRE">SPIRE</option>
+                <option value="SAGITTA">SAGITTA</option>
+                <option value="PALLADIN SHIPPING">PALLADIN SHIPPING</option>
+                <option value="ECOTEC">ECOTEC</option>
+                <option value="NIRGAL ENTERPRISES">NIRGAL ENTERPRISES</option>
+                <option value="KUIPER COOPERATIVE">KUIPER COOPERATIVE</option>
+              </select>
+            </fieldset>
+
+          <fieldset class="fieldset-alignment" style="width:366px;display:inline-block;margin-bottom:15px;">
+           <legend class="fieldset2">RESULT</legend>
+
+             <div id="lossSection" class="section" onclick="activateLoss()">
+               <div id="lossLabel" style="color:rgb(102, 25, 25);font-weight:bold;font-size:50px;">&#x2717;</div>
+               <select id="steps" class="drop-down2" name="steps" size="1" onchange="changeColours2(id)">
+                 <option value="0" disabled selected class="selected-option">&nbsp;FAILED</option>
+                   <option value="1">1 STEP</option>
+                   <option value="2">2 STEPS</option>
+                   <option value="3">3 STEPS</option>
+                   <option value="4">4 STEPS</option>
+                   <option value="5">5 STEPS</option>
+                   <option value="6">6 STEPS</option>
+                   <option value="7">7 STEPS</option>
+                   <option value="8">8 STEPS</option>
+                   <option value="9">9 STEPS</option>
+              </select>
+              </div>
+
+              <div id="winSection" class="section" onclick="activateWin()">
+                <div id="winLabel" style="font-weight:bold;font-size:50px;">&#x2713;</div>
+                <input id="corporation-score" class="corporation-score"  type="number" min="60" max ="200" step="1" name="score" placeholder="SCORE" oninput="changeColours2a(id)">
+              </div>
+
+         </fieldset>
+
+         <button  type="button" id="submit" class="button btn-submit2" onclick="checkForm()"><div>SUBMIT</div></button>
+         <button  type="button" id="delete" class="button btn-delete" onclick="deleteLastGame()"><div>DELETE YOUR LAST SUBMIT</div></button>
+
+         <input  id="confirm" type="submit" value="CONFIRM" onclick="animateTakeOff();">
+
+      </form>
+      </div>
+
+      <button id= "show-histograms" class="button btn-stats-activation" onclick="enableStats(id)"> LOAD</button>
+      <div id="data-histograms" class="chartStats">
+        <div class="grid-cell grid-corporations-title" style="font-size:18px"> <div>SCORES DISTRIBUTION</div></div>
+        <div class="grid2" style="width:200px;">
+          <div id="average" class="grid-cell-solo"></div>
+          <div id="losses" class="grid-cell-solo" style="color:#661919"></div>
+          <div id="winrate" class="grid-cell-solo"></div>
+          <div id="wins" class="grid-cell-solo"></div>
+        </div>
+        <div class="chart-div-solo2" id="histogram-losses"></div>
+        <div class="chart-div-solo" id="histogram"></div>
+      </div>
+
+    </div>
+
+    <div class="column">
+
+      <div class="buttons-container">
+        <div class="grid3-solo">
+          <div class="grid-cell grid-corporations-title"><div id="total_games" class="odometer header-cell" data-minintegerlen="5" style="font-size:26px;line-height:30px;">00000</div></div>
+          <div class="grid-cell grid-corporations-title" style="font-size:20px;">FILTERS</div>
+          <div class="btn-grid-cell" onclick="download();" style="width:30px;height:36px;margin-left:6px;" title="Download the database">
+            <img src="images/file.png" width="26" height="26" style="margin-top:5px;">
+          </div>
+        </div>
+
+      <div class="filters-div" style="height:250px;">
+
+        <div class ="grid-expansions-filters">
+          <input id="filter_venus" title=" EXCLUDE < > INCLUDE - filter by Venus Next" type="range" min="-1" max="1" value="0" step="1" list="tickmarks" oninput="changeSliderColour(id);" class="thumb-venus"  >
+          <input id="filter_prelude" title=" EXCLUDE < > INCLUDE - filter by Prelude" type="range" min="-1" max="1" value="0" step="1" list="tickmarks" oninput="changeSliderColour(id);" class="thumb-prelude"  >
+          <input id="filter_colonies" title=" EXCLUDE < > INCLUDE - filter by Colonies" type="range" min="-1" max="1" value="0" step="1" list="tickmarks" oninput="changeSliderColour(id);" class="thumb-colonies"  >
+          <input id="filter_turmoil" title=" EXCLUDE < > INCLUDE - filter by Turmoil" type="range" min="-1" max="1" value="0" step="1" list="tickmarks" oninput="changeSliderColour(id);" class="thumb-turmoil"  >
+          <input id="filter_mode" title=" 63TR < > TF ALL - filter by mode" type="range" min="-1" max="1" value="0" step="1" list="tickmarks" oninput="changeSliderColour(id);" class="thumb-mode">
+        </div>
+
+        <div class="grid-maps-filters" title="filter by map">
+          <button id="THARSIS" class="button btn-map" onclick="toggleButton(id)" title="filter games played on THARSIS"><div>THARSIS</div></button>
+          <button id="HELLAS"  class="button btn-map" onclick="toggleButton(id)" title="filter games played on HELLAS"><div style="background:#3b9ae3">HELLAS</div></button>
+          <button id="ELYSIUM" class="button  btn-map" onclick="toggleButton(id)" title="filter games played on ELYSIUM"><div style="background:#09aa09">ELYSIUM</div></button>
+        </div>
+
+        <div style="position:absolute; margin-top:50px; margin-left:226px;" title="filter by corporation">
+          <select id="corporation1" class="drop-down" name="corporations" size="1" onchange="changeColours(id)">
+            <option value="NOT SELECTED" selected>SELECT CORPORATION</option>
+            <option value="APHRODITE">APHRODITE</option>
+            <option value="ARCADIAN COMMUNITIES">ARCADIAN COMMUNITIES</option>
+            <option value="ARIDOR">ARIDOR</option>
+            <option value="ARKLIGHT">ARKLIGHT</option>
+            <option value="ASTRODRILL">ASTRODRILL</option>
+            <option value="CELESTIC">CELESTIC</option>
+            <option value="CHEUNG SHING MARS">CHEUNG SHING MARS</option>
+            <option value="CREDICOR">CREDICOR</option>
+            <option value="ECOLINE">ECOLINE</option>
+            <option value="FACTORUM">FACTORUM</option>
+            <option value="HELION">HELION</option>
+            <option value="INTERPLAN. CINEMATICS">INTERPLAN. CINEMATICS</option>
+            <option value="INVENTRIX">INVENTRIX</option>
+            <option value="LAKEFRONT RESORTS">LAKEFRONT RESORTS</option>
+            <option value="MANUTECH">MANUTECH</option>
+            <option value="MINING GUILD">MINING GUILD</option>
+            <option value="MONS INSURANCE">MONS INSURANCE</option>
+            <option value="MORNING STAR">MORNING STAR</option>
+            <option value="PHARMACY">PHARMACY UNION</option>
+            <option value="PHILARES">PHILARES</option>
+            <option value="PHOBOLOG">PHOBOLOG</option>
+            <option value="POINT LUNA">POINT LUNA</option>
+            <option value="POLYPHEMOS">POLYPHEMOS</option>
+            <option value="POSEIDON">POSEIDON</option>
+            <option value="PRISTAR">PRISTAR</option>
+            <option value="RECYCLON">RECYCLON</option>
+            <option value="ROBINSON INDUSTRIES">ROBINSON INDUSTRIES</option>
+            <option value="SATURN SYSTEMS">SATURN SYSTEMS</option>
+            <option value="SEPTEM TRIBUS">SEPTEM TRIBUS</option>
+            <option value="SPLICE">SPLICE</option>
+            <option value="STORMCRAFT">STORMCRAFT</option>
+            <option value="TERACTOR">TERACTOR</option>
+            <option value="TERALABS">TERRALABS</option>
+            <option value="THARSIS REPUBLIC">THARSIS REPUBLIC</option>
+            <option value="THORGATE">THORGATE</option>
+            <option value="UNMI">U.N.M.I.</option>
+            <option value="UTOPIA">UTOPIA</option>
+            <option value="VALLEY TRUST">VALLEY TRUST</option>
+            <option value="VIRON">VIRON</option>
+            <option value="VITOR">VITOR</option>
+            <option value disabled>Prelude 2</option>
+            <option value="TYCHO MAGNETICS">TYCHO MAGNETICS</option>
+            <option value="SPIRE">SPIRE</option>
+            <option value="SAGITTA">SAGITTA</option>
+            <option value="PALLADIN SHIPPING">PALLADIN SHIPPING</option>
+            <option value="ECOTEC">ECOTEC</option>
+            <option value="NIRGAL ENTERPRISES">NIRGAL ENTERPRISES</option>
+            <option value="KUIPER COOPERATIVE">KUIPER COOPERATIVE</option>
+          </select>
+
+          <select id="corporation2" class="drop-down" name="corporations" size="1" onchange="changeColours(id)">
+            <option value="NOT SELECTED" selected>SELECT CORPORATION</option>
+            <option value="APHRODITE">APHRODITE</option>
+            <option value="ARCADIAN COMMUNITIES">ARCADIAN COMMUNITIES</option>
+            <option value="ARIDOR">ARIDOR</option>
+            <option value="ARKLIGHT">ARKLIGHT</option>
+            <option value="ASTRODRILL">ASTRODRILL</option>
+            <option value="CELESTIC">CELESTIC</option>
+            <option value="CHEUNG SHING MARS">CHEUNG SHING MARS</option>
+            <option value="CREDICOR">CREDICOR</option>
+            <option value="ECOLINE">ECOLINE</option>
+            <option value="FACTORUM">FACTORUM</option>
+            <option value="HELION">HELION</option>
+            <option value="INTERPLAN. CINEMATICS">INTERPLAN. CINEMATICS</option>
+            <option value="INVENTRIX">INVENTRIX</option>
+            <option value="LAKEFRONT RESORTS">LAKEFRONT RESORTS</option>
+            <option value="MANUTECH">MANUTECH</option>
+            <option value="MINING GUILD">MINING GUILD</option>
+            <option value="MONS INSURANCE">MONS INSURANCE</option>
+            <option value="MORNING STAR">MORNING STAR</option>
+            <option value="PHARMACY">PHARMACY UNION</option>
+            <option value="PHILARES">PHILARES</option>
+            <option value="PHOBOLOG">PHOBOLOG</option>
+            <option value="POINT LUNA">POINT LUNA</option>
+            <option value="POLYPHEMOS">POLYPHEMOS</option>
+            <option value="POSEIDON">POSEIDON</option>
+            <option value="PRISTAR">PRISTAR</option>
+            <option value="RECYCLON">RECYCLON</option>
+            <option value="ROBINSON INDUSTRIES">ROBINSON INDUSTRIES</option>
+            <option value="SATURN SYSTEMS">SATURN SYSTEMS</option>
+            <option value="SEPTEM TRIBUS">SEPTEM TRIBUS</option>
+            <option value="SPLICE">SPLICE</option>
+            <option value="STORMCRAFT">STORMCRAFT</option>
+            <option value="TERACTOR">TERACTOR</option>
+            <option value="TERALABS">TERRALABS</option>
+            <option value="THARSIS REPUBLIC">THARSIS REPUBLIC</option>
+            <option value="THORGATE">THORGATE</option>
+            <option value="UNMI">U.N.M.I.</option>
+            <option value="UTOPIA">UTOPIA</option>
+            <option value="VALLEY TRUST">VALLEY TRUST</option>
+            <option value="VIRON">VIRON</option>
+            <option value="VITOR">VITOR</option>
+            <option value disabled>Prelude 2</option>
+            <option value="TYCHO MAGNETICS">TYCHO MAGNETICS</option>
+            <option value="SPIRE">SPIRE</option>
+            <option value="SAGITTA">SAGITTA</option>
+            <option value="PALLADIN SHIPPING">PALLADIN SHIPPING</option>
+            <option value="ECOTEC">ECOTEC</option>
+            <option value="NIRGAL ENTERPRISES">NIRGAL ENTERPRISES</option>
+            <option value="KUIPER COOPERATIVE">KUIPER COOPERATIVE</option>
+          </select>
+        </div>
+        <button style="position:absolute;margin-left:111px;margin-top:50px;" disabled id="mygames" class="button btn-mygames-solo" onclick="toggleButton(id);" title="filter my games (for logged users)"><div>MY STATS</div></button>
+        <button style="margin-top:157px;" id="filter-trigger" class="button btn-apply-filters" onclick="filterFunction();" title="Apply selected filters"><div>APPLY SELECTED FILTERS</div></button>
+      </div>
+    </div>
+
+
+      <div class="generalStats-history">
+        <div class="grid-cell title-cell" style="width:456px;">HISTORY</div><div></div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+        <div class="grid-cell-history" onclick="copyGameID()">
+          <div class="history-section-header">
+            <div class="flag-div"></div>
+            <div class="history-section-expansions"></div>
+            <div class="history-section-map"></div>
+          </div>
+          <div class="history-section-generation"></div>
+          <div class="history-section-corporation history-corporation-solo-cell"></div><div class="history-section-score history-corporation-solo-cell"></div>
+          <div class="history-section-submitted"></div><div class="history-section-time"></div>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="column">
+
+    <button id= "show-corporations" class="button btn-stats-activation" onclick="enableStats(id)"> LOAD</button>
+    <div id="data-corporations" class="corporations-solo">
+
+      <div class="corporations-header">
+        <div class="grid-cell grid-corporations-title" style="font-size:20px">CORPORATION</div>
+        <button class="btn-grid-cell-solo" onclick="sortBy('score')">SCORE</button>
+        <button class="btn-grid-cell-solo" onclick="sortBy('winrate')">WINS%</button>
+        <button class="btn-grid-cell-solo" onclick="sortBy('games')">GAMES</button>
+      </div>
+      <div id="playerStats">
+
+        <div class="corporation-row">
+          <div class="corporation-name">CREDICOR</div>
+          <div id="score-credicor"></div>
+          <div id="winrate-credicor"></div>
+          <div id="games-credicor"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ECOLINE</div>
+          <div id="score-ecoline"></div>
+          <div id="winrate-ecoline"></div>
+          <div id="games-ecoline"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">HELION</div>
+          <div id="score-helion"></div>
+          <div id="winrate-helion"></div>
+          <div id="games-helion"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">MINING GUILD</div>
+          <div id="score-mining"></div>
+          <div id="winrate-mining"></div>
+          <div id="games-mining"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">INTERPLAN. CINEMATICS</div>
+          <div id="score-interplan"></div>
+          <div id="winrate-interplan"></div>
+          <div id="games-interplan"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">INVENTRIX</div>
+          <div id="score-inventrix"></div>
+          <div id="winrate-inventrix"></div>
+          <div id="games-inventrix"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">PHOBOLOG</div>
+          <div id="score-phobolog"></div>
+          <div id="winrate-phobolog"></div>
+          <div id="games-phobolog"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">THARSIS REPUBLIC</div>
+          <div id="score-tharsis"></div>
+          <div id="winrate-tharsis"></div>
+          <div id="games-tharsis"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">THORGATE</div>
+          <div id="score-thorgate"></div>
+          <div id="winrate-thorgate"></div>
+          <div id="games-thorgate"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">U.N.M.I.</div>
+          <div id="score-unmi"></div>
+          <div id="winrate-unmi"></div>
+          <div id="games-unmi"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">TERACTOR</div>
+          <div id="score-teractor"></div>
+          <div id="winrate-teractor"></div>
+          <div id="games-teractor"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">SATURN SYSTEMS</div>
+          <div id="score-saturn"></div>
+          <div id="winrate-saturn"></div>
+          <div id="games-saturn"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">APHRODITE</div>
+          <div id="score-aphrodite"></div>
+          <div id="winrate-aphrodite"></div>
+          <div id="games-aphrodite"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">CELESTIC</div>
+          <div id="score-celestic"></div>
+          <div id="winrate-celestic"></div>
+          <div id="games-celestic"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">MANUTECH</div>
+          <div id="score-manutech"></div>
+          <div id="winrate-manutech"></div>
+          <div id="games-manutech"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">MORNING STAR INC.</div>
+          <div id="score-morning"></div>
+          <div id="winrate-morning"></div>
+          <div id="games-morning"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">VIRON</div>
+          <div id="score-viron"></div>
+          <div id="winrate-viron"></div>
+          <div id="games-viron"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">CHEUNG SHING MARS</div>
+          <div id="score-cheung"></div>
+          <div id="winrate-cheung"></div>
+          <div id="games-cheung"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">POINT LUNA</div>
+          <div id="score-point"></div>
+          <div id="winrate-point"></div>
+          <div id="games-point"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ROBINSON INDUSTRIES</div>
+          <div id="score-robinson"></div>
+          <div id="winrate-robinson"></div>
+          <div id="games-robinson"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">VALLEY TRUST</div>
+          <div id="score-valley"></div>
+          <div id="winrate-valley"></div>
+          <div id="games-valley"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">VITOR</div>
+          <div id="score-vitor"></div>
+          <div id="winrate-vitor"></div>
+          <div id="games-vitor"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ARIDOR</div>
+          <div id="score-aridor"></div>
+          <div id="winrate-aridor"></div>
+          <div id="games-aridor"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ARKLIGHT</div>
+          <div id="score-arklight"></div>
+          <div id="winrate-arklight"></div>
+          <div id="games-arklight"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">POLYPHEMOS</div>
+          <div id="score-polyphemos"></div>
+          <div id="winrate-polyphemos"></div>
+          <div id="games-polyphemos"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">POSEIDON</div>
+          <div id="score-poseidon"></div>
+          <div id="winrate-poseidon"></div>
+          <div id="games-poseidon"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">STORMCRAFT</div>
+          <div id="score-stormcraft"></div>
+          <div id="winrate-stormcraft"></div>
+          <div id="games-stormcraft"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">LAKEFRONT RESORTS</div>
+          <div id="score-lakefront"></div>
+          <div id="winrate-lakefront"></div>
+          <div id="games-lakefront"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">PRISTAR</div>
+          <div id="score-pristar"></div>
+          <div id="winrate-pristar"></div>
+          <div id="games-pristar"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">SEPTEM TRIBUS</div>
+          <div id="score-septem"></div>
+          <div id="winrate-septem"></div>
+          <div id="games-septem"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">TERRALABS</div>
+          <div id="score-teralabs"></div>
+          <div id="winrate-teralabs"></div>
+          <div id="games-teralabs"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">UTOPIA</div>
+          <div id="score-utopia"></div>
+          <div id="winrate-utopia"></div>
+          <div id="games-utopia"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ARCADIAN COMMUNITIES</div>
+          <div id="score-arcadian"></div>
+          <div id="winrate-arcadian"></div>
+          <div id="games-arcadian"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">FACTORUM</div>
+          <div id="score-factorum"></div>
+          <div id="winrate-factorum"></div>
+          <div id="games-factorum"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">MONS INSURANCE</div>
+          <div id="score-mons"></div>
+          <div id="winrate-mons"></div>
+          <div id="games-mons"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">PHILARES</div>
+          <div id="score-philares"></div>
+          <div id="winrate-philares"></div>
+          <div id="games-philares"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">RECYCLON</div>
+          <div id="score-recyclon"></div>
+          <div id="winrate-recyclon"></div>
+          <div id="games-recyclon"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">SPLICE</div>
+          <div id="score-splice"></div>
+          <div id="winrate-splice"></div>
+          <div id="games-splice"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ASTRODRILL</div>
+          <div id="score-astrodrill"></div>
+          <div id="winrate-astrodrill"></div>
+          <div id="games-astrodrill"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">PHARMACY UNION</div>
+          <div id="score-pharmacy"></div>
+          <div id="winrate-pharmacy"></div>
+          <div id="games-pharmacy"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">TYCHO MAGNETICS</div>
+          <div id="score-tycho"></div>
+          <div id="winrate-tycho"></div>
+          <div id="games-tycho"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">SPIRE</div>
+          <div id="score-spire"></div>
+          <div id="winrate-spire"></div>
+          <div id="games-spire"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">SAGITTA</div>
+          <div id="score-sagitta"></div>
+          <div id="winrate-sagitta"></div>
+          <div id="games-sagitta"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">PALLADIN SHIPPING</div>
+          <div id="score-palladin"></div>
+          <div id="winrate-palladin"></div>
+          <div id="games-palladin"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">ECOTEC</div>
+          <div id="score-ecotec"></div>
+          <div id="winrate-ecotec"></div>
+          <div id="games-ecotec"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">NIRGAL ENTERPRISES</div>
+          <div id="score-nirgal"></div>
+          <div id="winrate-nirgal"></div>
+          <div id="games-nirgal"></div>
+        </div>
+
+        <div class="corporation-row">
+          <div class="corporation-name">KUIPER COOPERATIVE</div>
+          <div id="score-kuiper"></div>
+          <div id="winrate-kuiper"></div>
+          <div id="games-kuiper"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/odometer.js"></script>
+  <script src="js/solo.js"></script>
+
+</body>
+</html>

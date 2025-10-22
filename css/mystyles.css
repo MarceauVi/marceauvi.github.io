@@ -1946,7 +1946,7 @@ li.global-card::before {
 #buttonsContainer-body {
   background: rgba(0, 0, 0, 0.3);
   height: 200px;
-  width: 1000px;
+  width: 930px;
   transition: height 0.2s;
   padding-left: 30px;
   margin: 5px 0;
@@ -1959,6 +1959,7 @@ li.global-card::before {
 
 #buttonsContainer-footer {
   height: 45px;
+  width: 1000px;
   padding-top: 5px;
   padding-left: 30px;
   background: rgba(0, 0, 0, 0.3);

@@ -1960,6 +1960,7 @@ li.global-card::before {
 
 #buttonsContainer-footer {
   height: 45px;
+  width: 930px;
   padding-top: 5px;
   padding-left: 30px;
   background: rgba(0, 0, 0, 0.3);

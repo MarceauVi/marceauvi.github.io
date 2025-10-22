@@ -1967,8 +1967,8 @@ li.global-card::before {
   height: 40px;
   line-height: 40px;
   display: inline-block;
-  width: 650px;
-  margin-left: 5px;
+  width: 700px;
+  margin-left: 0px;
   text-align: center;
 }
 

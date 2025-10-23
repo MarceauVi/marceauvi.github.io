@@ -58,7 +58,7 @@ function generateHand() {
 
 function displayCards() {
 
-  var url = "https://ssimeonoff.github.io/cards-list";
+  var url = "https://marceauvi.github.io/cards-list";
 
   titles_corporations = "";
   titles_projects = "";

@@ -844,8 +844,8 @@ li.global-card::before {
   height: 25px;
   padding-top: 1px;
   line-height: 25px;
-  width: 92px;
-  padding-left: 10px;
+  width: 111px;
+  padding-left: 2px;
   cursor: pointer;
   font-size: 12px;
   letter-spacing: 1px;

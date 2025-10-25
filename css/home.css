@@ -30,7 +30,7 @@
   background-size: 369px 90px;
   color: #eee;
   text-shadow: 0 0 2px black, 0 2px 1px black;
-  padding-left: 17px;
+  padding-left: 12px;
 }
 .grid > a:hover {
   filter: brightness(120%);

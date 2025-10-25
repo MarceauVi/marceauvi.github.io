@@ -769,7 +769,7 @@
                 <span class="resource-tag tag-microbe"></span> * :
                 <div class="resource science"></div>
               </div>
-              <div class="description">
+              <div class="description" style="margin-top: -4px">
                 (Action : Dépensez 1 M€ pour révéler et défausser la première carte de la pioche. Si cette carte a un symbole Microbe, placez 1 symbole science sur cette carte.)<br /><br />
                 (Le niveau d'oxygène doit être de 6% ou moins. 3 PV si vous avez une ou plusieurs Science sur cette carte.)
               </div>
@@ -861,7 +861,7 @@
               <div class="description" style="text-align: left">
                 (Nécessite 4 tuiles Océan. Placez cette tuile. Diminuez votre production d'énergie de 2 et augmentez votre production de M€ de 5.<br />
                 <div
-                  style="font-size: 9px; line-height: 12px; margin-top: 10px"
+                  style="font-size: 10px; margin-top: 10px"
                 >
                   +1 PV POUR CHAQUE <br />TUILE OCÉAN ADJACENTE <br />À CETTE TUILE CITÉ.)
                 </div>
@@ -1193,6 +1193,7 @@
               </div>
               <br />
               <div class="tile city-tile"></div>
+              *
               <div class="description">
                 (Placez une tuile Cité ADJACENTE À AUCUNE AUTRE TUILE.)
               </div>
@@ -1217,6 +1218,7 @@
                 <div class="titanium production"></div>
               </div>
               <div class="tile city-tile" style="margin-left: 20px"></div>
+              *
               <div class="description">
                 (Augmentez votre production de titane de 1 et placez une tuile Cité SUR LA ZONE RÉSERVÉE.)
               </div>
@@ -1572,8 +1574,8 @@
               <div class="red-arrow"></div>
               <div class="tile temperature-tile"></div>
               <div class="description">
-                (Action : Ajoutez 1 microbe à cette carte 
-                ou retirez 2 microbes pour augmenter la température de 1.)<br /><br />
+                (Action : Ajoutez 1 microbe sur cette carte 
+                OU retirez 2 microbes de cette carte pour augmenter la température de 1.)<br /><br />
                 (Nécessite au moins 4% d'oxygène.)
               </div>
             </div>
@@ -1655,7 +1657,7 @@
               <br />
               <div class="description">
                 (Augmentez votre NT de 2 et la température de 1. 
-                Augmentez votre production de plante de 1, ou de 4 si vous avez 3 badges Plante.)
+                Augmentez votre production de plantes de 1, ou de 4 si vous avez 3 badges Plante.)
               </div>
             </div>
           </li>
@@ -1778,7 +1780,8 @@
                 <div class="plant production"></div>
               </div>
               <div class="description">
-                (La température doit être de -18°C ou moins. Augmentez votre production de plantes de 1.)
+                (La température doit être de -18°C ou moins. 
+                Augmentez votre production <br />de plantes de 1.)
               </div>
             </div>
           </li>
@@ -1805,7 +1808,8 @@
                 <div class="heat production"></div>
               </div>
               <div class="description">
-                (Diminuez votre production d'énergie de 1 et augmentez votre production de chaleur de 3.)
+                (Diminuez votre production d'énergie de 1 et augmentez 
+                votre production<br /> de chaleur de 3.)
               </div>
             </div>
           </li>
@@ -1905,13 +1909,14 @@
             <div class="number">#047</div>
             <div class="content">
               <div class="requirements">5 Océans</div>
-              <div class="production-box production-box-size2">
+              <div class="plant resource"></div>
+              <div class="production-box production-box-size2" style="margin-left: 20px">
                 <div class="plant production"></div>
                 <div class="plant production"></div>
               </div>
-              <div class="plant resource" style="margin-left: 20px"></div>
               <div class="description">
-                (Nécessite 5 tuiles Océan. Gagnez 1 plante et augmentez votre production de plantes de 2.)
+                (Nécessite 5 tuiles Océan. Gagnez 1 plante et augmentez 
+                votre production <br />de plantes de 2.)
               </div>
             </div>
           </li>
@@ -1930,7 +1935,7 @@
                 <div class="plant production"></div>
               </div>
               <div class="description">
-                (Augmentez votre production de plantes de 1.)
+                (Augmentez votre production <br />de plantes de 1.)
               </div>
             </div>
 
@@ -2194,7 +2199,7 @@
             <div class="number">#058</div>
             <div class="content">
               <div class="points points-big">1</div>
-              <div class="requirements">Jovian</div>
+              <div class="requirements">Jovien</div>
 
               <div class="production-box production-box-size3">
                 <div class="production heat"></div>
@@ -2206,7 +2211,8 @@
                 <div class="production energy"></div>
               </div>
               <div class="description">
-                (Nécessite un badge Jovien. Augmentez vos production de chaleur et d'énergie de 3 chacune.)
+                (Nécessite 1 badge Jovien. Augmentez vos production de chaleur et 
+                d'énergie de 3 chacune.)
               </div>
             </div>
           </li>
@@ -2421,7 +2427,7 @@
               *
               <div class="description">
                 (Placez cette tuile sur une zone offrant un bonus d'acier ou de titane. 
-                Augmentez votre production de cette ressource de 1.)
+                Augmentez la production de cette ressource de 1.)
               </div>
             </div>
           </li>
@@ -3229,6 +3235,7 @@
                 <div
                   class="resource-tag production-tag tag-space red-outline"
                 ></div>
+                *
               </div>
               <div class="description">
                 (Augmentez votre production de M€ de 1 pour chaque badge Espace possédé par vos ADVERSAIRES.)
@@ -3459,7 +3466,7 @@
               :
               <div class="money resource">3</div>
               <div class="description">
-                (Effet : Après avoir joué une carte Événement, gagnez 3 M€.)
+                (Effet : Après avoir joué une carte Évènement, gagnez 3 M€.)
               </div>
             </div>
           </li>
@@ -3475,7 +3482,7 @@
             <div class="tag tag1 tag-earth"></div>
             <div class="number">#110</div>
             <div class="content">
-              <div class="red-arrow"></div>
+              <div class="red-arrow"style="margin-bottom: -5px"></div>
               <span style="font-size: 14px"
                 >ACTION : CONSULTEZ LA PREMIÈRE CARTE DE LA PIOCHE. 
                 VOUS POUVEZ SOIT L'ACHETER, SOIT LA DÉFAUSSER.
@@ -3741,11 +3748,12 @@
             <div class="number">#122</div>
             <div class="content">
               <div class="requirements">3 Océans</div>
+              <div class="minus"></div>
+              <div class="plant resource" style="margin-left: 5px"></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
               <div class="production-box">
                 <div class="plant production"></div>
               </div>
-              &nbsp;&nbsp; -
-              <div class="plant resource"></div>
               <div class="description">
                 (Nécessite 3 tuiles Océan et que vous perdiez 1 plante. 
                 Augmentez votre production de plantes de 1.)
@@ -3797,7 +3805,7 @@
               VOLEZ 2
               <div class="resource steel red-outline"></div>
               *<br />OU VOLEZ
-              <div class="resource money red-outline">3</div>*
+              <div class="resource money red-outline"style="margin-right: 5px">3</div>*
               <div class="description">
                 (Volez jusqu'à 2 aciers, ou 3 M€ à n'importe quel joueur.)
               </div>
@@ -3898,7 +3906,7 @@
               </div>
               <div
                 class="tile special-tile"
-                style="margin-left: 189px; font-size: 22px"
+                style="margin-left: 169px; font-size: 22px"
               >
                 &#x1F43e;&#xFE0E;
               </div>
@@ -3906,8 +3914,8 @@
                 class="description"
                 style="text-align: left; margin-top: -55px"
               >
-                (Nécessite que vous possédiez une <br />tuile Forêt. 
-                Placez cette tuile<br /> ADJACENTE À N'IMPORTE QUELLE<br /> TUILE FORÊT.
+                (Nécessite que vous possédiez une &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+                <br />tuile Forêt. Placez cette tuile<br />ADJACENTE À N'IMPORTE <br />QUELLE TUILE FORÊT.
                  <br /><br />
                 1 PV par groupe de 2 <br />animaux
                 sur cette carte.)
@@ -3934,6 +3942,7 @@
                   class="tile city-tile-small red-outline"
                   style="margin-bottom: 0px"
                 ></div>
+                *
                 <br />
               </div>
               <div class="description">
@@ -4237,7 +4246,7 @@
                 <div class="energy production"></div>
               </div>
               <div class="description">
-                (Augmentez votre production d'énergie de 1.)
+                (Augmentez votre production <br />d'énergie de 1.)
               </div>
             </div>
           </li>
@@ -4354,13 +4363,14 @@
             <div class="number">#146</div>
             <div class="content">
               <div class="requirements">3 Océans</div>
+              <div class="minus"></div>
+              <div class="plant resource" style="margin-left: 5px"></div>
+              <div class="plant resource"></div>
+              &nbsp;&nbsp;&nbsp;
               <div class="production-box production-box-size2">
                 <div class="plant production"></div>
                 <div class="plant production"></div>
               </div>
-              &nbsp;&nbsp; -
-              <div class="plant resource"></div>
-              <div class="plant resource"></div>
               <div class="description">
                 (Nécessite 3 tuiles Océan et que vous perdiez 2 plantes. 
                 Augmentez votre production de plantes de 2.)
@@ -4403,7 +4413,7 @@
                 style="position: absolute; text-align: left; margin-top: -25px"
               >
                 (Nécessite au moins<br /> 8% d'oxygène. 
-                Ajoutez un animal<br /> sur cette carte. 
+                Ajoutez 1 animal<br /> sur cette carte. 
                 Diminuez n'importe quelle production de plante de 1. 
                 <br />1 PV par groupe de 2 <br />animaux sur cette carte.)
               </div>

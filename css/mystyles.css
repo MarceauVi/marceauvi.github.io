@@ -125,7 +125,7 @@ li.prelude-card::before {
   width: 30px;
   height: 30px;
   width: 240px;
-  height: 240px;
+  height: 275px;
   top: 0;
   left: 0;
   background-position: -360px -25px;
@@ -200,7 +200,7 @@ li.global-card::before {
 
 .prelude-card,
 .global-card {
-  height: 240px;
+  height: 275px;
 }
 
 .colony-card {

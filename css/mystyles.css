@@ -198,9 +198,11 @@ li.global-card::before {
   z-index: 99;
 }
 
-.prelude-card,
-.global-card {
+.prelude-card{
   height: 275px;
+}
+.global-card {
+  height: 240px;
 }
 
 .colony-card {

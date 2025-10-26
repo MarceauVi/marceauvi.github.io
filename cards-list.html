@@ -9494,7 +9494,7 @@
             class="filterDiv automated promo spaceTag reqs"
             data-science="2"
           >
-            <div class="title background-color-automated">
+            <div class="title background-color-automated" style="font-size: 14px">
               Forage Crépusculaire au Laser
             </div>
             <div class="price">8</div>
@@ -9840,7 +9840,7 @@
             onclick="getClickedCard();"
             class="filterDiv active buildingTag spaceTag earthTag promo"
           >
-            <div class="title background-color-active">
+            <div class="title background-color-active" style="font-size: 14px">
               Système de Déviation Astéroïde
             </div>
             <div class="price">13</div>
@@ -9874,7 +9874,7 @@
                 style="
                   font-weight: normal;
                   line-height: 15px;
-                  margin-bottom: 5px;
+                  margin-bottom: 3px;
                 "
               >
                 VOS ADVERSAIRES NE PEUVENT PAS RETIRER VOS PLANTES
@@ -9888,9 +9888,9 @@
               </div>
               <div
                 class="description"
-                style="margin-left: 80px; text-align: left"
+                style="margin-left: 74px; text-align: left"
               >
-                (Diminuez votre production d'énergie de 1. 1 PV par astéroïde sur cette carte.)
+                (Diminuez votre production d'énergie de 1. 1 PV par astéroïde sur<br /> cette carte.)
               </div>
             </div>
           </li>
@@ -10067,7 +10067,7 @@
             <div class="number">#X20</div>
             <div class="promo-icon project-icon"></div>
             <div class="content">
-              <div class="requirements">9 different resources</div>
+              <div class="requirements">9 ressources différentes</div>
               <div class="tile rating"></div>
               <div class="description">
                 (Nécessite que vous ayez 9 types de ressources différentes. Augmentez votre NT de 1.)
@@ -10328,6 +10328,7 @@
             <div class="price">31</div>
             <div class="tag tag1 tag-event"></div>
             <div class="tag tag2 tag-space"></div>
+            <div class="promo-icon project-icon"></div>
             <div class="number">#X31</div>
             <div class="content">
               <div class="tile temperature-tile"></div>
@@ -10361,6 +10362,7 @@
             <div class="price">15</div>
             <div class="tag tag1 tag-building"></div>
             <div class="tag tag2 tag-power"></div>
+            <div class="promo-icon project-icon"></div>
             <div class="number">#X32</div>
             <div class="content">
               <div class="points points-big">1</div>
@@ -10385,11 +10387,12 @@
             onclick="getClickedCard();"
             class="filterDiv automated buildingTag promo"
           >
-            <div class="title background-color-automated">
+            <div class="title background-color-automated" style="font-size: 13px">
               Générateurs de Champ Magnétique
             </div>
             <div class="price">22</div>
             <div class="tag tag1 tag-building"></div>
+            <div class="promo-icon project-icon"></div>
             <div class="number">#X33</div>
             <div class="content">
               <div class="production-box production-box-size2a">
@@ -10494,7 +10497,7 @@
             <div class="promo-icon project-icon"></div>
             <div class="number">#X36</div>
             <div class="content">
-              <div class="resource energy"></div>
+              2
               <div class="resource energy"></div>
               <div class="red-arrow"></div>
               <div class="resource plant"></div>
@@ -10535,16 +10538,24 @@
             onclick="getClickedCard();"
             class="filterDiv automated noneTag promo reqs"
           >
-            <div class="title background-color-automated">Sports D'Extérieur</div>
+            <div class="title background-color-automated">Sports d'Extérieur</div>
             <div class="price">8</div>
             <div class="number">#X38</div>
             <div class="promo-icon project-icon"></div>
             <div class="content">
               <div class="points points-big">1</div>
-              <div class="requirements">Cité/Ocean</div>
-              <div class="tile city-tile red-outline"></div>
-              <div class="tile ocean-tile" style="margin-left: -3px;">
-              <div class="production-box">
+              <div class="requirements"></div>
+              <div class="tile city-tile red-outline" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: -18px"
+              ></div>
+              <div class="tile ocean-tile" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: 22px"
+              ></div>
+              <div class="production-box" style="margin-top: 10px">
                 <div class="money production">2</div>
               </div>
               <div class="description">
@@ -10668,7 +10679,9 @@
             onclick="getClickedCard();"
             class="filterDiv active noneTag promo"
           >
-            <div class="title background-color-active">Utilisation Dirigé de le Chaleur</div>
+            <div class="title background-color-active" style="font-size: 14px">
+              Utilisation Dirigé de le Chaleur
+            </div>
             <div class="price">1</div>
             <div class="number">#X48</div>
             <div class="promo-icon project-icon"></div>
@@ -10699,7 +10712,17 @@
             <div class="promo-icon project-icon"></div>
             <div class="content">
               <div class="points points-big">1</div>
-              <div class="requirements">Cité adjacent Océan</div>
+              <div class="requirements"></div>
+              <div class="tile city-tile" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: -40px"
+              ></div>
+              <div class="tile ocean-tile" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: 0px"
+              ></div>
               <br />
               <div class="resource card">
                 <div class="card-icon tag-building"></div>
@@ -11042,14 +11065,15 @@
               /
               <div class="tile special-tile red-outline"></div>
               <div class="tile ocean-tile" style="margin-left: -3px;">
-            </div>
-            *
-            <div class="description">
+              </div>
+              *
+              <div class="description">
               (Action : Gagnez 1 M€ pour chaque CITÉ 
               ET TUILE SPÉCIALE ADJACENTE À UN OCÉAN, quel que soit son propriétaire.)
-            </div>
-            <br />
-            <div class="description">(Nécessite au moins 4% d'oxygène.)</div>
+              </div>
+              <br />
+              <div class="description">(Nécessite au moins 4% d'oxygène.)</div>
+            </div>  
           </li>
 
           <!--X63-->
@@ -11158,6 +11182,54 @@
             </div>
           </li>
 
+          <!--X67-->
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag plantTag microbeTag promo"
+          >
+            <div class="title background-color-events">Enrichissement du Sol</div>
+            <div class="price">6</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-plant"></div>
+            <div class="tag tag3 tag-microbe"></div>
+            <div class="number">#X67</div>
+            <div class="promo-icon project-icon"></div>
+            <div class="content">
+              <div class="minus"></div>
+              <div class="resource microbe"></div>
+              *
+              <div class="plus"></div>
+              5
+              <div class="plant resource" style="margin-left: 5px"></div>
+              <div class="description">
+                (Dépensez 1 microbe de N'IMPORTE QUELLE de vos cartes pour gagner 5 plantes.)
+              </div>
+            </div>
+          </li>
+
+          <!--X68-->
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated noneTag promo reqs"
+          >
+            <div class="title background-color-automated">Supermarchés</div>
+            <div class="price">9</div>
+            <div class="number">#X68</div>
+            <div class="promo-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">1</div>
+              <div class="requirements">2 Cités en jeu</div>
+              <div class="tile city-tile red-outline"></div>
+              <div class="tile city-tile red-outline"></div>
+              <div class="production-box">
+                <div class="money production">2</div>
+              </div>
+              <div class="description">
+                (Nécessite que 2 tuiles Cité soient en jeu. 
+                Augmentez votre production de M€ de 2.)
+              </div>
+            </div>
+          </li>
           
         </ul>
 

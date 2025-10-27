@@ -265,6 +265,26 @@ li.global-card::before {
   font-family: Prototype;
 }
 
+.prelude2-label {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 20px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: -64px;
+  margin-left: 4px;
+  font-size: 12px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 40, 137);
+  border-radius: 14px 2px 2px 2px;
+  border-top: 2px solid rgb(221, 221, 221);
+  border-left: 2px solid rgb(221, 221, 221);
+  border-bottom: 2px solid rgb(137, 137, 137);
+  border-right: 2px solid rgb(137, 137, 137);
+  font-family: Prototype;
+}
+
 .standard-icon:after {
   content: "\00a0";
   position: absolute;
@@ -619,6 +639,14 @@ li.global-card::before {
     rgb(235, 118, 171) 10%,
     rgba(235, 118, 171, 0.6),
     rgb(235, 118, 171) 90%
+  );
+}
+.background-color-prelude2 {
+  background: linear-gradient(
+    -60deg,
+    rgb(255, 40, 137) 10%,
+    rgba(255, 40, 137, 0.6),
+    rgb(255, 40, 137) 90%
   );
 }
 
@@ -1493,6 +1521,9 @@ li.global-card::before {
 }
 .pristar {
   background-image: url(../images/resources/pristar.png);
+}
+.one {
+  background-image: url(../images/resources/one.png);
 }
 .director {
   background-image: url(../images/resources/director.png);

@@ -1,7 +1,7 @@
 // Default counts
 PROJECTS = 215;
 CORPORATIONS = 22;
-PRELUDES = 50;
+PRELUDES = 49;
 COLONIES = 0;
 GLOBALS = 0;
 

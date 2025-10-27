@@ -10,9 +10,8 @@
   <link rel="stylesheet" type="text/css" href="css/mystyles.css" />
   <link rel="stylesheet" href="css/odometer.css" />
   <link rel="stylesheet" href="css/odometer-cards-list.css" />
-  <title>TM Cards List</title>
+  <title>LISTE DES CARTES DE TERRAFORMING MARS J1</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
 
 <html>
@@ -80,23 +79,6 @@
                 title="filter Preludes Cards"
               >
                 PRÉLUDE
-              </button>
-              <button
-                id="colony-card"
-                class="button btn1 background-color-colony"
-                onclick="filterFunction(id)"
-                title="filter Colonies cards"
-              >
-                COLONIE
-              </button>
-              <button
-                id="global-card"
-                class="button btn1 background-color-global"
-                onclick="filterFunction(id)"
-                style="margin-right: 0px"
-                title="filter Global Events cards"
-              >
-                GLOBAL
               </button>
             </div>
 
@@ -171,13 +153,6 @@
                 title="filter by Event tag"
               ></button>
               <button
-                id="venusTag"
-                class="button btn2 tag-venus"
-                onclick="filterFunction(id)"
-                title="filter by Venus tag"
-              ></button>
-
-              <button
                 id="wildTag"
                 class="button btn2 tag-wild"
                 onclick="filterFunction(id)"
@@ -220,12 +195,6 @@
                 title="filter Corporate Era cards"
               ></button>
               <button
-                id="venusNext"
-                class="button btn3 venus-icon button-icon"
-                onclick="filterFunction(id)"
-                title="filter Venus Next cards"
-              ></button>
-              <button
                 id="prelude"
                 class="button btn3 prelude-icon button-icon"
                 onclick="filterFunction(id)"
@@ -236,24 +205,6 @@
                 class="button btn3 prelude2-icon button-icon"
                 onclick="filterFunction(id)"
                 title="filter Prelude 2 cards"
-              ></button>
-              <button
-                id="colonies"
-                class="button btn3 colonies-icon button-icon"
-                onclick="filterFunction(id)"
-                title="filter Colonies cards"
-              ></button>
-              <button
-                id="turmoil"
-                class="button btn3 turmoil-icon button-icon"
-                onclick="filterFunction(id)"
-                title="filter Turmoil cards"
-              ></button>
-              <button
-                id="promo"
-                class="button btn3 promo-icon button-icon"
-                onclick="filterFunction(id)"
-                title="filter Promo cards"
               ></button>
             </div>
 
@@ -430,16 +381,6 @@
                 title="filter cards which increase Oxygen"
                 style="background-position: 10px 3px"
               ></button>
-              <button
-                id="venus-tile"
-                class="button btn-tile venus-tile"
-                onclick="filterFunction(id)"
-                title="filter cards which increase Venus"
-                style="
-                  background-size: 45px 30px !important;
-                  background-position: 5px 4px;
-                "
-              ></button>
 
               <div id="subfilterReqs" class="subfilterReqs-disabled">
                 <output
@@ -504,26 +445,6 @@
                   class="track-oxygen-background track-oxygen-thumb"
                 />
 
-                <output
-                  id="output4"
-                  for="slider4"
-                  class="output-label"
-                  style="color: #8bb8da"
-                  >0</output
-                >
-                <!-- Just to display selected value -->
-                <input
-                  id="slider4"
-                  type="range"
-                  min="0"
-                  max="30"
-                  value="0"
-                  step="2"
-                  list="tickmarks"
-                  oninput="output4.value = slider4.value; filterFunction(id);"
-                  class="track-venus-background track-venus-thumb"
-                  style="margin-right: 0px"
-                />
                 <br />
                 <p></p>
                 <output
@@ -589,26 +510,7 @@
                   style="width: 60px"
                 />
 
-                <output
-                  id="output7"
-                  for="slider7"
-                  class="output-label"
-                  style="margin-left: 70px; color: rgb(84, 150, 201)"
-                  >0</output
-                >
-                <!-- Just to display selected value -->
-                <input
-                  id="slider7"
-                  type="range"
-                  min="0"
-                  max="2"
-                  value="0"
-                  step="1"
-                  list="tickmarks"
-                  oninput="output7.value = slider7.value; filterFunction(id);"
-                  class="track-venusTag-background track-venusTag-thumb thumb-tab"
-                  style="width: 60px"
-                />
+
               </div>
             </div>
           </div>
@@ -636,12 +538,6 @@
 
             <div class="card-footer card-footer-prelude"></div>
             <div id="totalPreludes" class="totalCardsCount odometer"></div>
-
-            <div class="card-footer card-footer-colony"></div>
-            <div id="totalColonies" class="totalCardsCount odometer"></div>
-
-            <div class="card-footer card-footer-globals"></div>
-            <div id="totalGlobals" class="totalCardsCount odometer">00</div>
           </div>
         </div>
 

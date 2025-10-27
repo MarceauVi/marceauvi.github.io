@@ -1737,7 +1737,7 @@ li.global-card::before {
 }
 
 .left-line {
-  border-bottom: 5px solid #cc3333;
+  border-bottom: 5px solid #000000;
   transform: rotate(30deg);
   width: 70px;
   margin-top: 17px;
@@ -1746,7 +1746,7 @@ li.global-card::before {
 }
 
 .right-line {
-  border-bottom: 5px solid #cc3333;
+  border-bottom: 5px solid #000000;
   transform: rotate(-30deg);
   width: 70px;
   margin-top: 17px;
@@ -1754,6 +1754,23 @@ li.global-card::before {
   position: absolute;
 }
 
+.left-line-red {
+  border-bottom: 5px solid #db0909ec;
+  transform: rotate(30deg);
+  width: 70px;
+  margin-top: 17px;
+  margin-left: -10px;
+  position: absolute;
+}
+
+.right-line-red {
+  border-bottom: 5px solid #db0909ec;
+  transform: rotate(-30deg);
+  width: 70px;
+  margin-top: 17px;
+  margin-left: -10px;
+  position: absolute;
+}
 /************** Extras ************/
 .red-arrow {
   background-image: url(../images/misc/arrow.png);

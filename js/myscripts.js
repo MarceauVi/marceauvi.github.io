@@ -1,7 +1,7 @@
 // Default counts
 PROJECTS = 400;
 CORPORATIONS = 47;
-PRELUDES = 40;
+PRELUDES = 46;
 COLONIES = 11;
 GLOBALS = 36;
 
@@ -395,7 +395,7 @@ function filterFunction(id) {
   //Display Cards Numbers
   displayedCards = document.querySelectorAll("li.show").length;
   CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
-  PRELUDES = document.querySelectorAll("li.show.prelude-card").length;
+  PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
   COLONIES = document.querySelectorAll("li.show.colony-card").length;
   GLOBALS = document.querySelectorAll("li.show.global-card").length;
 

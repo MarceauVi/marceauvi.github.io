@@ -2,8 +2,6 @@
 PROJECTS = 215;
 CORPORATIONS = 22;
 PRELUDES = 49;
-COLONIES = 0;
-GLOBALS = 0;
 
 CONTAINER = 200; //the default height of the buttons container
 CONTENT_FILTERS = 125; //the default height of the Content filters area
@@ -35,8 +33,6 @@ function showAll() {
   document.getElementById("totalProjects").innerHTML = PROJECTS;
   document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
   document.getElementById("totalPreludes").innerHTML = PRELUDES;
-  document.getElementById("totalColonies").innerHTML = COLONIES;
-  document.getElementById("totalGlobals").innerHTML = GLOBALS;
 
   //making all buttons inactive
   y = document.querySelectorAll("button.active");
@@ -277,20 +273,16 @@ function filterFunction(id) {
     temperatureValue = document.getElementById("slider1").value;
     oxygenValue = document.getElementById("slider2").value;
     oceansValue = document.getElementById("slider3").value;
-    venusValue = document.getElementById("slider4").value;
     scienceValue = document.getElementById("slider5").value;
     jovianValue = document.getElementById("slider6").value;
-    venusTagValue = document.getElementById("slider7").value;
     earthValue = document.getElementById("slider8").value;
 
     if (
       temperatureValue > -30 ||
       oxygenValue > 0 ||
       oceansValue > 0 ||
-      venusValue > 0 ||
       scienceValue > 0 ||
       jovianValue > 0 ||
-      venusTagValue > 0 ||
       earthValue > 0
     ) {
       for (i = 0; i < x.length; i++) {
@@ -298,10 +290,8 @@ function filterFunction(id) {
         temperatureData = parseInt(x[i].dataset.temperature);
         oxygenData = parseInt(x[i].dataset.oxygen);
         oceansData = parseInt(x[i].dataset.oceans);
-        venusData = parseInt(x[i].dataset.venus);
         scienceData = parseInt(x[i].dataset.science);
         jovianData = parseInt(x[i].dataset.jovian);
-        venusTagData = parseInt(x[i].dataset.venustag);
         earthData = parseInt(x[i].dataset.earth);
 
         show = false;
@@ -320,11 +310,6 @@ function filterFunction(id) {
             show = true;
           }
         }
-        if (venusValue > 0) {
-          if (venusValue <= venusData) {
-            show = true;
-          }
-        }
         if (scienceValue > 0) {
           if (scienceValue <= scienceData) {
             show = true;
@@ -332,11 +317,6 @@ function filterFunction(id) {
         }
         if (jovianValue > 0) {
           if (jovianValue <= jovianData) {
-            show = true;
-          }
-        }
-        if (venusTagValue > 0) {
-          if (venusTagValue <= venusTagData) {
             show = true;
           }
         }
@@ -362,8 +342,6 @@ function filterFunction(id) {
     document.getElementById("output2").innerHTML = 0;
     document.getElementById("slider3").value = 0;
     document.getElementById("output3").innerHTML = 0;
-    document.getElementById("slider4").value = 0;
-    document.getElementById("output4").innerHTML = 0;
     document.getElementById("slider5").value = 0;
     document.getElementById("output5").innerHTML = 0;
     document.getElementById("slider6").value = 0;
@@ -396,15 +374,11 @@ function filterFunction(id) {
   displayedCards = document.querySelectorAll("li.show").length;
   CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
   PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
-  COLONIES = document.querySelectorAll("li.show.colony-card").length;
-  GLOBALS = document.querySelectorAll("li.show.global-card").length;
 
-  PROJECTS = displayedCards - CORPORATIONS - PRELUDES - COLONIES - GLOBALS;
+  PROJECTS = displayedCards - CORPORATIONS - PRELUDES;
   document.getElementById("totalProjects").innerHTML = PROJECTS;
   document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
   document.getElementById("totalPreludes").innerHTML = PRELUDES;
-  document.getElementById("totalColonies").innerHTML = COLONIES;
-  document.getElementById("totalGlobals").innerHTML = GLOBALS;
 
   //clearing all displayed cards
   y = document.querySelectorAll(".display");
@@ -429,14 +403,10 @@ function clearInput() {
   document.getElementById("output2").innerHTML = 0;
   document.getElementById("slider3").value = 0;
   document.getElementById("output3").innerHTML = 0;
-  document.getElementById("slider4").value = 0;
-  document.getElementById("output4").innerHTML = 0;
   document.getElementById("slider5").value = 0;
   document.getElementById("output5").innerHTML = 0;
   document.getElementById("slider6").value = 0;
   document.getElementById("output6").innerHTML = 0;
-  document.getElementById("slider7").value = 0;
-  document.getElementById("output7").innerHTML = 0;
   document.getElementById("slider8").value = 0;
   document.getElementById("output8").innerHTML = 0;
 

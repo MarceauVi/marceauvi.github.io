@@ -1494,6 +1494,10 @@ li.global-card::before {
 .pristar {
   background-image: url(../images/resources/pristar.png);
 }
+.director {
+  background-image: url(../images/resources/director.png);
+}
+
 
 .card {
   background: url("../images/resources/card.png");

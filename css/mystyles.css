@@ -703,8 +703,11 @@ li.global-card::before {
 .tag-science {
   background-image: url("../images/tags/science.png");
 }
-.tag-none {
+.tag-none-eng {
   background-image: url("../images/tags/tag-none.png");
+}
+.tag-none {
+  background-image: url("../images/tags/tag-aucun.png");
 }
 
 /************** Style the buttons ************/

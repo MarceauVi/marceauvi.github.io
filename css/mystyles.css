@@ -1682,12 +1682,6 @@ li.global-card::before {
   background: rgb(235, 118, 171);
 }
 
-.card-footer-prelude2:after {
-  content: "P";
-  color: black;
-  background: rgb(255, 40, 137);
-}
-
 .card-footer-colony:after {
   content: "C";
   color: black;

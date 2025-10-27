@@ -1389,6 +1389,13 @@ li.global-card::before {
   background-size: 60px 40px;
 }
 
+.venus-tile-small {
+  background-image: url(../images/global-parameters/venus.png);
+  width: 30px;
+  height: 20px;
+  background-size: 30px 20px;
+}
+
 .rating {
   background-image: url(../images/resources/TR.png);
   width: 50px;

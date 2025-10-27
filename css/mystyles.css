@@ -1201,6 +1201,9 @@ li.global-card::before {
   line-height: 42px;
   font-size: 36px;
 }
+.points-prelude {
+  margin-top: 148px;
+}
 
 .description {
   font-size: 11px;

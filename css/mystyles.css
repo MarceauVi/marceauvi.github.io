@@ -117,7 +117,7 @@ li.corporation::before {
   filter: grayscale(1) brightness(1.9) contrast(0.6) hue-rotate(0deg);
 }
 
-li.prelude-card::before {
+li.carte-prel::before {
   content: "";
   background-size: 1000px;
   background-image: url(../images/mars.png);
@@ -198,7 +198,7 @@ li.global-card::before {
   z-index: 99;
 }
 
-.prelude-card{
+.carte-prel{
   height: 275px;
 }
 .global-card {

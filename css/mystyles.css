@@ -449,7 +449,7 @@ li.global-card::before {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
   content: "";
   background-image: url("../images/tags/CdF.png");
-  background-size: 16px 16px;
+  background-size: 22px 22px;
   background-position: bottom 2px right 3px;
   background-repeat: no-repeat;
 }

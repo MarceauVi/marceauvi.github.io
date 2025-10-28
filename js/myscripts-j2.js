@@ -35,11 +35,11 @@ function showAll() {
   document.getElementById("totalPreludes").innerHTML = PRELUDES;
 
   //Display Cards Numbers
-  displayedCards = document.querySelectorAll("li.show").length;
-  CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
-  PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
+  // displayedCards = document.querySelectorAll("li.show").length;
+  // CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
+  // PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
 
-  PROJECTS = displayedCards - CORPORATIONS - PRELUDES;
+  // PROJECTS = displayedCards - CORPORATIONS - PRELUDES;
   // document.getElementById("totalProjects").innerHTML = PROJECTS;
   // document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
   // document.getElementById("totalPreludes").innerHTML = PRELUDES;
@@ -77,6 +77,10 @@ function displayCards() {
     w3AddClass(arr[i], "display");
     w3RemoveClass(arr[i], "show");
   }
+  PROJECTS = 285;
+  CORPORATIONS = 32;
+  PRELUDES = 56;
+
 }
 
 //////////////////////PARSE function ////////////////////////////////

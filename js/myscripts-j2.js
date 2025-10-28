@@ -1,7 +1,10 @@
 // Default counts
-PROJECTS = 285;
-CORPORATIONS = 32;
-PRELUDES = 56;
+origine_projects= 285;
+origine_corporations= 32;
+origine_preludes= 56;
+PROJECTS = origine_projects;
+CORPORATIONS = origine_corporations;
+PRELUDES = origine_preludes;
 
 CONTAINER = 200; //the default height of the buttons container
 CONTENT_FILTERS = 125; //the default height of the Content filters area
@@ -34,16 +37,6 @@ function showAll() {
   document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
   document.getElementById("totalPreludes").innerHTML = PRELUDES;
 
-  //Display Cards Numbers
-  // displayedCards = document.querySelectorAll("li.show").length;
-  // CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
-  // PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
-
-  // PROJECTS = displayedCards - CORPORATIONS - PRELUDES;
-  // document.getElementById("totalProjects").innerHTML = PROJECTS;
-  // document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
-  // document.getElementById("totalPreludes").innerHTML = PRELUDES;
-
   //making all buttons inactive
   y = document.querySelectorAll("button.active");
   if (y.length > 0) {
@@ -59,6 +52,9 @@ function showAll() {
 
   //displaying first 48 cards that have "show"
   displayCards();
+  PROJECTS = origine_projects;
+  CORPORATIONS = origine_corporations;
+  PRELUDES = origine_preludes;
 }
 
 function displayCards() {
@@ -77,9 +73,7 @@ function displayCards() {
     w3AddClass(arr[i], "display");
     w3RemoveClass(arr[i], "show");
   }
-  PROJECTS = 285;
-  CORPORATIONS = 32;
-  PRELUDES = 56;
+
 
 }
 

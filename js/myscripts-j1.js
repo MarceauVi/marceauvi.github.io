@@ -1,7 +1,11 @@
 // Default counts
-PROJECTS = 215;
-CORPORATIONS = 22;
-PRELUDES = 49;
+origine_projects= 215;
+origine_corporations= 22;
+origine_preludes= 49;
+PROJECTS = origine_projects;
+CORPORATIONS = origine_corporations;
+PRELUDES = origine_preludes;
+
 
 CONTAINER = 200; //the default height of the buttons container
 CONTENT_FILTERS = 125; //the default height of the Content filters area
@@ -49,6 +53,9 @@ function showAll() {
 
   //displaying first 48 cards that have "show"
   displayCards();
+  PROJECTS = origine_projects;
+  CORPORATIONS = origine_corporations;
+  PRELUDES = origine_preludes;
 }
 
 function displayCards() {

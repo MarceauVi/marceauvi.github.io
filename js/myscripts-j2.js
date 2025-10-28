@@ -1,6 +1,6 @@
 // Default counts
-PROJECTS = 300;
-CORPORATIONS = 47;
+PROJECTS = 285;
+CORPORATIONS = 32;
 PRELUDES = 56;
 
 CONTAINER = 200; //the default height of the buttons container

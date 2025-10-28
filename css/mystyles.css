@@ -434,6 +434,26 @@ li.global-card::before {
   transform: rotate(180deg);
 }
 
+.CdF-icon:after {
+  position: absolute;
+  color: #222;
+  border: 1px solid black;
+  background: darkorange;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+  content: "";
+  background-image: url("../images/tags/CdF.png");
+  background-size: 10px 10px;
+  background-position: bottom 2px right 3px;
+  background-repeat: no-repeat;
+}
+
 .corporate-icon2 {
   background-image: url("../images/expansions/corporate.png");
 }

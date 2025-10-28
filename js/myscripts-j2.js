@@ -34,6 +34,16 @@ function showAll() {
   document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
   document.getElementById("totalPreludes").innerHTML = PRELUDES;
 
+  //Display Cards Numbers
+  displayedCards = document.querySelectorAll("li.show").length;
+  CORPORATIONS = document.querySelectorAll("li.show.corporation").length;
+  PRELUDES = document.querySelectorAll("li.show.carte-prel").length;
+
+  PROJECTS = displayedCards - CORPORATIONS - PRELUDES;
+  // document.getElementById("totalProjects").innerHTML = PROJECTS;
+  // document.getElementById("totalCorporations").innerHTML = CORPORATIONS;
+  // document.getElementById("totalPreludes").innerHTML = PRELUDES;
+
   //making all buttons inactive
   y = document.querySelectorAll("button.active");
   if (y.length > 0) {

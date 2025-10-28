@@ -49,12 +49,12 @@ function showAll() {
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "show");
   }
-
-  //displaying first 48 cards that have "show"
-  displayCards();
   PROJECTS = origine_projects;
   CORPORATIONS = origine_corporations;
   PRELUDES = origine_preludes;
+  //displaying first 48 cards that have "show"
+  displayCards();
+
 }
 
 function displayCards() {

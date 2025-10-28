@@ -49,9 +49,6 @@ function showAll() {
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "show");
   }
-  PROJECTS = origine_projects;
-  CORPORATIONS = origine_corporations;
-  PRELUDES = origine_preludes;
   //displaying first 48 cards that have "show"
   displayCards();
 
@@ -73,8 +70,10 @@ function displayCards() {
     w3AddClass(arr[i], "display");
     w3RemoveClass(arr[i], "show");
   }
-
-
+  /////test////
+  PROJECTS = origine_projects;
+  CORPORATIONS = origine_corporations;
+  PRELUDES = origine_preludes;
 }
 
 //////////////////////PARSE function ////////////////////////////////

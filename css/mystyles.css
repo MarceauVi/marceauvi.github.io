@@ -245,19 +245,10 @@ li.global-card::before {
   font-size: 12px;
 }
 
-.number-low {
-  position: relative;
-  float: left;
-  font-family: Prototype;
-  width: 36px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
+.num-low {
   color: #4f4f4f;
-  letter-spacing: 1px;
   margin-top: 90px;
   margin-left: 30px;
-  font-size: 12px;
 }
 
 .prelude-label {

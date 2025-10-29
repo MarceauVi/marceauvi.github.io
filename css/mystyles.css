@@ -245,6 +245,21 @@ li.global-card::before {
   font-size: 12px;
 }
 
+.number-low {
+  position: relative;
+  float: left;
+  font-family: Prototype;
+  width: 36px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #aaa;
+  letter-spacing: 1px;
+  margin-top: 250px;
+  margin-left: 50px;
+  font-size: 12px;
+}
+
 .prelude-label {
   position: relative;
   float: left;
@@ -544,6 +559,9 @@ li.global-card::before {
 
 .tag3 {
   margin-left: 104px;
+}
+.tag4 {
+  margin-left: 56px;
 }
 
 .title {

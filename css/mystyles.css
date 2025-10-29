@@ -747,6 +747,9 @@ li.global-card::before {
 .tag-none {
   background-image: url("../images/tags/tag-aucun.png");
 }
+.tag-empty {
+  background-image: url("../images/tags/empty.png");
+}
 .tag-CdF {
   background-image: url("../images/tags/CdF.png");
 }

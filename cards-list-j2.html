@@ -8210,6 +8210,7 @@
               </div>
             </div>
           </li>
+
           <li
             onclick="getClickedCard();"
             class="filterDiv active CdFTag buildingTag cityTag reqs"
@@ -8231,7 +8232,7 @@
               <div class="description" style="margin-top: -10px">
                 (Effet : Augmenter la température vous coûte 6 chaleurs au lieu de 8.)
               </div>
-              <div class="production-box production-box-size1a" style="margin-left: -50px">
+              <div class="production-box production-box-size1a" style="margin-left: -100px">
                 <div class="production-prefix"><div class="minus"></div></div>
                 <div class="energy production"></div>
                 +3
@@ -8239,10 +8240,71 @@
               </div>
               <div class="tile city-tile" style="margin-top: -10px"></div>
               *
-              <div class="description" style="margin-top: 0px">
+              <div class="description" style="position: absolute; margin-left: 120px; margin-top: -90px">
                 (Nécessite 2 tuiles océan. Diminuez votre production d'énergie de 1 
-                et augmentez votre production de chaleur de 3. Placez une tuile cité 
+                et augmentez votre production de chaleur de 3.
+              </div>
+              <div class="description" style="margin-left: 20px; margin-top: -5px">
+                Placez une tuile cité 
                 ADJACENTE À AU MOINS UNE TUILE OCÉAN.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag scienceTag earthTag CdFTag"
+          >
+            <div class="title background-color-events" style="font-size: 14px;">Investissement dans la Recherche</div>
+            <div class="price">8</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-science"></div>
+            <div class="tag tag3 tag-earth"></div>
+            <div class="tag tag4 tag-CdF"></div>
+            <div class="number">#CdF05</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource money">-2</div>
+              *
+              <div class="description">
+                LE COÛT DES PROCHAINES CARTES EST RÉDUIT DE 2 PENDANT CETTE GÉNÉRATION.
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag plantTag reqs"
+          >
+            <div class="title background-color-active">Paysagiste</div>
+            <div class="price">16</div>
+            <div class="tag tag1 tag-plant"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CdF06</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="requirements"></div>
+              <div class="tile city-tile red-outline-city" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: -25px"
+              ></div>
+              <div class="tile city-tile red-outline-city" style="
+                position:absolute;
+                margin-top: -45px;
+                margin-left: 30px"
+              ></div>
+              <div class="tile city-tile red-outline-city"></div>
+              :
+              <div class="resource plant"></div>
+              <div class="resource plant"></div>
+              <div class="description" style="margin-top: -10px">
+                (Effet : Lorsqu'une tuile cité est placée, 
+                par n'importe quel joueur, gagnez 2 plantes.)
+              </div>
+              <br /><br />
+              <div class="description">
+                (Il doit y avoir au moins deux cités en jeu.)
               </div>
             </div>
           </li>

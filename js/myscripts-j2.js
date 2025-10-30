@@ -1,7 +1,7 @@
 // Default counts
 origine_projects= 263;
-origine_corporations= 27;
-origine_preludes= 56;
+origine_corporations= 34;
+origine_preludes= 62;
 PROJECTS = origine_projects;
 CORPORATIONS = origine_corporations;
 PRELUDES = origine_preludes;

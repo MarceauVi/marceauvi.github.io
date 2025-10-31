@@ -1448,6 +1448,20 @@ li.global-card::before {
   background-size: 50px 40px;
 }
 
+.defauss-prel{
+  background-image: url(../images/resources/defauss_prel.png);
+  width: 50px;
+  height: 40px;
+  background-size: 50px 40px;
+}
+
+.defauss-corp{
+  background-image: url(../images/resources/defauss_corp.png);
+  width: 50px;
+  height: 40px;
+  background-size: 50px 40px;
+}
+
 .globals-box {
   width: 100px;
   text-shadow: none;

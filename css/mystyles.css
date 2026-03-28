@@ -1443,9 +1443,9 @@ li.global-card::before {
 
 .rating {
   background-image: url(../images/resources/terrra_grand.png);
-  width: 50px;
+  width: 51px;
   height: 40px;
-  background-size: 50px 40px;
+  background-size: 51px 40px;
 }
 
 .defauss-prel{

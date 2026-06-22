@@ -528,7 +528,7 @@ li.global-card::before {
   border-bottom: 2px solid rgb(137, 137, 137);
   border-right: 2px solid rgb(137, 137, 137);
   background-color: white;
-  margin-top: 40px;
+  margin-top: -6px;
 }
 
 .globalTag1 {
@@ -537,6 +537,7 @@ li.global-card::before {
 
 .globalTag2 {
   margin-left: 160px;
+  margin-top: 40px;
 }
 
 .tag1 {

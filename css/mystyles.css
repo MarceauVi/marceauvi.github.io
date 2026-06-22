@@ -483,7 +483,19 @@ li.global-card::before {
 
 .global-icon:after {
   margin-left: -231px;
-  margin-top: 214px;
+  margin-top: 190px;
+}
+.global-icon2:after {
+  margin-left: -231px;
+  margin-top: 166px;
+}
+.global-icon3:after {
+  margin-left: -231px;
+  margin-top: 142px;
+}
+.global-icon4:after {
+  margin-left: -231px;
+  margin-top: 118px;
 }
 
 .corporation-icon:after {

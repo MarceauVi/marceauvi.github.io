@@ -44,7 +44,7 @@
                 id="automated"
                 class="button btn1 background-color-automated"
                 onclick="filterFunction(id)"
-                title="filter Automated Project Cards"
+                title="filtrer les Cartes Instantanée"
               >
                 INSTANTANÉE
               </button>
@@ -52,7 +52,7 @@
                 id="active"
                 class="button btn1 background-color-active"
                 onclick="filterFunction(id)"
-                title="filter Active Project Cards"
+                title="filtrer les Cartes Action"
               >
                 ACTION
               </button>
@@ -60,7 +60,7 @@
                 id="events"
                 class="button btn1 background-color-events"
                 onclick="filterFunction(id)"
-                title="filter Space Events Project Cards"
+                title="filtrer les Cartes Évènement"
               >
                 ÉVÈNEMENT
               </button>
@@ -68,7 +68,7 @@
                 id="corporation"
                 class="button btn1 background-color-corporation"
                 onclick="filterFunction(id)"
-                title="filter Corporations Cards"
+                title="filtrer les Cartes Corporation"
               >
                 CORPORATION
               </button>
@@ -76,7 +76,7 @@
                 id="carte-prel"
                 class="button btn1 background-color-prelude"
                 onclick="filterFunction(id)"
-                title="filter Preludes Cards"
+                title="filtrer les Cartes Prélude"
               >
                 PRÉLUDE
               </button>
@@ -87,90 +87,90 @@
                 id="buildingTag"
                 class="button btn2 tag-building"
                 onclick="filterFunction(id)"
-                title="filter by Building tag"
+                title="filtrer par badge Construction"
               ></button>
               <button
                 id="spaceTag"
                 class="button btn2 tag-space"
                 onclick="filterFunction(id)"
-                title="filter by Space tag"
+                title="filtrer par badge Espace"
               ></button>
               <button
                 id="scienceTag"
                 class="button btn2 tag-science"
                 onclick="filterFunction(id)"
-                title="filter by Science tag"
+                title="filtrer par badge Science"
               ></button>
 
               <button
                 id="plantTag"
                 class="button btn2 tag-plant"
                 onclick="filterFunction(id)"
-                title="filter by Plant tag"
+                title="filtrer par badge Plante"
               ></button>
               <button
                 id="microbeTag"
                 class="button btn2 tag-microbe"
                 onclick="filterFunction(id)"
-                title="filter by Microbe tag"
+                title="filtrer par badge Microbe"
               ></button>
               <button
                 id="animalTag"
                 class="button btn2 tag-animal"
                 onclick="filterFunction(id)"
-                title="filter by Animal tag"
+                title="filtrer par badge Animal"
               ></button>
 
               <button
                 id="powerTag"
                 class="button btn2 tag-power"
                 onclick="filterFunction(id)"
-                title="filter by Power tag"
+                title="filtrer par badge Énergie"
               ></button>
               <button
                 id="jovianTag"
                 class="button btn2 tag-jovian"
                 onclick="filterFunction(id)"
-                title="filter by Jovian tag"
+                title="filtrer par badge Jovien"
               ></button>
               <button
                 id="earthTag"
                 class="button btn2 tag-earth"
                 onclick="filterFunction(id)"
-                title="filter by Earth tag"
+                title="filtrer par badge Terre"
               ></button>
 
               <button
                 id="cityTag"
                 class="button btn2 tag-city"
                 onclick="filterFunction(id)"
-                title="filter by City tag"
+                title="filtrer par badge Cité"
               ></button>
               <button
                 id="eventTag"
                 class="button btn2 tag-event"
                 onclick="filterFunction(id)"
-                title="filter by Event tag"
+                title="filtrer par badge Évènement"
               ></button>
 
               <button
                 id="wildTag"
                 class="button btn2 tag-wild"
                 onclick="filterFunction(id)"
-                title="filter by Wild tag"
+                title="filtrer par badge Joker"
               ></button>
               <button
                 id="noneTag"
                 class="button btn2 tag-none"
                 onclick="filterFunction(id)"
-                title="filter cards with no tags"
+                title="filtrer par carte sans badge"
               ></button>
 
               <button
                 id="CdFTag"
                 class="button btn2 tag-CdF"
                 onclick="filterFunction(id)"
-                title="filter cards with CdF tags"
+                title="filtrer par badge CdF"
               ></button>
             </div>
 
@@ -179,7 +179,7 @@
                 id="content"
                 class="button btn-content"
                 onclick="toggleContentDiv();"
-                title="reveal Card Content filters"
+                title="Afficher les filtres du Contenu des Cartes"
               >
                 CONTENU
               </button>
@@ -188,45 +188,45 @@
                 id="myInput"
                 oninput="filterFunction(id);"
                 placeholder="Chercher ..."
-                title="Search by card's title, number or keywords"
+                title="Chercher par nom de Carte, nombre, ID ou mots clefs"
               />
               <button
                 id="standard"
                 class="button btn3 standard-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter Base game cards"
+                title="filtrer les cartes du Jeu de Base"
               ></button>
               <button
                 id="corporate"
                 class="button btn3 corporate-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter Corporate Era cards"
+                title="filtrer les cartes de l'Ère des Corporations"
               ></button>
               <button
                 id="prelude"
                 class="button btn3 prelude-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter Prelude cards"
+                title="filtrer les cartes de Prélude"
               ></button>
               <button
                 id="pre2lude"
                 class="button btn3 prelude2-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter Prelude 2 cards"
+                title="filtrer les cartes de Prélude 2"
               ></button>
 
               <button
                 id="promo"
                 class="button btn3 promo-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter Promo cards"
+                title="filtrer les cartes Promo"
               ></button>
 
               <button
                 id="CdF"
                 class="button btn3 CdF-icon button-icon"
                 onclick="filterFunction(id)"
-                title="filter CdF cards"
+                title="filtrer les cartes CdF"
               ></button>
             </div>
 
@@ -242,6 +242,7 @@
                     checked="checked"
                     onclick="sortByID();"
                     style="display: none"
+                    title="Classer les cartes Projet par ID"
                   />
                   <label class="btn-sort" for="radio-choice-1">ID</label>
                   <input
@@ -251,6 +252,7 @@
                     value="off"
                     onclick="sortByPriceUp();"
                     style="display: none"
+                    title="Classer les cartes Projet par Prix Croissant"
                   />
                   <label class="btn-sort" for="radio-choice-2">M€ Croissant</label>
                   <input
@@ -260,22 +262,22 @@
                     value="other"
                     onclick="sortByPriceDown();"
                     style="display: none"
+                    title="Classer les cartes Projet par Prix Décroissant"
                   />
                   <label class="btn-sort" for="radio-choice-3">M€ Décroissant</label>
                 </fieldset>
               </form>
 
               <button
-                title="decrease Price filter by 1"
                 class="button2 btn-price"
                 onclick="reduceOne()"
-                title="decrease Price filter by 1"
+                title="Diminuer la valeur du filtre par Prix de 1"
               >
                 -
               </button>
               <input
                 type="number"
-                title="filter by Price"
+                title="filtrer par Prix"
                 id="price"
                 oninput="filterFunction(id);"
                 value="0"
@@ -286,7 +288,7 @@
                 class="button2 btn-price"
                 style="margin-right: 10px"
                 onclick="increaseOne()"
-                title="increase Price filter by 1"
+                title="Augmenter la valeur du filtre par Prix de 1"
               >
                 +
               </button>
@@ -295,7 +297,7 @@
                 id=".production.money"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with money production"
+                title="filtrer les cartes avec de la production de M€"
                 style="margin-left: 6px"
               >
                 <div class="production money">M€</div>
@@ -304,7 +306,7 @@
                 id=".production.steel"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with steel production"
+                title="filtrer les cartes avec de la production d'acier"
               >
                 <div class="production steel"></div>
               </button>
@@ -312,7 +314,7 @@
                 id=".production.titanium"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with titanium production"
+                title="filtrer les cartes avec de la production de titane"
               >
                 <div class="production titanium"></div>
               </button>
@@ -320,7 +322,7 @@
                 id=".production.plant"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with plant production"
+                title="filtrer les cartes avec de la production de plante"
               >
                 <div class="production plant"></div>
               </button>
@@ -328,7 +330,7 @@
                 id=".production.energy"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with enery production"
+                title="filtrer les cartes avec de la production d'énergie"
               >
                 <div class="production energy"></div>
               </button>
@@ -336,7 +338,7 @@
                 id=".production.heat"
                 class="button btn-production"
                 onclick="filterFunction(id)"
-                title="filter cards with heat production"
+                title="filtrer les cartes avec de la production de chaleur"
               >
                 <div class="production heat"></div>
               </button>
@@ -346,7 +348,7 @@
                 id="reqs"
                 class="button btn-req"
                 onclick="filterFunction(id);toggleRequirementsFilters();"
-                title="filter cards having Requirements"
+                title="filtrer les cartes avec des prérequis"
               >
                 PRÉREQUIS
               </button>
@@ -354,7 +356,7 @@
                 id="vp"
                 class="button btn-vp points"
                 onclick="filterFunction(id)"
-                title="filter cards with VP"
+                title="filtrer les cartes avec une icône de PV"
               >
                 PV
               </button>
@@ -363,7 +365,7 @@
                 id="rating"
                 class="button btn-tile rating"
                 onclick="filterFunction(id)"
-                title="filter cards which increase TR"
+                title="filtrer les cartes avec une icône de NT"
                 style="
                   background-size: 36px 30px !important;
                   background-position: 10px;
@@ -373,7 +375,7 @@
                 id="temperature-tile"
                 class="button btn-tile temperature-tile"
                 onclick="filterFunction(id)"
-                title="filter cards which increase Temperature"
+                title="filtrer les cartes avec une icône de Température"
                 style="
                   background-size: 11px 34px !important;
                   background-position: 22px;
@@ -383,14 +385,14 @@
                 id="ocean-tile"
                 class="button btn-tile ocean-tile"
                 onclick="filterFunction(id)"
-                title="filter cards which place Ocean tiles"
+                title="filtrer les cartes avec une icône de tuile Océan"
                 style="background-position: 10px"
               ></button>
               <button
                 id="greenery-tile"
                 class="button btn-tile greenery-tile"
                 onclick="filterFunction(id)"
-                title="filter cards which place Greenery tiles"
+                title="filtrer les cartes avec une icône de tuile Forêt"
                 style="
                   background-position: 10px;
                   background-size: 40px 34px !important;
@@ -400,7 +402,7 @@
                 id="oxygen-tile"
                 class="button btn-tile oxygen-tile"
                 onclick="filterFunction(id)"
-                title="filter cards which increase Oxygen"
+                title="filtrer les cartes avec une icône d'Oxygène"
                 style="background-position: 10px 3px"
               ></button>
 
@@ -541,9 +543,9 @@
               id="reset"
               class="button2 btn-reset"
               onclick="clearInput();showAll();"
-              title="Reset all selected filters"
+              title="Réinitialiser tous les filtres sélectionnés"
             >
-              RESET
+              RÉINITIALISER
             </button>
             <div
               class="card-footer card-footer-projects"

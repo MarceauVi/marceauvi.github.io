@@ -27,10 +27,10 @@
               disabled
               id="btn-selectedCards"
               class="button btn-selected-cards disabled"
-              title="open selected cards"
+              title="Ouvre une page avec les cartes selectionnées"
               href="no-selected-card.html"
               target="_blank"
-              >SELECTIONNÉ
+              >SELECTION
               <div id="selectedCardsAmount">0</div>
             </a>
           </div>
@@ -44,7 +44,7 @@
                 id="automated"
                 class="button btn1 background-color-automated"
                 onclick="filterFunction(id)"
-                title="filtrer les Cartes Instantanée"
+                title="filtrer les cartes Instantanée"
               >
                 INSTANTANÉE
               </button>
@@ -52,7 +52,7 @@
                 id="active"
                 class="button btn1 background-color-active"
                 onclick="filterFunction(id)"
-                title="filtrer les Cartes Action"
+                title="filtrer les cartes Action"
               >
                 ACTION
               </button>
@@ -60,7 +60,7 @@
                 id="events"
                 class="button btn1 background-color-events"
                 onclick="filterFunction(id)"
-                title="filtrer les Cartes Évènement"
+                title="filtrer les cartes Évènement"
               >
                 ÉVÈNEMENT
               </button>
@@ -68,7 +68,7 @@
                 id="corporation"
                 class="button btn1 background-color-corporation"
                 onclick="filterFunction(id)"
-                title="filtrer les Cartes Corporation"
+                title="filtrer les cartes Corporation"
               >
                 CORPORATION
               </button>
@@ -76,7 +76,7 @@
                 id="carte-prel"
                 class="button btn1 background-color-prelude"
                 onclick="filterFunction(id)"
-                title="filtrer les Cartes Prélude"
+                title="filtrer les cartes Prélude"
               >
                 PRÉLUDE
               </button>
@@ -163,7 +163,7 @@
                 id="noneTag"
                 class="button btn2 tag-none"
                 onclick="filterFunction(id)"
-                title="filtrer par carte sans badge"
+                title="filtrer les cartes sans badge"
               ></button>
 
               <button
@@ -179,7 +179,7 @@
                 id="content"
                 class="button btn-content"
                 onclick="toggleContentDiv();"
-                title="Afficher les filtres du Contenu des Cartes"
+                title="Afficher les filtres du contenu des cartes"
               >
                 CONTENU
               </button>
@@ -188,7 +188,7 @@
                 id="myInput"
                 oninput="filterFunction(id);"
                 placeholder="Chercher ..."
-                title="Chercher par nom de Carte, nombre, ID ou mots clefs"
+                title="Chercher par nom de carte, nombre, ID ou mots clefs"
               />
               <button
                 id="standard"
@@ -242,9 +242,9 @@
                     checked="checked"
                     onclick="sortByID();"
                     style="display: none"
-                    title="Classer les cartes Projet par ID"
+                    
                   />
-                  <label class="btn-sort" for="radio-choice-1">ID</label>
+                  <label class="btn-sort" title="Classer les cartes Projet par ID" for="radio-choice-1">ID</label>
                   <input
                     type="radio"
                     name="radio"
@@ -252,9 +252,9 @@
                     value="off"
                     onclick="sortByPriceUp();"
                     style="display: none"
-                    title="Classer les cartes Projet par Prix Croissant"
+                    
                   />
-                  <label class="btn-sort" for="radio-choice-2">M€ Croissant</label>
+                  <label class="btn-sort" title="Classer les cartes Projet par Prix Croissant" for="radio-choice-2">M€ Croissant</label>
                   <input
                     type="radio"
                     name="radio"
@@ -262,9 +262,9 @@
                     value="other"
                     onclick="sortByPriceDown();"
                     style="display: none"
-                    title="Classer les cartes Projet par Prix Décroissant"
+                    
                   />
-                  <label class="btn-sort" for="radio-choice-3">M€ Décroissant</label>
+                  <label class="btn-sort" title="Classer les cartes Projet par Prix Décroissant" for="radio-choice-3">M€ Décroissant</label>
                 </fieldset>
               </form>
 
@@ -277,7 +277,7 @@
               </button>
               <input
                 type="number"
-                title="filtrer par Prix"
+                title="filtre par Prix"
                 id="price"
                 oninput="filterFunction(id);"
                 value="0"
@@ -348,7 +348,7 @@
                 id="reqs"
                 class="button btn-req"
                 onclick="filterFunction(id);toggleRequirementsFilters();"
-                title="filtrer les cartes avec des prérequis"
+                title="filtrer les cartes avec prérequis"
               >
                 PRÉREQUIS
               </button>

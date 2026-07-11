@@ -1227,7 +1227,7 @@ li.global-card::before {
   font-size: 15px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 0, 0, 0.3);
   background: linear-gradient(90deg, #f3a10e 0%, #fdea25 45%, #fdea25 55%, #f3a10e 100%);
-  font-family: Ubuntu, sans-serif;
+  font-family: Prototype;
   font-weight: bold;
   display: flex;
   justify-content: center;

@@ -1239,9 +1239,13 @@ li.global-card::before {
 .requirements-max {
   background: linear-gradient(to right, #fa2525, #fb7272, #fb7272, #fa2525);
   background-image: url(../images/requisites/max_big.png);
+  /*
   background-size: 164px 34px;
   background-position: -4px -4px;
+  */
   filter: grayscale(0.2);
+  background-size: 174px 34px;
+  background-position: -12px -4px;
 }
 
 .points {

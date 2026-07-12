@@ -1252,6 +1252,7 @@ li.global-card::before {
   justify-content: center;
   flex-flow: row;
   align-items: center;
+  text-align: center;
   
 }
 

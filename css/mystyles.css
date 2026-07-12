@@ -1197,8 +1197,8 @@ li.global-card::before {
   position: relative;
   /*
   display: flex;
-  */
   flex-flow: column;
+  */
   align-items: center;
   width: 220px;
   height: 226px;

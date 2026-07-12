@@ -229,7 +229,7 @@ li.global-card::before {
   background-size: 50px;
   filter: drop-shadow(0px 0px 1px black);
 }
-
+/*
 .number {
   position: relative;
   float: left;
@@ -244,7 +244,25 @@ li.global-card::before {
   margin-left: 50px;
   font-size: 12px;
 }
-
+  */
+.number {
+  float: left;
+  font-family: Prototype;
+  width: 36px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: -64px;
+  margin-left: 50px;
+  font-size: 12px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 0, 0, 0.3);
+  background: #cccccc;
+  border-radius: 2px;
+  border-top: 2px solid #dddddd;
+  border-left: 2px solid #dddddd;
+  border-bottom: 2px solid #898989;
+  border-right: 2px solid #898989;
+}
 .num-low {
   color: #4f4f4f;
   margin-top: 90px;

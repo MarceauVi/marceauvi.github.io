@@ -1195,16 +1195,16 @@ li.global-card::before {
 
   color: black;
   position: relative;
+  /*
   display: flex;
+  */
   flex-flow: column;
   align-items: center;
   width: 220px;
   height: 226px;
   padding: 10px;
   font-size: 16px;
-  /* 20px under */
-  line-height: 40px;
-  
+  line-height: 20px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 0px;

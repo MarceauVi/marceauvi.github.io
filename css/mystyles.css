@@ -1237,7 +1237,7 @@ li.global-card::before {
 
 /************** Style the Content ************/
 .content {
-  /*
+  
   position: relative;
   display: inline-block;
   width: 220px;
@@ -1245,24 +1245,22 @@ li.global-card::before {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  */
-  display: inline-block;
   
   /*
-  display: flex;
-  flex-flow: column;
-  */
   color: black;
   position: relative;
+  display: flex;
+  flex-flow: column;
   align-items: center;
   width: 220px;
   height: 226px;
   padding: 10px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 20px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 0px;
+  */
 }
 
 .contentCorporation {

@@ -293,6 +293,7 @@ li.global-card::before {
 }
 */
 .prelude-label {
+  /*
   position: relative;
   text-transform: uppercase;
   float: left;
@@ -310,8 +311,9 @@ li.global-card::before {
   border-left: 2px solid #dddddd;
   border-bottom: 2px solid #898989;
   border-right: 2px solid #898989;
-  /*
-    position: absolute;
+  */
+  
+  position: absolute;
   text-transform: uppercase;
   top: 15px;
   left: 4px;
@@ -328,7 +330,7 @@ li.global-card::before {
   border-left: 2px solid #dddddd;
   border-bottom: 2px solid #898989;
   border-right: 2px solid #898989;
-  */
+  
 }
 
 .prelude2-label {

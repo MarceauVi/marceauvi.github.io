@@ -739,10 +739,18 @@ li.global-card::before {
 .background-color-prelude2 {
   background: linear-gradient(
     -60deg,
+    rgb(235, 118, 171) 10%,
+    rgba(235, 118, 171, 0.6),
+    rgb(235, 118, 171) 90%
+  );
+  /*
+  background: linear-gradient(
+    -60deg,
     rgb(255, 40, 137) 10%,
     rgba(255, 40, 137, 0.6),
     rgb(255, 40, 137) 90%
   );
+  */
 }
 
 .background-color-colony {

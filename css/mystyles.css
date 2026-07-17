@@ -293,6 +293,7 @@ li.global-card::before {
 }
 */
 .prelude-label {
+  position: relative;
   text-transform: uppercase;
   float: left;
   width: 80px;
@@ -312,6 +313,7 @@ li.global-card::before {
 }
 
 .prelude2-label {
+  position: relative;
   text-transform: uppercase;
   float: left;
   width: 80px;

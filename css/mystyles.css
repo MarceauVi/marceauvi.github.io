@@ -2412,17 +2412,12 @@ li.global-card::before {
 
 .leader {
   display: inline-block;
-  background-image: url(../images/misc/delegate.png);
+  background-image: url(../images/misc/chairman.png);
   width: 24px;
   height: 30px;
   background-size: 24px 30px;
   vertical-align: middle;
   filter: drop-shadow(0px 0px 1px black);
-  background-color: #222;
-  padding: 3px;
-  background-repeat: no-repeat;
-  background-position: 3px;
-  border-radius: 15px 15px 2px 2px;
   margin-bottom: 6px;
 }
 

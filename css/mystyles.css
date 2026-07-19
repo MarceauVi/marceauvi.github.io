@@ -265,17 +265,18 @@ li.global-card::before {
 }
 
 */
-.num-low {
+.num-::after {
   color: #4f4f4f;
   position: absolute;
   margin-top: 290px;
-  margin-left: 30px;
+  margin-left: -225px;
+
 }
-.num-low-prel {
+.num-low-prel::after {
   color: #4f4f4f;
   position: absolute;
-  margin-top: 255px;
-  margin-left: 30px;
+  margin-top: 290px;
+  margin-left: -225px;
 }
 /*
 .prelude-label {

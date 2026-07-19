@@ -269,15 +269,15 @@ li.global-card::before {
 .num-low {
   color: #4f4f4f;
   position: absolute;
-  margin-top: 290px;
-  margin-left: -55px;
+  margin-top: 260px;
+  margin-left: 30px;
 
 }
 .num-low-prel {
   color: #4f4f4f;
   position: absolute;
-  margin-top: 255px;
-  margin-left: -55px;
+  margin-top: 250px;
+  margin-left: 30px;
 }
 /*
 .prelude-label {

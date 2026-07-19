@@ -265,7 +265,7 @@ li.global-card::before {
 }
 
 */
-.numb2 {
+.numb2::after {
   position: relative;
   float: left;
   font-family: Prototype;

@@ -270,6 +270,11 @@ li.global-card::before {
   margin-top: 90px;
   margin-left: 30px;
 }
+.num-low-prel {
+  color: #4f4f4f;
+  margin-top: 65px;
+  margin-left: 30px;
+}
 /*
 .prelude-label {
   text-transform: uppercase;

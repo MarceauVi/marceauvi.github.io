@@ -265,18 +265,34 @@ li.global-card::before {
 }
 
 */
-.num-::after {
+.num-low::after {
   color: #4f4f4f;
   position: absolute;
   margin-top: 290px;
   margin-left: -225px;
+  float: left;
+  font-family: Prototype;
+  width: 36px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 12px;
 
 }
 .num-low-prel::after {
   color: #4f4f4f;
   position: absolute;
-  margin-top: 290px;
+  margin-top: 265px;
   margin-left: -225px;
+  float: left;
+  font-family: Prototype;
+  width: 36px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
 /*
 .prelude-label {

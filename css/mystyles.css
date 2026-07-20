@@ -557,6 +557,14 @@ li.global-card::before {
   margin-left: -231px;
   margin-top: 284px;
 }
+.project-icon2:after {
+  margin-left: -231px;
+  margin-top: 260px;
+}
+.project-icon3:after {
+  margin-left: -231px;
+  margin-top: 236px;
+}
 
 .preludeCard-icon:after {
   margin-left: -231px;

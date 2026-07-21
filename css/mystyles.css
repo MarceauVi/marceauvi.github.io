@@ -1756,7 +1756,9 @@ li.global-card::before {
 .director {
   background-image: url(../images/resources/director.png);
 }
-
+.multiRes {
+  background-image: url(../images/resources/Multi_Resources.png);
+}
 
 .card {
   background: url("../images/resources/card.png");

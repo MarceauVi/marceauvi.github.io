@@ -1703,8 +1703,8 @@ li.global-card::before {
   height: 16px;
   width: 16px;
   background-size: 16px;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: -2px;
+  margin-right: -2px;
   margin-bottom: 12px;
 }
 .resource-tag-superscript {

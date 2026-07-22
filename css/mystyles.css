@@ -1692,6 +1692,21 @@ li.global-card::before {
   margin-bottom: 5px;
   filter: brightness(0.9);
 }
+.resource-superscript {
+  font-family: Prototype, sans-serif;
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 30px;
+  filter: drop-shadow(0px 0px 1px black);
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-size: 16px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 12px;
+}
 
 .production-tag {
   margin-bottom: 2px;

@@ -1693,7 +1693,7 @@ li.global-card::before {
   filter: brightness(0.9);
 }
 .resource-superscript {
-  font-family: Prototype;
+  font-family: sans-serif;
   position: relative;
   display: inline-block;
   font-size: 22px;
@@ -1708,7 +1708,7 @@ li.global-card::before {
   margin-bottom: 12px;
 }
 .resource-tag-superscript {
-  font-family: Prototype;
+  font-family: sans-serif;
   position: relative;
   display: inline-block;
   border-radius: 50%;
@@ -1721,7 +1721,11 @@ li.global-card::before {
   background-size: 16px;
   margin-left: -2px;
   margin-right: -2px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+}
+.police-super{
+  font-family: sans-serif; 
+  font-weight: bold;
 }
 
 .production-tag {

@@ -1707,6 +1707,22 @@ li.global-card::before {
   margin-right: 1px;
   margin-bottom: 12px;
 }
+.resource-tag-superscript {
+  font-family: Prototype;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 30px;
+  filter: drop-shadow(0px 0px 1px black);
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-size: 16px;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-bottom: 15px;
+}
 
 .production-tag {
   margin-bottom: 2px;

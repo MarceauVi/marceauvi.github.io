@@ -1371,6 +1371,12 @@ li.global-card::before {
   background-size: 174px 34px;
   background-position: -12px -4px;
 }
+.req-tag{
+  margin-top:-5px";
+}
+.req-tile{
+  margin-top:-10px";
+}
 
 .points {
   position: absolute;

@@ -1693,7 +1693,7 @@ li.global-card::before {
   filter: brightness(0.9);
 }
 .resource-superscript {
-  font-family: Prototype, sans-serif;
+  font-family: Prototype;
   position: relative;
   display: inline-block;
   font-size: 22px;

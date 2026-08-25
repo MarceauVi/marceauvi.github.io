@@ -3115,6 +3115,10 @@ input[type="radio"]:checked + label {
 
 .req-tag{
   margin-top:-5px;
+  margin-bottom:0px;
+}
+.req-res{
+  margin-bottom:0px;
 }
 .req-tile{
   margin-top:-10px;

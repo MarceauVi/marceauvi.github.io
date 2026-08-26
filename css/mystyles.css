@@ -1580,6 +1580,12 @@ li.global-card::before {
   line-height: 44px;
 }
 
+.oxygen-tile-small {
+  background-image: url(../images/global-parameters/oxygen.png);
+  width: 23px;
+  background-size: 23px;
+}
+
 .oxygen-tile {
   background-image: url(../images/global-parameters/oxygen.png);
   width: 46px;

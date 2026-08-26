@@ -1561,15 +1561,15 @@ li.global-card::before {
   background-image: url(../images/tiles/city.png);
   filter: brightness(0.8) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
   width: 30px;
-  height: 32px;
-  background-size: 30px 32px;
+  height: 34px;
+  background-size: 30px 34px;
 }
 
 .empty-tile-small {
   background-image: url(../images/tiles/empty.png);
   width: 30px;
-  height: 32px;
-  background-size: 30px 32px;
+  height: 34px;
+  background-size: 30px 34px;
 }
 
 .special-tile {
@@ -3133,8 +3133,8 @@ input[type="radio"]:checked + label {
 .req-tile{
   margin-top:-10px;
   margin-bottom:-7px;
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -5px;
+  margin-right: -3px;
   scale:80%;
 }
 

@@ -3124,12 +3124,26 @@ input[type="radio"]:checked + label {
   margin-top:-5px;
   margin-bottom:0px;
 }
+
 .req-res{
   margin-top:-5px;
   margin-bottom:0px;
 }
+
 .req-tile{
   margin-top:-10px;
   margin-bottom:-7px;
 }
 
+.req-tile-outline{
+  margin-top:-10px;
+  margin-bottom:-7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.req-tile-glued{
+  margin-top:-10px;
+  margin-bottom:-7px;
+  margin-left: -5px;
+}

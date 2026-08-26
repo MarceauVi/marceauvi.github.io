@@ -1582,8 +1582,9 @@ li.global-card::before {
 
 .oxygen-tile-small {
   background-image: url(../images/global-parameters/oxygen.png);
-  width: 23px;
-  background-size: 23px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px;
 }
 
 .oxygen-tile {

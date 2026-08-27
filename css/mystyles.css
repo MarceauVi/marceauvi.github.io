@@ -3133,7 +3133,7 @@ input[type="radio"]:checked + label {
 .req-tile{
   margin-top:-10px;
   margin-bottom:-7px;
-  margin-left: -6px;
+  margin-left: -5px;
   margin-right: -2px;
   scale:80%;
 }
@@ -3147,7 +3147,7 @@ input[type="radio"]:checked + label {
 }
 
 .req-tile-glued{
-  margin-left: -10px;
+  margin-left: -12px;
 }
 .tile-glued{
   margin-left: -6px;

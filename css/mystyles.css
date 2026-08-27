@@ -3147,7 +3147,7 @@ input[type="radio"]:checked + label {
 }
 
 .req-tile-glued{
-  margin-left: -8px;
+  margin-left: -10px;
 }
 .tile-glued{
   margin-left: -6px;

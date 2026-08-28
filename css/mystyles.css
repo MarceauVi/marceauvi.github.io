@@ -1802,8 +1802,11 @@ li.global-card::before {
 .asteroid {
   background-image: url(../images/resources/asteroid.png);
 }
-.pristar {
-  background-image: url(../images/resources/pristar.png);
+.camp {
+  background-image: url(../images/resources/camp.png);
+}
+.preservation {
+  background-image: url(../images/resources/preservation.png);
 }
 .one {
   background-image: url(../images/resources/one.png);
@@ -2124,7 +2127,7 @@ li.global-card::before {
     -5px 3px 0 black, 5px 3px 0 black, 0px -7px 0px black, -7px 4px 0px red,
     7px 4px 0px red, 0px -10px 0px red;
 }
-
+/*
 .camp {
   background-color: orange;
 }
@@ -2134,12 +2137,13 @@ li.global-card::before {
   vertical-align: top;
   font-size: 20px;
   display: inline-block;
-  -webkit-transform: scale(1.5, 1); /* Safari and Chrome */
-  -moz-transform: scale(1.5, 1); /* Firefox */
-  -ms-transform: scale(1.5, 1); /* IE 9 */
-  -o-transform: scale(1.5, 1); /* Opera */
-  transform: scale(1.5, 1); /* W3C */
-}
+  */
+  /*-webkit-transform: scale(1.5, 1); /* Safari and Chrome */
+  /*-moz-transform: scale(1.5, 1); /* Firefox */
+  /*-ms-transform: scale(1.5, 1); /* IE 9 */
+  /*-o-transform: scale(1.5, 1); /* Opera */
+  /*transform: scale(1.5, 1); /* W3C */
+/*}*/
 
 /************** Style the Input field************/
 #myInput {

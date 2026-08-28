@@ -1631,6 +1631,13 @@ li.global-card::before {
   background-size: 51px 40px;
 }
 
+.colony-tile-tile {
+  background-image: url(../images/tiles/Colony_Tile.png);
+  width: 80px;
+  height: 48px;
+  background-size: 80px 48px;
+}
+
 .defauss-prel{
   background-image: url(../images/resources/defauss_prel.png);
   width: 50px;
@@ -2968,7 +2975,7 @@ input[type="radio"]:checked + label {
   line-height: 50px;
   width: 83px;
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 10px;
   margin-left: 0px;
   margin-bottom: 10px;
@@ -2982,9 +2989,9 @@ input[type="radio"]:checked + label {
   line-height: 50px;
   width: 100px;
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 10px;
-  margin-left: -5px;
+  margin-left: -12px;
   margin-bottom: 10px;
   text-shadow: 0 5px 10px black;
 }

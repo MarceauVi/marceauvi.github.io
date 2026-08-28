@@ -1324,6 +1324,19 @@ li.global-card::before {
   padding: 8px;
 }
 
+.content .card-rows {
+  display: flex;
+  flex-flow: column;
+  margin-top: 8px;
+  align-items: center;
+}
+.content .card-rows .card-row {
+  margin: 4px 0px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
 .requirements {
   
   font-family: Prototype;

@@ -1477,6 +1477,10 @@ li.global-card::before {
 .production-box-size5 {
   width: 185px;
 }
+.production-box-size5a {
+  width: 200px;
+}
+
 .production {
   display: inline-block;
   position: relative;

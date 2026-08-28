@@ -1327,11 +1327,11 @@ li.global-card::before {
 .content .card-rows {
   display: flex;
   flex-flow: column;
-  margin-top: 8px;
+  margin-top: 2px;
   align-items: center;
 }
 .content .card-rows .card-row {
-  margin: 4px 0px;
+  margin: 2px 0px;
   display: flex;
   flex-flow: row;
   align-items: center;

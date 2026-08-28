@@ -1819,6 +1819,9 @@ li.global-card::before {
 .preservation {
   background-image: url(../images/resources/preservation.png);
 }
+.graphene {
+  background-image: url(../images/resources/graphene.png);
+}
 .one {
   background-image: url(../images/resources/one.png);
 }

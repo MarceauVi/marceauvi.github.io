@@ -1827,6 +1827,9 @@ li.global-card::before {
 .graphene {
   background-image: url(../images/resources/graphene.png);
 }
+.hydroelectric {
+  background-image: url(../images/resources/hydroelectric-resource.png);
+}
 .one {
   background-image: url(../images/resources/one.png);
 }

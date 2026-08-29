@@ -238,7 +238,7 @@ li.global-card::before {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  color: #aaa;
+  color: #5c5c5c;
   letter-spacing: 1px;
   margin-top: -62px;
   margin-left: 50px;
@@ -271,7 +271,7 @@ li.global-card::before {
 }
 
 .num-low {
-  color: #4f4f4f;
+  color: #5c5c5c;
   position: absolute;
   margin-top: 285px;
   margin-left: 30px;

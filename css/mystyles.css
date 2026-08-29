@@ -2089,6 +2089,11 @@ li.global-card::before {
   background-repeat: no-repeat;
   background-position: 0px;
 }
+.big-arrow {
+  background-size: 45px;
+  width: 45px;
+  height: 45px;
+}
 
 .plus {
   background-image: url(../images/misc/plus.png);

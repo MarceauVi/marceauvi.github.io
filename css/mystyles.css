@@ -1586,6 +1586,10 @@ li.global-card::before {
   background-size: 30px 34px;
 }
 
+.capital-tile {
+  background-image: url(../images/tiles/Capital_Tile.png);
+}
+
 .empty-tile-small {
   background-image: url(../images/tiles/empty.png);
   width: 30px;

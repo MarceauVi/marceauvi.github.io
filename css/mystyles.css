@@ -1877,6 +1877,7 @@ li.global-card::before {
   background-size: 108px 18px;
   display: inline-block;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .card-face {

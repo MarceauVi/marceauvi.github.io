@@ -1872,13 +1872,13 @@ li.global-card::before {
 
 .milestone-award {
   background: url("../images/misc/Milestone_Award.png");
-  height: 18px;
-  width: 108px;
-  background-size: 108px 18px;
+  height: 21px;
+  width: 126px;
+  background-size: 126px 21px;
   display: inline-block;
   vertical-align: middle;
-  font-weight: bold;
-  font-size: 14px;
+  font-family: Prototype;
+  font-size: 16px;
 }
 
 .card-face {

@@ -1872,9 +1872,9 @@ li.global-card::before {
 
 .milestone-award {
   background: url("../images/misc/Milestone_Award.png");
-  height: 8px;
-  width: 48px;
-  background-size: 48px 8px;
+  height: 16px;
+  width: 96px;
+  background-size: 96px 16px;
   display: inline-block;
   vertical-align: middle;
 }

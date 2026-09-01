@@ -1851,6 +1851,16 @@ li.global-card::before {
   background-size: 30px 40px;
   vertical-align: middle;
 }
+
+.card-prelude {
+  background: url("../images/resources/prelude.png");
+  height: 30px;
+  width: 42px;
+  background-size: 42px 30px;
+  vertical-align: middle;
+}
+
+
 .card-face {
   background: linear-gradient(
     #ddd 20%,

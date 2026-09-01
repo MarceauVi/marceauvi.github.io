@@ -1870,6 +1870,14 @@ li.global-card::before {
   vertical-align: middle;
 }
 
+.milestone-award {
+  background: url("../images/misc/Milestone_Award.png");
+  height: 8px;
+  width: 48px;
+  background-size: 48px 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .card-face {
   background: linear-gradient(

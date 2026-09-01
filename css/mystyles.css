@@ -1853,7 +1853,16 @@ li.global-card::before {
 }
 
 .card-prelude {
-  background: url("../images/resources/prelude.png");
+  background: url("../images/resources/Prelude_Back.png");
+  height: 30px;
+  width: 42px;
+  background-size: 42px 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-corporation {
+  background: url("../images/resources/Corporation_Back.png");
   height: 30px;
   width: 42px;
   background-size: 42px 30px;
@@ -2017,26 +2026,6 @@ li.global-card::before {
   content: "G";
   color: #222;
   background: #8fd7ef;
-}
-
-.card-corporation {
-  background-color: rgb(44, 44, 44);
-  background: linear-gradient(
-    to right bottom,
-    black,
-    rgb(60, 60, 60),
-    rgb(150, 150, 150),
-    rgb(60, 60, 60),
-    rgb(60, 60, 60),
-    black
-  );
-  color: black;
-  font-size: 12px;
-  width: 38px;
-  padding-left: 7px;
-  padding-right: 7px;
-  border-radius: 3px;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.8);
 }
 
 .card-colony {

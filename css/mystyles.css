@@ -858,6 +858,8 @@ li.global-card::before {
 }
 .tag-empty {
   background-image: url("../images/tags/empty.png");
+  font-family: Arial;
+
 }
 .tag-CdF {
   background-image: url("../images/tags/CdF.png");

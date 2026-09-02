@@ -1739,7 +1739,7 @@ li.global-card::before {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
   margin-bottom: 5px;
-  filter: brightness(0.9);
+  /*filter: brightness(0.9);*/
 }
 .resource-superscript {
   font-family: sans-serif;
@@ -1918,17 +1918,11 @@ li.global-card::before {
   line-height: 20px;
   border-radius: 10px;
   background-size: 20px 20px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);*/
 }
 
-.biohazard {
-  background: url("../images/resources/biohazard.png");
-  background-color: orange;
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: 3px 0px;
-  height: 26px;
-  vertical-align: middle;
+.disease {
+  background: url("../images/resources/disease.png");
 }
 
 .card-icon-venus {

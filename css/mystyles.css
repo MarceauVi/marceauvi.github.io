@@ -1838,6 +1838,9 @@ li.global-card::before {
 .preservation {
   background-image: url(../images/resources/preservation.png);
 }
+.disease {
+  background-image: url("../images/resources/disease.png");
+}
 .graphene {
   background-image: url(../images/resources/graphene.png);
 }
@@ -1919,10 +1922,6 @@ li.global-card::before {
   border-radius: 10px;
   background-size: 20px 20px;
   /*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);*/
-}
-
-.disease {
-  background: url("../images/resources/disease.png");
 }
 
 .card-icon-venus {

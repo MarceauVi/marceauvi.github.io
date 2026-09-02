@@ -1330,7 +1330,7 @@ li.global-card::before {
   margin-top: 2px;
   align-items: center;
 }
-.content .card-rows .card-row {
+.content .card-row {
   margin: 2px 0px;
   display: flex;
   flex-flow: row;

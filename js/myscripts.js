@@ -468,6 +468,8 @@ function clearInput() {
   }
   selectedCards = "";
 
+  //test reset classement par ID
+  sortByID();
   //scroll to the top
   window.scrollTo({ top: 0, behavior: "smooth" });
 }

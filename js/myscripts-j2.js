@@ -49,7 +49,7 @@ function showAll() {
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "show");
   }
-  //displaying first 48 cards that have "show"
+  //displaying first 60 cards that have "show"
   displayCards();
 
 }
@@ -58,8 +58,8 @@ function displayCards() {
   button_load_more = document.getElementById("button-load-more");
 
   arr = document.querySelectorAll("li.show");
-  if (arr.length > 48) {
-    display_length = 48;
+  if (arr.length > 60) {
+    display_length = 60;
     button_load_more.style.display = "block";
   } else {
     display_length = arr.length;

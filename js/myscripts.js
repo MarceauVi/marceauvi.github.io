@@ -433,6 +433,8 @@ function clearInput() {
   document.getElementById("contentFilters").style.display = "none"; //hides the range inputs div
   document.getElementById("subfilterReqs").style.display = "none"; //hides the range inputs div
   document.getElementById("btn-selectedCards").classList.add("disabled"); //hide the selected cards button
+  document.getElementById("sortButtons").reset(); // reset l'ordre de classement des projets à cemlui pour ID
+
 
   //resets the range inputs
   document.getElementById("slider1").value = -30;
@@ -469,7 +471,7 @@ function clearInput() {
   selectedCards = "";
 
   //test reset classement par ID
-  sortByID();
+  //sortByID();
   //scroll to the top
   window.scrollTo({ top: 0, behavior: "smooth" });
 }

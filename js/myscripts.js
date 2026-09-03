@@ -1,10 +1,10 @@
 // Default counts
 origine_projects= 426;
 origine_corporations= 47;
-origine_preludes= 70;
+origine_preludes= 71;
 origine_colonies=11;
 origine_globals=36;
-// 590 total without young corpo and with colony tiles
+// 591 total without young corpo and with colony tiles
 PROJECTS = origine_projects;
 CORPORATIONS = origine_corporations;
 PRELUDES = origine_preludes;

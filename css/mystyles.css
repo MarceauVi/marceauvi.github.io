@@ -19,8 +19,8 @@ a {
 }
 
 .app-container {
-  max-width: 1850px;
-  height: 900px;
+  /* max-width: 1850px;
+  height: 900px; */
   padding-top: 20px;
   margin: auto;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ a {
     linear-gradient(to left top, #000, transparent 20%),
     linear-gradient(to right top, #000, transparent 20%),
     url("../images/mars2.jpg");
-  background-size: 1750px;
+  background-size: contain;
 }
 
 .side-icon {

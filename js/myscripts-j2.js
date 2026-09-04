@@ -700,3 +700,8 @@ function zoomSingleCard() {
     }, 500);
   }
 }
+
+function toTop(){
+  //scroll to the top
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

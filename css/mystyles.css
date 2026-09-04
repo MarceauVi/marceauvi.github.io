@@ -31,6 +31,20 @@ a {
   background-size: 1750px;
 }
 
+.scroll-top-arrow {
+  position: fixed;
+  bottom: 112px;
+  left: 0;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #c6c6c6;
+  font-size: 30px;
+  line-height: 1;
+}
+
 /*project card div*/
 .filterDiv {
   cursor: pointer;

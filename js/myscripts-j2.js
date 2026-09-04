@@ -402,10 +402,10 @@ function clearInput() {
   document.getElementById("contentFilters").style.display = "none"; //hides the range inputs div
   document.getElementById("subfilterReqs").style.display = "none"; //hides the range inputs div
   document.getElementById("btn-selectedCards").classList.add("disabled"); //hide the selected cards button
-  document.getElementById("sortButtons").reset(); // reset l'ordre de classement des projets à celui pour ID
-  sortByID(); //reclasse les par ID
+  document.getElementById("sortButtons").reset(); // reset sort button
+  sortByID(); //reset project cards order per ID
 
-  
+
   //resets the range inputs
   document.getElementById("slider1").value = -30;
   document.getElementById("output1").innerHTML = -30;

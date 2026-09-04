@@ -19,8 +19,8 @@ a {
 }
 
 .app-container {
-  max-width: 1750px;
-  height: 850px;
+  max-width: 1850px;
+  height: 900px;
   padding-top: 20px;
   margin: auto;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ a {
 .scroll-top-arrow {
   position: fixed;
   bottom: 4px;
-  left: 0;
+  left: 5px;
   height: 46px;
   display: flex;
   align-items: center;

@@ -31,6 +31,14 @@ a {
   background-size: 1750px;
 }
 
+.side_icon {
+  width: 46px;
+  background: rgb(91, 91, 91);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
 .scroll-top-arrow {
   position: fixed;
   bottom: 112px;

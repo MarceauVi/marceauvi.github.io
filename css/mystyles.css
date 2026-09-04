@@ -41,7 +41,7 @@ a {
 
 .scroll-top-arrow {
   position: fixed;
-  bottom: 112px;
+  bottom: 4px;
   left: 0;
   height: 46px;
   display: flex;

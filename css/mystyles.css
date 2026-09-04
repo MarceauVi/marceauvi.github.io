@@ -19,8 +19,8 @@ a {
 }
 
 .app-container {
-  /* max-width: 1850px;
-  height: 900px; */
+  /* max-width: 1850px;*/
+  max-height: 850px;
   padding-top: 20px;
   margin: auto;
   background-repeat: no-repeat;

@@ -35,7 +35,7 @@ a {
 .scroll-top-arrow {
   position: fixed;
   bottom: 4px;
-  left: 5px;
+  right: 5px;
   height: 46px;
   display: flex;
   align-items: center;

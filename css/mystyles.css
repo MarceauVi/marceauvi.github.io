@@ -28,7 +28,7 @@ a {
     linear-gradient(to left top, #000, transparent 20%),
     linear-gradient(to right top, #000, transparent 20%),
     url("../images/mars2.jpg");
-  background-size: contain;
+  background-size:cover;
 }
 
 .side-icon {

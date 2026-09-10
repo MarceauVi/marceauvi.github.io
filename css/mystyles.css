@@ -1629,6 +1629,10 @@ li.global-card::before {
   line-height: 44px;
 }
 
+.red-ships-tile-red-outline {
+  background-image: url(../images/tiles/red_ships.png);
+}
+
 .oxygen-tile-small {
   background-image: url(../images/global-parameters/oxygen.png);
   width: 36px;

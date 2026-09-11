@@ -1554,7 +1554,7 @@ li.global-card::before {
   margin-left: 2px;
   margin-right: 2px;
   margin-top: 5px;
-  filter: drop-shadow(0px 0px 1px black);
+  /*filter: drop-shadow(0px 0px 1px black);*/
   background-image: url(../images/tiles/empty.png);
 }
 
@@ -1566,14 +1566,16 @@ li.global-card::before {
 
 .greenery-tile {
   background-image: url(../images/tiles/greenery.png);
-  background-size: 50px 46px;
+  background-size: 50px 49px;
   width: 50px;
+  height:49px;
 }
 
 .greenery-tile-no-O2 {
   background-image: url(../images/tiles/greenery_no_O2.png);
-  background-size: 41px 46px;
+  background-size: 41px 49x;
   width: 41px;
+  height: 49px;
 }
 
 .ocean-tile {
@@ -1631,6 +1633,7 @@ li.global-card::before {
 
 .red-ships-tile-red-outline {
   background-image: url(../images/tiles/red_ships.png);
+  filter: drop-shadow(0px 0px 1px black);
 }
 
 .oxygen-tile-small {

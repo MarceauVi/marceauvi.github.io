@@ -2734,7 +2734,7 @@ input[type="range"]:focus {
 
 .track-temp-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb1.png") !important;
-  height: 40px !important;
+  height: 40px !important;/* 48*/
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }
@@ -2758,15 +2758,15 @@ input[type="range"]:focus {
 
 .track-oceans-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb3.png") !important;
-  height: 40px !important;
-  width: 45px !important;
+  height: 32px !important;/* 48 et 54 */
+  width: 36px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }
 .track-oceans-thumb::-moz-range-thumb {
   background: url("../images/thumbs/thumb3.png") !important;
-  height: 44px !important;
-  width: 50px !important;
+  height: 22px !important; /* 44 et 50 */
+  width: 25px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }

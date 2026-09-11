@@ -2758,8 +2758,8 @@ input[type="range"]:focus {
 
 .track-oceans-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
-  height: 38px !important;/* 48 et 54 */
-  width: 43px !important;
+  height: 42px !important;/* 48 et 54 */
+  width: 47px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }

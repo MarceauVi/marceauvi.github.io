@@ -3220,6 +3220,7 @@ input[type="radio"]:checked + label {
 .req-tile-glued{
   margin-left: -12px;
 }
+
 .tile-glued{
-  margin-left: -6px;
+  margin-left: -7px;
 }

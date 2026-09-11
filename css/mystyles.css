@@ -1607,10 +1607,6 @@ li.global-card::before {
   background-size: 30px 34px;
 }
 
-.capital-tile {
-  background-image: url(../images/tiles/Capital_Tile.png);
-}
-
 .empty-tile-small {
   background-image: url(../images/tiles/empty.png);
   width: 30px;
@@ -1625,12 +1621,81 @@ li.global-card::before {
   background-size: 30px 34px;
 }
 
+/* All Special tiles */
+
 .special-tile {
   background-image: url(../images/tiles/special.png);
   color: rgb(73, 54, 40);
   font-size: 30px;
   font-weight: bold;
   line-height: 44px;
+}
+
+.special-capital-tile {
+  background-image: url(../images/tiles/Capital_Tile.png);
+}
+
+.special-deimos-down {
+  background-image: url(../images/tiles/spe_deimos_down.png);
+  color: rgb(73, 54, 40);
+  /* font-size: 30px;
+  font-weight: bold;
+  line-height: 44px; */
+}
+
+.special-great-dam {
+  background-image: url(../images/tiles/spe_great_dam.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-magnetic-field-generators{
+  background-image: url(../images/tiles/spe_magnetic_field.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-commercial-district{
+  background-image: url(../images/tiles/spe_commercial_district.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-mining-tile{
+  background-image: url(../images/tiles/spe_mining_tile.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-ecological-zone{
+  background-image: url(../images/tiles/spe_ecological_zone.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-industrial-center{
+  background-image: url(../images/tiles/spe_industrial_center.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-lava-flows{
+  background-image: url(../images/tiles/spe_lava_flows.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-mohole-area{
+  background-image: url(../images/tiles/spe_mohole_area.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-nature-reserve{
+  background-image: url(../images/tiles/spe_nature_reserve.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-nuclear-zone{
+  background-image: url(../images/tiles/spe_nuclear_zone.png);
+  color: rgb(73, 54, 40);
+}
+
+.special-restricted-area{
+  background-image: url(../images/tiles/spe_restricted_area.png);
+  color: rgb(73, 54, 40);
 }
 
 .red-ships-tile-red-outline {

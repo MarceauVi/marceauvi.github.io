@@ -2734,7 +2734,7 @@ input[type="range"]:focus {
 
 .track-temp-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb1.png") !important;
-  height: 48px !important;
+  height: 40px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }

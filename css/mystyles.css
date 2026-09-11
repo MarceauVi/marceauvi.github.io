@@ -1636,6 +1636,8 @@ li.global-card::before {
 .red-ships-tile-red-outline {
   background-image: url(../images/tiles/red_ships.png);
   filter: drop-shadow(0px 0px 1px black);
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .oxygen-tile-small {

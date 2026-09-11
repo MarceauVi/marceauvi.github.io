@@ -1574,7 +1574,7 @@ li.global-card::before {
 
 .greenery-tile-no-O2 {
   background-image: url(../images/tiles/greenery_no_O2.png);
-  background-size: 41px 49x;
+  background-size: 41px 49px;
   width: 41px;
   height: 49px;
   filter:none;

@@ -2758,15 +2758,15 @@ input[type="range"]:focus {
 
 .track-oceans-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb3.png") !important;
-  height: 48px !important;/* 48 et 54 */
-  width: 54px !important;
+  height: 38px !important;/* 48 et 54 */
+  width: 43px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }
 .track-oceans-thumb::-moz-range-thumb {
   background: url("../images/thumbs/thumb3.png") !important;
-  height: 22px !important; /* 44 et 50 */
-  width: 25px !important;
+  height: 44px !important; /* 44 et 50 */
+  width: 50px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
 }

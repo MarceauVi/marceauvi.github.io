@@ -283,6 +283,9 @@ function filterFunction(id) {
     scienceValue = document.getElementById("slider5").value;
     jovianValue = document.getElementById("slider6").value;
     earthValue = document.getElementById("slider8").value;
+    cityTileValue = document.getElementById("slider9").value;
+    greeneryTileValue = document.getElementById("slider10").value;
+
 
     if (
       temperatureValue > -30 ||
@@ -290,7 +293,9 @@ function filterFunction(id) {
       oceansValue > 0 ||
       scienceValue > 0 ||
       jovianValue > 0 ||
-      earthValue > 0
+      earthValue > 0 ||
+      cityTileValue > 0 ||
+      greeneryTileValue > 0
     ) {
       for (i = 0; i < x.length; i++) {
         //obtaining the data without writing over it
@@ -300,6 +305,8 @@ function filterFunction(id) {
         scienceData = parseInt(x[i].dataset.science);
         jovianData = parseInt(x[i].dataset.jovian);
         earthData = parseInt(x[i].dataset.earth);
+        cityTileData = parseInt(x[i].dataset.citytile);
+        greeneryTileData = parseInt(x[i].dataset.greenerytile);
 
         show = false;
         if (temperatureValue > -30) {
@@ -332,6 +339,16 @@ function filterFunction(id) {
             show = true;
           }
         }
+        if (cityTileValue > 0) {
+          if (cityTileValue <= cityTileData) {
+            show = true;
+          }
+        }
+        if (greeneryTileValue > 0) {
+          if (greeneryTileValue <= greeneryTileData) {
+            show = true;
+          }
+        }
 
         //the check
         if (show) {
@@ -353,6 +370,12 @@ function filterFunction(id) {
     document.getElementById("output5").innerHTML = 0;
     document.getElementById("slider6").value = 0;
     document.getElementById("output6").innerHTML = 0;
+    document.getElementById("slider8").value = 0;
+    document.getElementById("output8").innerHTML = 0;
+    document.getElementById("slider9").value = 0;
+    document.getElementById("output9").innerHTML = 0;
+    document.getElementById("slider10").value = 0;
+    document.getElementById("output10").innerHTML = 0;
   }
 
   ///////////////////////////////////////////////////////////////////////////////
@@ -419,6 +442,10 @@ function clearInput() {
   document.getElementById("output6").innerHTML = 0;
   document.getElementById("slider8").value = 0;
   document.getElementById("output8").innerHTML = 0;
+  document.getElementById("slider9").value = 0;
+  document.getElementById("output9").innerHTML = 0;
+  document.getElementById("slider10").value = 0;
+  document.getElementById("output10").innerHTML = 0;
 
   //shrinks any expanded AREAS
   document.getElementById("buttonsContainer-body").style.height =

@@ -441,7 +441,7 @@
                   type="range"
                   min="0"
                   max="9"
-                  value="-0"
+                  value="0"
                   step="1"
                   list="tickmarks"
                   oninput="output3.value = slider3.value; filterFunction(id);"
@@ -453,7 +453,7 @@
                   id="output2"
                   for="slider2"
                   class="output-label"
-                  style="color: rgb(246, 241, 175)"
+                  style=" margin-left: 160px; color: rgb(246, 241, 175)"
                   >0</output
                 >
                 <!-- Just to display selected value -->
@@ -467,6 +467,7 @@
                   list="tickmarks"
                   oninput="output2.value = slider2.value; filterFunction(id);"
                   class="track-oxygen-background track-oxygen-thumb"
+                  style="width: 150px"
                 />
 
                 <br />
@@ -496,7 +497,7 @@
                   id="output8"
                   for="slider8"
                   class="output-label"
-                  style="margin-left: 90px; color: rgb(15, 96, 151)"
+                  style="margin-left: 100px; color: rgb(15, 96, 151)"
                   >0</output
                 >
                 <!-- Just to display selected value -->
@@ -510,14 +511,14 @@
                   list="tickmarks"
                   oninput="output8.value = slider8.value; filterFunction(id);"
                   class="track-earth-background track-earth-thumb thumb-tab"
-                  style="width: 80px"
+                  style="width: 90px"
                 />
 
                 <output
                   id="output6"
                   for="slider6"
                   class="output-label"
-                  style="margin-left: 70px; color: rgb(255, 223, 149)"
+                  style="margin-left: 76px; color: rgb(255, 223, 149)"
                   >0</output
                 >
                 <!-- Just to display selected value -->
@@ -531,9 +532,50 @@
                   list="tickmarks"
                   oninput="output6.value = slider6.value; filterFunction(id);"
                   class="track-jovian-background track-jovian-thumb thumb-tab"
-                  style="width: 60px"
+                  style="width: 66px"
                 />
 
+                <output
+                  id="output9"
+                  for="slider9"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(100, 100, 100)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider9"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output9.value = slider9.value; filterFunction(id);"
+                  class="track-cityTile-background track-cityTile-thumb thumb-tab"
+                  style="width: 80px"
+                />
+
+                <output
+                  id="output10"
+                  for="slider10"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(21, 255, 0)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider10"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output10.value = slider10.value; filterFunction(id);"
+                  class="track-greeneryTile-background track-greeneryTile-thumb thumb-tab"
+                  style="width: 80px"
+                />
 
               </div>
             </div>
@@ -3917,6 +3959,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active plantTag animalTag standard reqs"
+            data-greenerytile="1"
           >
             <div class="title background-color-active">Zone Écologique</div>
             <div class="price">12</div>
@@ -5507,6 +5550,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated corporate reqs noneTag"
+            data-citytile="2"
           >
             <div class="title background-color-automated">Combinaison Anti-Radiation</div>
             <div class="price">6</div>
@@ -6349,6 +6393,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv events promo eventTag plantTag reqs"
+            data-greenerytile="3"
             >
             <div class="title background-color-events">Récolte</div>
             <div class="price">4</div>
@@ -6374,6 +6419,7 @@
             onclick="getClickedCard();"
             class="filterDiv automated noneTag promo reqs"
             data-oceans="1"
+            data-citytile="1"
           >
             <div class="title background-color-automated">Sports d'Extérieur</div>
             <div class="price">8</div>
@@ -6541,6 +6587,7 @@
             onclick="getClickedCard();"
             class="filterDiv automated buildingTag promo reqs"
             data-oceans="1"
+            data-citytile="1"
           >
             <div class="title background-color-automated">Systèmes d'Aqueducs</div>
             <div class="price">9</div>
@@ -6793,6 +6840,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active plantTag buildingTag promo reqs"
+            data-greenerytile="2"
           >
             <div class="title background-color-active">
               Martian Lumber Corps
@@ -7040,6 +7088,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated noneTag promo reqs"
+            data-citytile="2"
           >
             <div class="title background-color-automated">Supermarchés</div>
             <div class="price">9</div>
@@ -7128,7 +7177,9 @@
           <!--X71-->
           <li
             onclick="getClickedCard();"
-            class="filterDiv automated plantTag promo reqs">
+            class="filterDiv automated plantTag promo reqs"
+            data-citytile="3"
+          >
             <div class="title background-color-automated">
               Parcs Urbains
             </div>
@@ -7327,6 +7378,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active CdFTag plantTag reqs"
+            data-citytile="2"
           >
             <div class="title background-color-active">Paysagiste</div>
             <div class="price">16</div>
@@ -7413,7 +7465,7 @@
 
           <li
             onclick="getClickedCard();"
-            class="filterDiv active CdFTag earthTag scienceTag "
+            class="filterDiv active CdFTag earthTag scienceTag"
           >
             <div class="title background-color-active">Restriction de Planification</div>
             <div class="price">3</div>

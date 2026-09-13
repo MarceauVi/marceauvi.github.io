@@ -1,10 +1,10 @@
 // Default counts
-origine_projects= 215;
-origine_corporations= 22;
-origine_preludes= 49;
-PROJECTS = origine_projects;
-CORPORATIONS = origine_corporations;
-PRELUDES = origine_preludes;
+origin_projects= 215;
+origin_corporations= 22;
+origin_preludes= 49;
+PROJECTS = origin_projects;
+CORPORATIONS = origin_corporations;
+PRELUDES = origin_preludes;
 
 
 CONTAINER = 200; //the default height of the buttons container
@@ -72,9 +72,9 @@ function displayCards() {
     w3RemoveClass(arr[i], "show");
   }
     /////test////
-  PROJECTS = origine_projects;
-  CORPORATIONS = origine_corporations;
-  PRELUDES = origine_preludes;
+  PROJECTS = origin_projects;
+  CORPORATIONS = origin_corporations;
+  PRELUDES = origin_preludes;
 }
 
 //////////////////////PARSE function ////////////////////////////////

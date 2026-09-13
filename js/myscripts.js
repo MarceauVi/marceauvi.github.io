@@ -1,15 +1,15 @@
 // Default counts
-origine_projects= 426;
-origine_corporations= 47;
-origine_preludes= 71;
-origine_colonies=11;
-origine_globals=36;
+origin_projects= 426;
+origin_corporations= 47;
+origin_preludes= 71;
+origin_colonies=11;
+origin_globals=36;
 // 591 total without young corpo and with colony tiles
-PROJECTS = origine_projects;
-CORPORATIONS = origine_corporations;
-PRELUDES = origine_preludes;
-COLONIES = origine_colonies;
-GLOBALS = origine_globals;
+PROJECTS = origin_projects;
+CORPORATIONS = origin_corporations;
+PRELUDES = origin_preludes;
+COLONIES = origin_colonies;
+GLOBALS = origin_globals;
 
 CONTAINER = 200; //the default height of the buttons container
 CONTENT_FILTERS = 125; //the default height of the Content filters area
@@ -78,11 +78,11 @@ function displayCards() {
     w3RemoveClass(arr[i], "show");
   }
   /////test////
-  PROJECTS = origine_projects;
-  CORPORATIONS = origine_corporations;
-  PRELUDES = origine_preludes;
-  COLONIES = origine_colonies;
-  GLOBALS = origine_globals;
+  PROJECTS = origin_projects;
+  CORPORATIONS = origin_corporations;
+  PRELUDES = origin_preludes;
+  COLONIES = origin_colonies;
+  GLOBALS = origin_globals;
 }
 
 //////////////////////PARSE function ////////////////////////////////
@@ -294,6 +294,7 @@ function filterFunction(id) {
     jovianValue = document.getElementById("slider6").value;
     venusTagValue = document.getElementById("slider7").value;
     earthValue = document.getElementById("slider8").value;
+    cityTileValue = document.getElementById("slider9").value;
 
     if (
       temperatureValue > -30 ||
@@ -303,7 +304,8 @@ function filterFunction(id) {
       scienceValue > 0 ||
       jovianValue > 0 ||
       venusTagValue > 0 ||
-      earthValue > 0
+      earthValue > 0 ||
+      cityTileValue > 0
     ) {
       for (i = 0; i < x.length; i++) {
         //obtaining the data without writing over it
@@ -315,6 +317,7 @@ function filterFunction(id) {
         jovianData = parseInt(x[i].dataset.jovian);
         venusTagData = parseInt(x[i].dataset.venustag);
         earthData = parseInt(x[i].dataset.earth);
+        cityTileData = parseInt(x[i].dataset.citytile);
 
         show = false;
         if (temperatureValue > -30) {
@@ -357,7 +360,11 @@ function filterFunction(id) {
             show = true;
           }
         }
-
+        if (cityTileValue > 0) {
+          if (cityTileValue <= cityTagData) {
+            show = true;
+          }
+        }
         //the check
         if (show) {
           w3AddClass(x[i], "show");
@@ -380,6 +387,12 @@ function filterFunction(id) {
     document.getElementById("output5").innerHTML = 0;
     document.getElementById("slider6").value = 0;
     document.getElementById("output6").innerHTML = 0;
+    document.getElementById("slider7").value = 0;
+    document.getElementById("output7").innerHTML = 0;
+    document.getElementById("slider8").value = 0;
+    document.getElementById("output8").innerHTML = 0;
+    document.getElementById("slider9").value = 0;
+    document.getElementById("output9").innerHTML = 0;
   }
 
   ///////////////////////////////////////////////////////////////////////////////
@@ -453,6 +466,8 @@ function clearInput() {
   document.getElementById("output7").innerHTML = 0;
   document.getElementById("slider8").value = 0;
   document.getElementById("output8").innerHTML = 0;
+  document.getElementById("slider9").value = 0;
+  document.getElementById("output9").innerHTML = 0;
 
   //shrinks any expanded AREAS
   document.getElementById("buttonsContainer-body").style.height =

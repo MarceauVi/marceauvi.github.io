@@ -503,6 +503,7 @@
                   list="tickmarks"
                   oninput="output2.value = slider2.value; filterFunction(id);"
                   class="track-oxygen-background track-oxygen-thumb"
+                  style="width: 150px"
                 />
 
                 <output
@@ -523,7 +524,7 @@
                   list="tickmarks"
                   oninput="output4.value = slider4.value; filterFunction(id);"
                   class="track-venus-background track-venus-thumb thumb-tab"
-                  style="margin-right: 0px"
+                  style="width: 160px; margin-right: 0px"
                 />
                 <br />
                 <p></p>
@@ -608,6 +609,27 @@
                   list="tickmarks"
                   oninput="output7.value = slider7.value; filterFunction(id);"
                   class="track-venusTag-background track-venusTag-thumb thumb-tab"
+                  style="width: 80px"
+                />
+
+                <output
+                  id="output9"
+                  for="slider9"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(100, 100, 100)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider9"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output9.value = slider9.value; filterFunction(id);"
+                  class="track-cityTile-background track-cityTile-thumb thumb-tab"
                   style="width: 80px"
                 />
               </div>
@@ -3993,6 +4015,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active plantTag animalTag standard reqs"
+            data-greenery="1"
           >
             <div class="title background-color-active">Zone Écologique</div>
             <div class="price">12</div>
@@ -5583,6 +5606,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated corporate reqs noneTag"
+            data-city="2"
           >
             <div class="title background-color-automated">Combinaison Anti-Radiation</div>
             <div class="price">6</div>
@@ -8583,6 +8607,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active coloniess buildingTag animalTag reqs"
+            data-city="2"
           >
             <div class="title background-color-active">Zoo Martien</div>
             <div class="price">12</div>
@@ -9302,6 +9327,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated microbeTag colonies reqs"
+            data-city="1"
           >
             <div class="title background-color-automated">
               Décomposeurs Urbains
@@ -10094,7 +10120,7 @@
             <div class="tag tag1 tag-event"></div>
             <div class="number">#P77</div>
             <div class="turmoil-icon project-icon"></div>
-            <div class="prelude2-icon project-icon3"></div>
+            <div class="prelude2-icon project-icon2"></div>
             <div class="content">
               <div class="requirements">
                 <div class="resource-tag tag-jovian req-tag"></div>
@@ -11589,6 +11615,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv events promo eventTag plantTag reqs"
+            data-greenery="1"
             >
             <div class="title background-color-events">Récolte</div>
             <div class="price">4</div>
@@ -11614,6 +11641,7 @@
             onclick="getClickedCard();"
             class="filterDiv automated noneTag promo reqs"
             data-oceans="1"
+            data-city="1"
           >
             <div class="title background-color-automated">Sports d'Extérieur</div>
             <div class="price">8</div>
@@ -11781,6 +11809,7 @@
             onclick="getClickedCard();"
             class="filterDiv automated buildingTag promo reqs"
             data-oceans="1"
+            data-city="1"
           >
             <div class="title background-color-automated">Systèmes d'Aqueducs</div>
             <div class="price">9</div>
@@ -12033,6 +12062,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv active plantTag buildingTag promo reqs"
+            data-greenery="2"
           >
             <div class="title background-color-active">
               Martian Lumber Corps
@@ -12282,6 +12312,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated noneTag promo reqs"
+            data-city="2"
           >
             <div class="title background-color-automated">Supermarchés</div>
             <div class="price">9</div>
@@ -12370,7 +12401,9 @@
           <!--X71-->
           <li
             onclick="getClickedCard();"
-            class="filterDiv automated plantTag promo reqs">
+            class="filterDiv automated plantTag promo reqs"
+            data-city="3"
+          >
             <div class="title background-color-automated">
               Parcs Urbains
             </div>
@@ -12399,6 +12432,7 @@
           <li
             onclick="getClickedCard();"
             class="filterDiv automated buildingTag promo reqs"
+            data-city="1"
           >
             <div class="title background-color-automated">Casinos</div>
             <div class="price">5</div>

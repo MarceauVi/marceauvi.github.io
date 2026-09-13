@@ -2762,6 +2762,7 @@ input[type="range"]:focus {
   width: 47px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
+  border-radius: 50% !important;
 }
 .track-oceans-thumb::-moz-range-thumb {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
@@ -2769,6 +2770,7 @@ input[type="range"]:focus {
   width: 50px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
+  border-radius: 50% !important;
 }
 
 .track-venus-thumb::-webkit-slider-thumb {

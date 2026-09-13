@@ -2764,7 +2764,7 @@ input[type="range"]:focus {
   background-repeat: no-repeat;
 }
 .track-oceans-thumb::-moz-range-thumb {
-  background: url("../images/thumbs/thumb3.png") !important;
+  background: url("../images/thumbs/thumb3_(-4).png") !important;
   height: 44px !important; /* 44 et 50 */
   width: 50px !important;
   margin-top: -18px !important;

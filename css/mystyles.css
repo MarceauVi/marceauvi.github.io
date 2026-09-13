@@ -2835,6 +2835,17 @@ input[type="range"]:focus {
   background-repeat: no-repeat;
 }
 
+.track-greeneryTile-thumb::-webkit-slider-thumb {
+  background: url("../images/thumbs/thumb10.png") !important;
+  border-radius: 10% !important;
+  background-repeat: no-repeat;
+}
+.track-greeneryTile-thumb::-moz-range-thumb {
+  background: url("../images/thumbs/thumb10.png") !important;
+  border-radius: 10% !important;
+  background-repeat: no-repeat;
+}
+
 .track-temp-background::-webkit-slider-runnable-track {
   background: #f25540 !important;
 }
@@ -2897,6 +2908,14 @@ input[type="range"]:focus {
 
 .track-cityTile-background::-moz-range-track {
   background-color: rgb(100, 100, 100) !important;
+}
+
+.track-greeneryTile-background::-webkit-slider-runnable-track {
+  background-color: rgb(21, 255, 0) !important;
+}
+
+.track-greeneryTile-background::-moz-range-track {
+  background-color: rgb(21, 255, 0) !important;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {

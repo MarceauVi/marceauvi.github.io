@@ -632,6 +632,28 @@
                   class="track-cityTile-background track-cityTile-thumb thumb-tab"
                   style="width: 80px"
                 />
+
+                <output
+                  id="output10"
+                  for="slider10"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(21, 255, 0)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider10"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output10.value = slider10.value; filterFunction(id);"
+                  class="track-greeneryTile-background track-greeneryTile-thumb thumb-tab"
+                  style="width: 80px"
+                />
+                
               </div>
             </div>
           </div>

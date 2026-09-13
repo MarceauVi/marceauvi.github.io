@@ -2728,9 +2728,6 @@ input[type="range"]:focus {
   outline: none;
 }
 
-.track-temp-background::-webkit-slider-runnable-track {
-  background: #f25540 !important;
-}
 
 .track-temp-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb1.png") !important;
@@ -2836,6 +2833,10 @@ input[type="range"]:focus {
   background: url("../images/thumbs/thumb9.png") !important;
   border-radius: 10% !important;
   background-repeat: no-repeat;
+}
+
+.track-temp-background::-webkit-slider-runnable-track {
+  background: #f25540 !important;
 }
 
 .track-temp-background::-moz-range-track {

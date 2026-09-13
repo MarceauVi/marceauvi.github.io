@@ -361,7 +361,7 @@ function filterFunction(id) {
           }
         }
         if (cityTileValue > 0) {
-          if (cityTileValue <= cityTagData) {
+          if (cityTileValue <= cityTileData) {
             show = true;
           }
         }

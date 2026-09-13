@@ -204,7 +204,7 @@ function filterFunction(id) {
   } else {
     document
       .getElementById("subfilterReqs")
-      .classList.add("subfilterReqs-disabled"); //to disble the subfilters
+      .classList.add("subfilterReqs-disabled"); //to disable the subfilters
   }
 
   //filter by VP

@@ -2757,9 +2757,9 @@ input[type="range"]:focus {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
   height: 42px !important;/* 48 et 54 */
   width: 47px !important;
-  margin-top: -18px !important;
+  margin-top: -15px !important;
   background-repeat: no-repeat;
-  border-radius: 50% !important;
+  border-radius: 10% !important;
 }
 .track-oceans-thumb::-moz-range-thumb {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
@@ -2767,7 +2767,7 @@ input[type="range"]:focus {
   width: 50px !important;
   margin-top: -18px !important;
   background-repeat: no-repeat;
-  border-radius: 50% !important;
+  border-radius: 10% !important;
 }
 
 .track-venus-thumb::-webkit-slider-thumb {

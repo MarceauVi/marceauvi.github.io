@@ -2440,6 +2440,7 @@ li.global-card::before {
   position:absolute;
   margin-left: 965px;
   align-items: center;
+  padding-left: 20px;
 }
 
 #buttonsContainer-header {
@@ -2469,7 +2470,7 @@ li.global-card::before {
   height: 20px;
   line-height: 20px;
   display: inline-block;
-  width: 300px;
+  width: 380px;
   /* margin-left: -58px; */
   text-align: center;
 }

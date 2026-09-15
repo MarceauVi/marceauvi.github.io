@@ -2484,8 +2484,8 @@ li.global-card::before {
   height: 20px;
   line-height: 20px;
   display: inline-block;
-  width: 380px;
-  margin-left: -40px; 
+  width: 400px;
+  margin-left: -20px; 
   text-align: center;
 }
 
@@ -2502,7 +2502,6 @@ li.global-card::before {
 .title-small {
   font-family: Prototype;
   font-size: 18px;
-  margin-left: 60px;
   margin-top: 5px;
   margin-bottom: 10px;
   transform: scale(1.5, 1);

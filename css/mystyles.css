@@ -960,6 +960,10 @@ li.global-card::before {
   letter-spacing: 1px;
   vertical-align: top;
 }
+.btn-pack{
+  margin-bottom:10px;
+
+}
 
 .btn4 {
   outline: none;

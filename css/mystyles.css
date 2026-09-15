@@ -2434,11 +2434,12 @@ li.global-card::before {
 #PromosContainer-body {
   background: rgba(0, 0, 0, 0.5);
   height: 200px;
-  width: 330px;
+  width: 380px;
   transition: height 0.2s, width 0.2s;
   margin: 5px 0;
   position:absolute;
   margin-left: 965px;
+  align-items: center;
 }
 
 #buttonsContainer-header {

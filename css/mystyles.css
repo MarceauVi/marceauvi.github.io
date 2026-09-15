@@ -2755,17 +2755,17 @@ input[type="range"]:focus {
 
 .track-oceans-thumb::-webkit-slider-thumb {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
-  height: 42px !important;/* 48 et 54 */
+  height: 42px !important;/* 48 and 54 */
   width: 47px !important;
-  margin-top: -15px !important;
+  margin-top: -13px !important;
   background-repeat: no-repeat;
   border-radius: 10% !important;
 }
 .track-oceans-thumb::-moz-range-thumb {
   background: url("../images/thumbs/thumb3_(-4).png") !important;
-  height: 44px !important; /* 44 et 50 */
-  width: 50px !important;
-  margin-top: -18px !important;
+  height: 39px !important; /* 44 and 50 */
+  width: 44px !important;
+  margin-top: -13px !important;
   background-repeat: no-repeat;
   border-radius: 10% !important;
 }

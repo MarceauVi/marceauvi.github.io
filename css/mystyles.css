@@ -2435,10 +2435,8 @@ li.global-card::before {
   height: 200px;
   width: 330px;
   transition: height 0.2s, width 0.2s;
-  padding-left: 30px;
   margin: 5px 0;
   position:absolute;
-  margin-top: -205px;
   margin-left: 965px;
 }
 

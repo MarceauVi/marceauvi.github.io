@@ -960,10 +960,7 @@ li.global-card::before {
   letter-spacing: 1px;
   vertical-align: top;
 }
-.btn-pack{
-  margin-bottom:10px;
 
-}
 
 .btn4 {
   outline: none;
@@ -2464,6 +2461,15 @@ li.global-card::before {
   display: inline-block;
   width: 930px;
   margin-left: -58px;
+  text-align: center;
+}
+
+#promotitleContainer {
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  width: 300px;
+  /* margin-left: -58px; */
   text-align: center;
 }
 

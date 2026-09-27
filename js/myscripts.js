@@ -130,7 +130,7 @@ function filterFunction(id) {
   //filtering by Type + Tag + Deck + Reqs
   btnType = document.querySelectorAll("button.active.btn1");
   btnTag = document.querySelectorAll("button.active.btn2");
-  btnDeck = document.querySelectorAll("button.active.btn3");
+  btnDeck = document.querySelectorAll("button.active.btn3")+document.querySelectorAll("button.active.btn5");
   btnReq = document.getElementById("reqs");
   btnVP = document.getElementById("vp");
   btnTile = document.querySelectorAll("button.active.btn-tile");

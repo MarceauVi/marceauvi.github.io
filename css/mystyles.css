@@ -961,6 +961,11 @@ li.global-card::before {
   vertical-align: top;
 }
 
+.pack {
+  color: #000000;
+  margin-right: 30px;
+}
+
 .btn4 {
   outline: none;
   height: 40px;

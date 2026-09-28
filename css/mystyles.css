@@ -912,6 +912,10 @@ li.global-card::before {
   cursor: pointer;
 }
 
+.btn-manage:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
 .disabled {
   opacity: 0;
   cursor: not-allowed !important;
@@ -998,6 +1002,25 @@ li.global-card::before {
   text-shadow: 0 0 1px black;
 }
 
+.btn-manage1 {
+  outline: none;
+  display: inline-block;
+  height: 18px;
+  width: 63px;
+  margin-right: 104px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  font-family: Prototype;
+  background-color: #00bd19;
+  text-shadow: 0 0 1px black;
+}
+
+.btn-manage2 {
+  background-color: #cc3333;
+}
 .btn-load-more {
   display: none;
   margin-top: 35px;

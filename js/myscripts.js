@@ -451,17 +451,21 @@ function filterFunction(id) {
 }
 
 function managePacks(id){
-  if (id==manageRemove){
+  if (id=="manageRemove"){
+    console.log("enter if1");
     //making all pack buttons inactive
     y = document.querySelectorAll(".pack button.active");
+    console.log(y);
     if (y.length > 0) {
       for (i = 0; i < y.length; i++) {
         y[i].classList.toggle("active");
       }
     }
   }else{
+    console.log("enter else");
     //making all packs buttons active
     y = document.querySelectorAll(".pack button");
+    console.log(y);
     if (y.length > 0) {
       for (i = 0; i < y.length; i++) {
         y[i].classList.toggle("active");

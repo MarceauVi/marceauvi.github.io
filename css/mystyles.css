@@ -912,7 +912,7 @@ li.global-card::before {
   cursor: pointer;
 }
 
-.btn-manage:hover {
+.btn-manage1:hover {
   filter: brightness(120%);
   cursor: pointer;
 }
@@ -1006,8 +1006,8 @@ li.global-card::before {
   outline: none;
   display: inline-block;
   height: 18px;
-  width: 63px;
-  margin-right: 104px;
+  width: 126px;
+  margin-right: 10px;
   cursor: pointer;
   border-radius: 8px;
   text-align: center;

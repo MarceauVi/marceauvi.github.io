@@ -450,6 +450,26 @@ function filterFunction(id) {
   displayCards();
 }
 
+function managePacks(id){
+  if (id==manageRemove){
+    //making all pack buttons inactive
+    y = document.querySelectorAll(".pack button.active");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.toggle("active");
+      }
+    }
+  }else{
+    //making all packs buttons active
+    y = document.querySelectorAll(".pack button");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.toggle("active");
+      }
+    }
+  }
+}
+
 function clearInput() {
   document.getElementById("myInput").value = ""; //resets the text input
   document.getElementById("price").value = 0;

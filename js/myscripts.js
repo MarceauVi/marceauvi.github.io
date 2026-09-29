@@ -493,13 +493,19 @@ function managePromos(id){//manage promo packs buttons when using main promo but
 
 function togglePromoPacks(){ // manage promo pack zone and its line visibility (and secondary clean up)
   line=document.querySelectorAll(".hidden")[0];
+  line2=document.querySelectorAll(".hidden")[1];
+  oline=document.querySelectorAll(".visible")[0];
   document.getElementById("revealPromos").classList.toggle("active");
   if (document.getElementById("revealPromos").classList.contains("active")) {
     document.getElementById("PromosContainer-body").style.display = "block";// reveal the promo pack container
-    line.style.display = "inline-block";// reveal the promo pack container and its line
+    line.style.display = "inline-block";// reveal the promo pack container and its lines
+    line2.style.display = "inline-block";// reveal the promo pack container and its lines
+    oline.style.display = "none";
   } else {
     document.getElementById("PromosContainer-body").style.display = "none";// reveal the promo pack container
-    line.style.display = "none"; // hide the promo pack container its line
+    line.style.display = "none"; // hide the promo pack container its lines
+    line2.style.display = "none"; // hide the promo pack container its line
+    oline.style.display = "inline-block";
     filterFunction(); // reset the promo packs individual filter
   }
 }

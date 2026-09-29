@@ -1007,7 +1007,7 @@ li.global-card::before {
   height: 46px;
   width: 100px;
   margin-left: -2px;
-  smargin-top: -3px;
+  margin-top: -3px;
   cursor: pointer;
   border-radius: 8px;
   text-align: center;

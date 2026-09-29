@@ -36,21 +36,22 @@
           </div>
           
           <div id="PromosContainer-body">
-            <div id="promotitleContainer" style=" margin-bottom: 40px">
+            <div id="promotitleContainer" style=" margin-bottom: 15px">
               <div class="title-small">LISTE DES PACKS PROMO</div>
             </div>
             <button
               id="manageRemove"
               class="button2 btn-manage1 btn-manage2"
-              onclick="managePacks(id);"
+              onclick="managePacks(id);filterFunction();"
               title="Enlever tous les Packs Promo"
+              style="margin-left: 20px; margin-bottom: 15px;"
             >
               TOUT ENLEVER
             </button>
             <button
               id="manageAdd"
               class="button2 btn-manage1"
-              onclick="managePacks(id);"
+              onclick="managePacks(id);filterFunction();"
               title="Ajouter tous les Packs Promo"
             >
               TOUT AJOUTER
@@ -345,7 +346,7 @@
               <button
                 id="promo"
                 class="button btn3 promo-icon button-icon"
-                onclick="filterFunction(id)"
+                onclick="managePromos();filterFunction(id);"
                 title="filtrer les cartes Promo"
               ></button>
             </div>

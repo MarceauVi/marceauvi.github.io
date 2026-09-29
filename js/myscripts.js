@@ -451,28 +451,45 @@ function filterFunction(id) {
 }
 
 function managePacks(id){
-  if (id=="manageRemove"){
-    console.log("enter if1");
+  if (id=="manageAdd"){
+    //making all packs buttons active
+    y = document.querySelectorAll("button.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.add("active");
+      }
+    }
+    document.getElementById("promo").classList.add("active");
+  }else if (id=="manageRemove"){
     //making all pack buttons inactive
-    y = document.querySelectorAll(".pack button.active");
-    console.log(y);
+    y = document.querySelectorAll("button.active.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.toggle("active");
+      }
+    }
+    document.getElementById("promo").classList.remove("active");
+  }
+}
+function managePromos(){
+  if (document.getElementById("promo").classList.contains("active")){
+    y = document.querySelectorAll("button.active.pack");
     if (y.length > 0) {
       for (i = 0; i < y.length; i++) {
         y[i].classList.toggle("active");
       }
     }
   }else{
-    console.log("enter else");
     //making all packs buttons active
-    y = document.querySelectorAll(".pack button");
-    console.log(y);
+    y = document.querySelectorAll("button.pack");
     if (y.length > 0) {
       for (i = 0; i < y.length; i++) {
-        y[i].classList.toggle("active");
+        y[i].classList.add("active");
       }
     }
   }
 }
+
 
 function clearInput() {
   document.getElementById("myInput").value = ""; //resets the text input

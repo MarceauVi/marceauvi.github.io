@@ -450,7 +450,7 @@ function filterFunction(id) {
   displayCards();
 }
 
-function managePacks(id){
+function managePacks(id){ //manage promo packs buttons when using buttons add all/remove all
   if (id=="manageAdd"){
     //making all packs buttons active
     y = document.querySelectorAll("button.pack");
@@ -459,7 +459,8 @@ function managePacks(id){
         y[i].classList.add("active");
       }
     }
-    document.getElementById("promo").classList.add("active");
+    
+    document.getElementById("promos").classList.add("active");
   }else if (id=="manageRemove"){
     //making all pack buttons inactive
     y = document.querySelectorAll("button.active.pack");
@@ -468,11 +469,11 @@ function managePacks(id){
         y[i].classList.toggle("active");
       }
     }
-    document.getElementById("promo").classList.remove("active");
+    document.getElementById("promos").classList.remove("active");
   }
 }
-function managePromos(){
-  if (document.getElementById("promo").classList.contains("active")){
+function managePromos(id){//manage promo packs buttons when using main promo button
+  if (document.getElementById(id).classList.contains("active")){
     y = document.querySelectorAll("button.active.pack");
     if (y.length > 0) {
       for (i = 0; i < y.length; i++) {
@@ -487,6 +488,16 @@ function managePromos(){
         y[i].classList.add("active");
       }
     }
+  }
+}
+
+function togglePromoPacks(){ // manage promo pack zone visibility (and secondary clean up)
+  document.getElementById("revealPromos").classList.toggle("active");
+  if (document.getElementById("revealPromos").classList.contains("active")) {
+    document.getElementById("PromosContainer-body").style.display = "block";// reveal the promo pack container
+  } else {
+    document.getElementById("PromosContainer-body").style.display = "none"; // hide the promo pack container
+    filterFunction(); // reset the promo packs individual filter
   }
 }
 
@@ -570,14 +581,14 @@ function w3RemoveClass(element, name) {
 function toggleContentDiv() {
   document.getElementById("content").classList.toggle("active");
   if (document.getElementById("content").classList.contains("active")) {
-    containerHeight = containerHeight + contentFiltersCurrent + 30; //30 for the margins
+    containerHeight = containerHeight + contentFiltersCurrent + 20; //20 for the margins
     document.getElementById("buttonsContainer-body").style.height =
       containerHeight + "px";
     setTimeout(function () {
       $("#contentFilters").fadeIn(200);
     }, 100);
   } else {
-    containerHeight = containerHeight - contentFiltersCurrent - 30;
+    containerHeight = containerHeight - contentFiltersCurrent - 20;
     document.getElementById("contentFilters").style.display = "none"; //hides the range inputs div
     document.getElementById("buttonsContainer-body").style.height =
       containerHeight + "px";

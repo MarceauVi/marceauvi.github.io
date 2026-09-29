@@ -344,11 +344,19 @@
                 title="filtrer les cartes de Turmoil"
               ></button>
               <button
-                id="promo"
+                id="promos"
                 class="button btn3 promo-icon button-icon"
-                onclick="managePromos();filterFunction(id);"
+                onclick="managePromos(id);filterFunction(id);"
                 title="filtrer les cartes Promo"
               ></button>
+              <button
+              id="revealPromos"
+              class="button button2 btn-manage"
+              onclick="togglePromoPacks();"
+              title="Afficher/cacher les détails des Packs Promo"
+            >
+              Afficher les détails des Packs Promo
+            </button>
             </div>
 
             <div id="contentFilters">

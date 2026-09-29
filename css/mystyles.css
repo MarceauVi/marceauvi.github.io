@@ -907,15 +907,14 @@ li.global-card::before {
 
 .button:hover,
 .button2:hover,
-.btn-sort:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-}
-
+.btn-sort:hover,
+.btn-manage:hover,
 .btn-manage1:hover {
   filter: brightness(120%);
   cursor: pointer;
 }
+
+
 .disabled {
   opacity: 0;
   cursor: not-allowed !important;
@@ -999,6 +998,24 @@ li.global-card::before {
   color: #ccc;
   font-family: Prototype;
   background-color: #cc3333;
+  text-shadow: 0 0 1px black;
+}
+
+.btn-manage {
+  outline: none;
+  display: inline-block;
+  height: 46px;
+  width: 100px;
+  margin-left: -2px;
+  smargin-top: -3px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 13px;
+  font-size: 14px;
+  color: #ccc;
+  font-family: Prototype;
+  background-color: #6d5d00;
   text-shadow: 0 0 1px black;
 }
 
@@ -2444,7 +2461,7 @@ li.global-card::before {
   top: -256px;
   z-index: 2;
   display: none;
-  width: 930px;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2468,6 +2485,7 @@ li.global-card::before {
   margin-left: 965px;
   align-items: center;
   padding-left: 20px;
+  display: none;
 }
 
 #buttonsContainer-header {

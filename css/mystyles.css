@@ -966,7 +966,12 @@ li.global-card::before {
 
 .pack {
   color: #000000;
-  margin-right: 30px;
+  margin-right: 25px;
+}
+
+.pack-small {
+  color: #000000;
+  margin-right: 20px;
 }
 
 .btn4 {
@@ -1049,6 +1054,14 @@ li.global-card::before {
   font-family: Prototype;
   background-color: #00bd19;
   text-shadow: 0 0 1px black;
+}
+
+.btn-manage1-small {
+  width: 95px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 11px;
 }
 
 .btn-manage2 {
@@ -2494,7 +2507,7 @@ li.global-card::before {
 #PromosContainer-body {
   background: rgba(0, 0, 0, 0.5);
   height: 200px;
-  width: 380px;
+  width: 340px;
   transition: height 0.2s, width 0.2s;
   margin: 5px 0;
   position:absolute;
@@ -2531,7 +2544,7 @@ li.global-card::before {
   height: 20px;
   line-height: 20px;
   display: inline-block;
-  width: 400px;
+  width: 360px;
   margin-left: -20px; 
   text-align: center;
 }

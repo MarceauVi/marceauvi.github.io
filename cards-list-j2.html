@@ -34,6 +34,101 @@
               <div id="selectedCardsAmount">0</div>
             </a>
           </div>
+          
+          <div id="PromosContainer-body">
+            <div id="promotitleContainer" style=" margin-bottom: 15px">
+              <div class="title-small">LISTE DES PACKS PROMO</div>
+            </div>
+            <button
+              id="manageRemove"
+              class="button2 btn-manage1 btn-manage2"
+              onclick="managePacks(id);filterFunction();"
+              title="Enlever tous les Packs Promo"
+              style="margin-left: 20px; margin-bottom: 15px;"
+            >
+              TOUT ENLEVER
+            </button>
+            <button
+              id="manageAdd"
+              class="button2 btn-manage1"
+              onclick="managePacks(id);filterFunction();"
+              title="Ajouter tous les Packs Promo"
+            >
+              TOUT AJOUTER
+            </button>
+            
+            <div
+              id="myBtnContainerPromo1"
+              style="line-height: 55px; margin-bottom: 10px"
+            >
+              <button
+                id="original_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >TM</button>
+              <button
+                id="turmoil_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >TUR</button>
+              <button
+                id="bigbox_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >BB</button>
+              <button
+                id="pre2_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >P2</button>
+              <button
+                id="s21_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo Saisonnier 2021"
+              >S21</button>
+            </div>
+
+            <div
+              id="myBtnContainerPromo2"
+              style="line-height: 55px"
+            >
+              <button
+                id="s22_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S22</button>
+              <button
+                id="s23_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S23</button>
+              <button
+                id="s24_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S24</button>
+              <button
+                id="s25_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S25</button>
+              <button
+                id="s26_promo"
+                class="button btn3 button-icon pack"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S26</button>
+            </div>
+          </div>
 
           <div id="buttonsContainer-body" style="padding-left: 100px; width: 900px;">
             <div
@@ -214,20 +309,32 @@
                 onclick="filterFunction(id)"
                 title="filtrer les cartes de Prélude 2"
               ></button>
-
-              <button
-                id="promo"
-                class="button btn3 promo-icon button-icon"
-                onclick="filterFunction(id)"
-                title="filtrer les cartes Promo"
-              ></button>
-
+              
               <button
                 id="CdF"
                 class="button btn3 CdF-icon button-icon"
                 onclick="filterFunction(id)"
                 title="filtrer les cartes CdF"
               ></button>
+
+              <button
+                id="promos"
+                class="button btn3 promo-icon button-icon"
+                onclick="managePromos(id);filterFunction(id);"
+                title="filtrer les cartes Promo"
+              ></button>
+              <span class="line visible"></span>
+              <span class="line hidden" style="width: 98px;"></span> 
+              <button
+              id="revealPromos"
+              class="button button2 btn-manage"
+              onclick="togglePromoPacks();"
+              title="Afficher/cacher les détails des Packs Promo"
+              >
+              Afficher les détails des Packs Promo
+              </button>
+              <span class="line hidden"></span>
+      
             </div>
 
             <div id="contentFilters" style="margin-left: -80px;">

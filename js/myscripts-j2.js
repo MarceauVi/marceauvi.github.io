@@ -419,6 +419,67 @@ function filterFunction(id) {
   displayCards();
 }
 
+
+function managePacks(id){ //manage promo packs buttons when using buttons add all/remove all
+  if (id=="manageAdd"){
+    //making all packs buttons active
+    y = document.querySelectorAll("button.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.add("active");
+      }
+    }
+    
+    document.getElementById("promos").classList.add("active");
+  }else if (id=="manageRemove"){
+    //making all pack buttons inactive
+    y = document.querySelectorAll("button.active.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.toggle("active");
+      }
+    }
+    document.getElementById("promos").classList.remove("active");
+  }
+}
+function managePromos(id){//manage promo packs buttons when using main promo button
+  if (document.getElementById(id).classList.contains("active")){
+    y = document.querySelectorAll("button.active.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.toggle("active");
+      }
+    }
+  }else{
+    //making all packs buttons active
+    y = document.querySelectorAll("button.pack");
+    if (y.length > 0) {
+      for (i = 0; i < y.length; i++) {
+        y[i].classList.add("active");
+      }
+    }
+  }
+}
+
+function togglePromoPacks(){ // manage promo pack zone and its line visibility (and secondary clean up)
+  line=document.querySelectorAll(".hidden")[0];
+  line2=document.querySelectorAll(".hidden")[1];
+  oline=document.querySelectorAll(".visible")[0];
+  document.getElementById("revealPromos").classList.toggle("active");
+  if (document.getElementById("revealPromos").classList.contains("active")) {
+    document.getElementById("PromosContainer-body").style.display = "block";// reveal the promo pack container
+    line.style.display = "inline-block";// reveal the promo pack container and its lines
+    line2.style.display = "inline-block";// reveal the promo pack container and its lines
+    oline.style.display = "none";
+  } else {
+    document.getElementById("PromosContainer-body").style.display = "none";// reveal the promo pack container
+    line.style.display = "none"; // hide the promo pack container its lines
+    line2.style.display = "none"; // hide the promo pack container its line
+    oline.style.display = "inline-block";
+    filterFunction(); // reset the promo packs individual filter
+  }
+}
+
 function clearInput() {
   document.getElementById("myInput").value = ""; //resets the text input
   document.getElementById("price").value = 0;

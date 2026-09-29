@@ -1018,7 +1018,23 @@ li.global-card::before {
   background-color: #6d5d00;
   text-shadow: 0 0 1px black;
 }
+.line {
+  position: absolute;
+  width: 39px;
+  height: 10px;
+  background: black;
+  border-radius: 10px;
+  margin-left: -35px;
+  margin-top: 15px;
+  z-index: -1;
+}
 
+.hidden {
+  display: none;
+  border-radius: 0px;
+  width: 45px;
+  opacity:0.5;
+}
 .btn-manage1 {
   outline: none;
   display: inline-block;

@@ -491,12 +491,15 @@ function managePromos(id){//manage promo packs buttons when using main promo but
   }
 }
 
-function togglePromoPacks(){ // manage promo pack zone visibility (and secondary clean up)
+function togglePromoPacks(){ // manage promo pack zone and its line visibility (and secondary clean up)
+  line=document.querySelectorAll(".hidden")[0];
   document.getElementById("revealPromos").classList.toggle("active");
   if (document.getElementById("revealPromos").classList.contains("active")) {
     document.getElementById("PromosContainer-body").style.display = "block";// reveal the promo pack container
+    line.style.display = "inline-block";// reveal the promo pack container and its line
   } else {
-    document.getElementById("PromosContainer-body").style.display = "none"; // hide the promo pack container
+    document.getElementById("PromosContainer-body").style.display = "none";// reveal the promo pack container
+    line.style.display = "none"; // hide the promo pack container its line
     filterFunction(); // reset the promo packs individual filter
   }
 }

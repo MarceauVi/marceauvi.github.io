@@ -966,7 +966,7 @@ li.global-card::before {
 
 .pack {
   color: #000000;
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .pack-small {
@@ -2507,7 +2507,7 @@ li.global-card::before {
 #PromosContainer-body {
   background: rgba(0, 0, 0, 0.5);
   height: 200px;
-  width: 340px;
+  width: 330px;
   transition: height 0.2s, width 0.2s;
   margin: 5px 0;
   position:absolute;
@@ -2544,7 +2544,7 @@ li.global-card::before {
   height: 20px;
   line-height: 20px;
   display: inline-block;
-  width: 360px;
+  width: 350px;
   margin-left: -20px; 
   text-align: center;
 }

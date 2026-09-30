@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="LISTE DES CARTES CdF" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="viewport" content="width=930" />
+
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/mystyles.css" />
+  <link rel="stylesheet" href="css/odometer.css" />
+  <link rel="stylesheet" href="css/odometer-cards-list.css" />
+  <title>LISTE DES CARTES CdF</title>
+
+</head>
+
+<html>
+  <body>
+    <div class="app-container">
+      <div class="list-container">
+        <div id="buttonsContainer">
+          <div id="buttonsContainer-header">
+            <div id="titleContainer">
+              <div class="title-style">LISTE DES CARTES CdF</div>
+            </div>
+            <a
+              disabled
+              id="btn-selectedCards"
+              class="button btn-selected-cards disabled"
+              title="Ouvre une page avec les cartes selectionnées"
+              href="no-selected-card.html"
+              target="_blank"
+              >SELECTION
+              <div id="selectedCardsAmount">0</div>
+            </a>
+          </div>
+
+          <div id="PromosContainer-body" style="margin-left:1005px; width: 190px;">
+            <div id="promotitleContainer" style=" margin-bottom: 15px; width:215px">
+              <div class="title-small" style="font-size: 15px;transform: none;">LISTE DES PACKS PROMO</div>
+            </div>
+            <button
+              id="manageRemove"
+              class="button2 btn-manage1 btn-manage2 btn-manage1-small"
+              onclick="managePacks(id);filterFunction();"
+              title="Enlever tous les Packs Promo"
+              style="margin-left: -15px;margin-bottom: 15px;"
+            >
+              TOUT ENLEVER
+            </button>
+            <button
+              id="manageAdd"
+              class="button2 btn-manage1 btn-manage1-small"
+              onclick="managePacks(id);filterFunction();"
+              title="Ajouter tous les Packs Promo"
+            >
+              TOUT AJOUTER
+            </button>
+            
+            <div
+              id="myBtnContainerPromo1"
+              style="line-height: 55px; margin-bottom: 10px"
+            >
+            
+              <button
+                id="original_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >TM</button>
+              <button
+                id="pre2_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >P2</button>
+              <button
+                id="s21_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo Saisonnier 2021"
+              >S21</button>
+            </div>
+
+            <div
+              id="myBtnContainerPromo2"
+              style="line-height: 55px"
+            >
+              <button
+                id="s23_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S23</button>
+              <button
+                id="s24_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S24</button>
+              <button
+                id="s25_promo"
+                class="button btn3 button-icon pack pack-small"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes du Pack Promo"
+              >S25</button>
+            </div>
+          </div>
+
+          <div id="buttonsContainer-body" style="padding-left: 100px; width: 900px;">
+            <div
+              id="myBtnContainer1"
+              style="line-height: 55px; margin-bottom: 10px; margin-left: 120px"
+            >
+              <button
+                id="automated"
+                class="button btn1 background-color-automated"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes Instantanée"
+              >
+                INSTANTANÉE
+              </button>
+              <button
+                id="active"
+                class="button btn1 background-color-active"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes Action"
+              >
+                ACTION
+              </button>
+              <button
+                id="events"
+                class="button btn1 background-color-events"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes Évènement"
+              >
+                ÉVÈNEMENT
+              </button>
+              <button
+                id="corporation"
+                class="button btn1 background-color-corporation"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes Corporation"
+              >
+                CORPORATION
+              </button>
+              <button
+                id="carte-prel"
+                class="button btn1 background-color-prelude"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes Prélude"
+              >
+                PRÉLUDE
+              </button>
+              <button
+                id="global-card"
+                class="button btn1 background-color-global"
+                onclick="filterFunction(id)"
+                style="margin-right: 0px"
+                title="filtrer les cartes Évènement Global"
+              >
+                GLOBAL
+              </button>
+            </div>
+
+            <div id="myBtnContainer2" style="line-height: 55px">
+              <button
+                id="buildingTag"
+                class="button btn2 tag-building"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Construction"
+              ></button>
+              <button
+                id="spaceTag"
+                class="button btn2 tag-space"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Espace"
+              ></button>
+              <button
+                id="scienceTag"
+                class="button btn2 tag-science"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Science"
+              ></button>
+
+              <button
+                id="plantTag"
+                class="button btn2 tag-plant"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Plante"
+              ></button>
+              <button
+                id="microbeTag"
+                class="button btn2 tag-microbe"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Microbe"
+              ></button>
+              <button
+                id="animalTag"
+                class="button btn2 tag-animal"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Animal"
+              ></button>
+
+              <button
+                id="powerTag"
+                class="button btn2 tag-power"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Énergie"
+              ></button>
+              <button
+                id="jovianTag"
+                class="button btn2 tag-jovian"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Jovien"
+              ></button>
+              <button
+                id="earthTag"
+                class="button btn2 tag-earth"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Terre"
+              ></button>
+
+              <button
+                id="cityTag"
+                class="button btn2 tag-city"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Cité"
+              ></button>
+              <button
+                id="eventTag"
+                class="button btn2 tag-event"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Évènement"
+              ></button>
+
+              <button
+                id="wildTag"
+                class="button btn2 tag-wild"
+                onclick="filterFunction(id)"
+                title="filtrer par badge Joker"
+              ></button>
+              <button
+                id="noneTag"
+                class="button btn2 tag-none"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes sans badge"
+              ></button>
+
+              <button
+                id="CdFTag"
+                class="button btn2 tag-CdF"
+                onclick="filterFunction(id)"
+                title="filtrer par badge CdF"
+              ></button>
+            </div>
+
+            <div id="myBtnContainer4" style="display: inline-block; padding-left: 50px">
+              <button
+                id="content"
+                class="button btn-content"
+                onclick="toggleContentDiv();"
+                title="Afficher les filtres du contenu des cartes"
+              >
+                CONTENU
+              </button>
+              <input
+                type="text"
+                id="myInput"
+                oninput="filterFunction(id);"
+                placeholder="Chercher ..."
+                title="Chercher par nom de carte, nombre, ID ou mots clefs"
+              />
+      
+            </div>
+
+            <div id="contentFilters" style="margin-left: -80px;">
+              <form id="sortButtons">
+                <fieldset style="margin-bottom: -30px">
+                  <legend class="sort-title">CLASSER LES CARTES PROJETS PAR</legend>
+                  <input
+                    type="radio"
+                    name="radio"
+                    id="radio-choice-1"
+                    value="on"
+                    checked="checked"
+                    onclick="sortByID();"
+                    style="display: none"
+                    
+                  />
+                  <label class="btn-sort" title="Classer les cartes Projet par ID" for="radio-choice-1">ID</label>
+                  <input
+                    type="radio"
+                    name="radio"
+                    id="radio-choice-2"
+                    value="off"
+                    onclick="sortByPriceUp();"
+                    style="display: none"
+                    
+                  />
+                  <label class="btn-sort" title="Classer les cartes Projet par Prix Croissant" for="radio-choice-2">M€ Croissant</label>
+                  <input
+                    type="radio"
+                    name="radio"
+                    id="radio-choice-3"
+                    value="other"
+                    onclick="sortByPriceDown();"
+                    style="display: none"
+                    
+                  />
+                  <label class="btn-sort" title="Classer les cartes Projet par Prix Décroissant" for="radio-choice-3">M€ Décroissant</label>
+                </fieldset>
+              </form>
+
+              <button
+                class="button2 btn-price"
+                onclick="reduceOne()"
+                title="Diminuer la valeur du filtre par Prix de 1"
+              >
+                -
+              </button>
+              <input
+                type="number"
+                title="filtre par Prix"
+                id="price"
+                oninput="filterFunction(id);"
+                value="0"
+                min="0"
+                max="50"
+              />
+              <button
+                class="button2 btn-price"
+                style="margin-right: 10px"
+                onclick="increaseOne()"
+                title="Augmenter la valeur du filtre par Prix de 1"
+              >
+                +
+              </button>
+
+              <button
+                id=".production.money"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production de M€"
+                style="margin-left: 6px"
+              >
+                <div class="production money">M€</div>
+              </button>
+              <button
+                id=".production.steel"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production d'acier"
+              >
+                <div class="production steel"></div>
+              </button>
+              <button
+                id=".production.titanium"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production de titane"
+              >
+                <div class="production titanium"></div>
+              </button>
+              <button
+                id=".production.plant"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production de plante"
+              >
+                <div class="production plant"></div>
+              </button>
+              <button
+                id=".production.energy"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production d'énergie"
+              >
+                <div class="production energy"></div>
+              </button>
+              <button
+                id=".production.heat"
+                class="button btn-production"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec de la production de chaleur"
+              >
+                <div class="production heat"></div>
+              </button>
+              <br />
+
+              <button
+                id="reqs"
+                class="button btn-req"
+                onclick="filterFunction(id);toggleRequirementsFilters();"
+                title="filtrer les cartes avec prérequis"
+              >
+                PRÉREQUIS
+              </button>
+              <button
+                id="vp"
+                class="button btn-vp points"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône de PV"
+              >
+                PV
+              </button>
+
+              <button
+                id="rating"
+                class="button btn-tile rating"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône de NT"
+                style="
+                  background-size: 36px 30px !important;
+                  background-position: 10px;
+                "
+              ></button>
+              <button
+                id="temperature-tile"
+                class="button btn-tile temperature-tile"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône de Température"
+                style="
+                  background-size: 11px 34px !important;
+                  background-position: 22px;
+                "
+              ></button>
+              <button
+                id="ocean-tile"
+                class="button btn-tile ocean-tile"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône de tuile Océan"
+                style="background-position: 10px"
+              ></button>
+              <button
+                id="greenery-tile"
+                class="button btn-tile greenery-tile"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône de tuile Forêt"
+                style="
+                  background-position: 10px;
+                  background-size: 40px 34px !important;
+                "
+              ></button>
+              <button
+                id="oxygen-tile"
+                class="button btn-tile oxygen-tile"
+                onclick="filterFunction(id)"
+                title="filtrer les cartes avec une icône d'Oxygène"
+                style="background-position: 10px 3px"
+              ></button>
+
+              <div id="subfilterReqs" class="subfilterReqs-disabled">
+                <output
+                  id="output1"
+                  for="slider1"
+                  class="output-label"
+                  style="color: #f25540; margin-left: 225px"
+                  >-30</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider1"
+                  type="range"
+                  min="-30"
+                  max="8"
+                  value="-30"
+                  step="2"
+                  list="tickmarks"
+                  oninput="output1.value = slider1.value; filterFunction(id);"
+                  class="track-temp-background track-temp-thumb"
+                  style="width: 200px; margin-right: 70px; margin-left: 15px"
+                />
+
+                <output
+                  id="output3"
+                  for="slider3"
+                  class="output-label"
+                  style="margin-left: 110px"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider3"
+                  type="range"
+                  min="0"
+                  max="9"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output3.value = slider3.value; filterFunction(id);"
+                  class="track-oceans-thumb"
+                  style="width: 100px"
+                />
+
+                <output
+                  id="output2"
+                  for="slider2"
+                  class="output-label"
+                  style=" margin-left: 160px; color: rgb(246, 241, 175)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider2"
+                  type="range"
+                  min="0"
+                  max="14"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output2.value = slider2.value; filterFunction(id);"
+                  class="track-oxygen-background track-oxygen-thumb"
+                  style="width: 150px"
+                />
+
+                <br />
+                <p></p>
+                <output
+                  id="output5"
+                  for="slider5"
+                  class="output-label"
+                  style="color: white; margin-left: 198px"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  style="margin-left: 60px"
+                  id="slider5"
+                  type="range"
+                  min="0"
+                  max="7"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output5.value = slider5.value; filterFunction(id);"
+                  class="track-science-background track-science-thumb thumb-tab"
+                />
+
+                <output
+                  id="output8"
+                  for="slider8"
+                  class="output-label"
+                  style="margin-left: 100px; color: rgb(15, 96, 151)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider8"
+                  type="range"
+                  min="0"
+                  max="4"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output8.value = slider8.value; filterFunction(id);"
+                  class="track-earth-background track-earth-thumb thumb-tab"
+                  style="width: 90px"
+                />
+
+                <output
+                  id="output6"
+                  for="slider6"
+                  class="output-label"
+                  style="margin-left: 76px; color: rgb(255, 223, 149)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider6"
+                  type="range"
+                  min="0"
+                  max="2"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output6.value = slider6.value; filterFunction(id);"
+                  class="track-jovian-background track-jovian-thumb thumb-tab"
+                  style="width: 66px"
+                />
+
+                <output
+                  id="output9"
+                  for="slider9"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(100, 100, 100)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider9"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output9.value = slider9.value; filterFunction(id);"
+                  class="track-cityTile-background track-cityTile-thumb thumb-tab"
+                  style="width: 80px"
+                />
+
+                <output
+                  id="output10"
+                  for="slider10"
+                  class="output-label"
+                  style="margin-left: 90px; color: rgb(21, 255, 0)"
+                  >0</output
+                >
+                <!-- Just to display selected value -->
+                <input
+                  id="slider10"
+                  type="range"
+                  min="0"
+                  max="3"
+                  value="0"
+                  step="1"
+                  list="tickmarks"
+                  oninput="output10.value = slider10.value; filterFunction(id);"
+                  class="track-greeneryTile-background track-greeneryTile-thumb thumb-tab"
+                  style="width: 80px"
+                />
+
+              </div>
+            </div>
+          </div>
+          <div id="buttonsContainer-footer" style="padding-left: 220px; width: 780px;">
+            <button
+              id="reset"
+              class="button2 btn-reset"
+              onclick="clearInput();showAll();"
+              title="Réinitialiser tous les filtres sélectionnés"
+            >
+              RÉINITIALISER
+            </button>
+            <div
+              class="card-footer card-footer-projects"
+              style="margin-left: 0px"
+            ></div>
+            <div
+              id="totalProjects"
+              class="totalCardsCount odometer"
+              data-minintegerlen="3"
+            ></div>
+
+            <div class="card-footer card-footer-corp"></div>
+            <div id="totalCorporations" class="totalCardsCount odometer"></div>
+
+            <div class="card-footer card-footer-prelude"></div>
+            <div id="totalPreludes" class="totalCardsCount odometer"></div>
+
+            <div class="card-footer card-footer-globals"></div>
+            <div id="totalGlobals" class="totalCardsCount odometer"></div>
+          </div>
+        </div>
+
+        <!--PROJECT CARDS-->
+        <ul class="myUL" id="projectCards">
+
+          <!--CDF Projets-->
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated cityTag buildingTag CdFTag reqs"
+            data-oceans="5"
+          >
+            <div class="title background-color-automated">Cité Hydraulique</div>
+            <div class="price">34</div>
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-city"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF01</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">2</div>
+              <div class="requirements">5 
+                <div class="tile ocean-tile req-tile"></div>
+              </div>
+              <div class="production-box production-box-size1a" style="margin-left: -10px; margin-bottom: -10px">
+                <div class="production-prefix"><div class="minus"></div></div>
+                <div class="energy production"></div>
+              </div>
+              <div class="tile city-tile" style="margin-bottom: 0px; margin-top: 0px"></div>
+              *<br />
+              <div class="card resource" style="height:33px; width: 25px; background-size:25px 33px"></div>
+              /2
+              <div class="tile ocean-tile" style="margin-left: -2px;height:39px; width: 35px; background-size:35px 39px"></div>
+              <div class="description" style="text-align: left; margin-top: -10px; margin-left: -10px">
+                (Nécessite 5 tuiles Océan. Placez une tuile cité SUR UNE TUILE OCÉAN en jeu. 
+                Diminuez votre production d'énergie de 1. La tuile océan sous votre cité est 
+                toujours considérée comme un océan. Piochez une carte<br /> par paire d'océan en jeu.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag CdFTag"
+          >
+            <div class="title background-color-events" style="font-size: 14px;">Distribution de Marchés Public</div>
+            <div class="price">5</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF02</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">1</div>
+              PIOCHEZ 5 CARTES FACE VISIBLE, SÉLECTIONNEZ-EN UNE, PUIS CHAQUE JOUEUR FAIT DE MÊME. 
+              S'IL RESTE DES CARTES, DÉFAUSSEZ-LES.
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated CdFTag reqs"
+            data-oceans="8"
+          >
+            <div class="title background-color-automated">Évaporation Massive</div>
+            <div class="price">12</div>
+            <div class="tag tag1 tag-CdF"></div>
+            <div class="number">#CDF03</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">1</div>
+              <div class="requirements">8 
+                <div class="tile ocean-tile req-tile"></div>
+              </div>
+              <div class="tile temperature-tile"></div>
+              <div class="tile temperature-tile"></div>
+              <div class="description" style="margin-top: 0px">
+                (Augmentez la température de 2. Nécessite 8 tuiles Océan.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag buildingTag cityTag reqs"
+            data-oceans="2"
+          >
+            <div class="title background-color-active">Thermes d'Olympes</div>
+            <div class="price">17</div>
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-city"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF04</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="requirements">
+                <div class="tile ocean-tile req-tile"></div>
+                <div class="tile ocean-tile req-tile"></div>
+              </div>
+              6
+              <div class="resource heat" style="margin-top: 0px"></div>
+              <div class="red-arrow" style="margin-top: 0px"></div>
+              <div class="tile temperature-tile" style="margin-top: 0px"></div>
+              <div class="description" style="margin-top: -10px">
+                (Effet : Augmenter la température vous coûte 6 chaleurs au lieu de 8.)
+              </div>
+              <div class="production-box production-box-size1a" style="margin-left: -100px">
+                <div class="production-prefix"><div class="minus"></div></div>
+                <div class="energy production"></div>
+                +3
+                <div class="heat production"></div>
+              </div>
+              <div class="tile city-tile" style="margin-top: -10px"></div>
+              *
+              <div class="description" style="position: absolute; margin-left: 120px; margin-top: -90px">
+                (Nécessite 2 tuiles océan. Diminuez votre production d'énergie de 1 
+                et augmentez votre production de chaleur de 3.
+              </div>
+              <div class="description" style="margin-left: 20px; margin-top: -5px">
+                Placez une tuile cité 
+                ADJACENTE À AU MOINS UNE TUILE OCÉAN.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag scienceTag earthTag CdFTag"
+          >
+            <div class="title background-color-events" style="font-size: 13px;">
+              Investissement dans la Recherche</div>
+            <div class="price">8</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-science"></div>
+            <div class="tag tag3 tag-earth"></div>
+            <div class="tag tag4 tag-CdF"></div>
+            <div class="number num-low">#CDF05</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource money">-2</div>
+              *
+              <br />
+              LE COÛT DES PROCHAINES CARTES EST RÉDUIT DE 2 PENDANT CETTE GÉNÉRATION.
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag plantTag reqs"
+            data-citytile="2"
+          >
+            <div class="title background-color-active">Paysagiste</div>
+            <div class="price">16</div>
+            <div class="tag tag1 tag-plant"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF06</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="requirements">
+                <div class="tile city-tile red-outline-city req-tile-outline"></div>
+                <div class="tile city-tile red-outline-city req-tile-outline"></div>
+              </div>
+              <br />
+              <div class="tile city-tile red-outline-city"></div>
+              :
+              <div class="resource plant"></div>
+              <div class="resource plant"></div>
+              <div class="description" style="margin-top: -5px">
+                (Effet : Lorsqu'une tuile cité est placée, 
+                par n'importe quel joueur, gagnez 2 plantes.)
+              </div>
+              <br /><br />
+              <div class="description">
+                (Il doit y avoir au moins deux cités en jeu.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated buildingTag CdFTag"
+          >
+            <div class="title background-color-automated">
+              Réseau de Chaleur
+            </div>
+            <div class="price">10</div>
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF07</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="production-box production-box-size3">
+                <div class="production heat"></div>
+                <div class="production heat"></div>
+                OU <br />
+                3
+                <div class="tag-power resource-tag production-tag"></div>
+                : 6
+                <div class="heat production"></div>
+              </div>
+              <br />
+              <div class="description">
+                (Augmentez votre production de chaleur de 2, ou de 6 si vous avez 3 badges Énergie.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag scienceTag CdFTag"
+          >
+            <div class="title background-color-events">Effet Joule</div>
+            <div class="price">10</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-science"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF08</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource heat"></div>
+              /
+              <div class="production-box">
+                <div class="production energy"></div>
+              </div>
+              +
+              <div class="production-box">
+                <div class="production heat"></div>
+              </div>
+              <div class="description">
+                (Gagnez autant de chaleurs que vos productions d'énergie et de chaleur cumulés.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag earthTag scienceTag"
+          >
+            <div class="title background-color-active">Restriction de Planification</div>
+            <div class="price">3</div>
+            <div class="tag tag1 tag-science"></div>
+            <div class="tag tag2 tag-earth"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF09</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource card"></div>
+              * = 0 : 
+              <div class="resource money">5</div>
+              <br />
+              <div class="resource card"></div>
+              * > 1  : 
+              <div class="resource money">-5</div>
+              <div class="description" style="margin-top: -10px">
+                (Effet : Lors de la phase de Recherche, si vous ne conservez aucune carte, 
+                gagnez 5 M€, si vous en conservez plus d'une, payez 5 M€ supplémentaires.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag earthTag CdFTag"
+          >
+            <div class="title background-color-events">
+              Taxe d'Habitation</div>
+            <div class="price">3</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-earth"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF10</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">-1</div>
+              <div class="resource money red-outline">-3</div>
+              * / 
+              <div class="tile city-tile red-outline-city"></div>
+              *
+              <div class="description">
+                (Chaque joueur perd 3 M€ pour chaque cité qu'il possède.)
+              </div>
+            </div>
+          </li>
+          
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag buildingTag "
+          >
+            <div class="title background-color-active">Brûleurs</div>
+            <div class="price">14</div>
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF11</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource plant"></div>
+              <div class="red-arrow" style="margin-top: 0px"></div>
+              4
+              <div class="resource heat"></div>
+              <div class="description">
+                (Action : Dépensez 1 plante pour gagner 4 chaleurs.)
+              </div>
+              <br />
+              <div class="production-box production-box-size1a">
+                2
+                <div class="production heat"></div>
+              </div>
+              <div class="description">
+                (Augmentez votre production de chaleur de 2.)
+              </div>
+            </div>
+          </li>
+          
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated plantTag buildingTag CdFTag reqs"
+            data-temperature="-10"
+          >
+            <div class="title background-color-automated">Irrigation Optimisée</div>
+            <div class="price">16</div>
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-plant"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="number">#CDF12</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="requirements">-10°C
+                <div class="tile temperature-tile req-tile"></div>
+              </div>
+              <div class="production-box production-box-size3a" style="height: 45px">
+                <div class="money production" style="margin-bottom: -5px;margin-right: 10px">1</div>
+                <span class="description" 
+                style=" margin-top: 17px;margin-left: -10px; font-size: 25px; position: absolute">
+                /
+                </span>
+                <div class="tile greenery-tile-no-O2 red-outline" 
+                style="margin-bottom: -20px; margin-top: -10px"></div>
+                <div class="tile ocean-tile" 
+                style="margin-left: -7px; margin-top: -10px; margin-bottom: -20px"></div>
+              </div>
+              <div class="description">
+                (Augmentez votre production de M€ de 1 par forêt en jeu 
+                adjacente à au moins un océan.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv events eventTag CdFTag"
+          >
+            <div class="title background-color-events">Rétroformation</div>
+            <div class="price">15</div>
+            <div class="tag tag1 tag-event"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF13</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">1</div>
+              <div class="minus"></div>
+              <div class="tile temperature-tile" style="margin-right: 10px; margin-left: -4px"></div>
+              <div class="minus"></div>
+              <div class="tile oxygen-tile" style="margin-right: 10px; margin-left: -3px"></div>
+              <div class="minus"></div>
+              <div class="tile ocean-tile" style="margin-left: -1px"></div>
+              <div class="description">
+                (Diminuez la température et l'oxygène de 1 chacun et retirez une tuile océan du plateau.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv automated earthTag CdFTag"
+          >
+            <div class="title background-color-automated">
+              Réunion d'Actionnaires
+            </div>
+            <div class="price">13</div>
+            <div class="tag tag1 tag-earth"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF14</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="resource money">1</div>
+              /
+              <div class="card resource red-outline"></div>
+              <br />
+              <div class="description">
+                (Gagnez 1 M€ par carte dans la main de CHAQUE joueur.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv active CdFTag scienceTag "
+          >
+            <div class="title background-color-active">Incubateur de Projets</div>
+            <div class="price">12</div>
+            <div class="tag tag1 tag-science"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="number">#CDF15</div>
+            <div class="CdF-icon project-icon"></div>
+            <div class="content">
+              <div class="points points-big">1</div>
+              <div class="resource card">
+                <div class="card-icon tag-empty"></div>
+              </div>
+              <div class="red-arrow"></div> 
+              <div class="resource card">
+                <div class="card-icon tag-empty"></div>
+              </div>
+              <div class="description">
+                (Action : Révélez et défaussez une carte de votre main, 
+                puis piochez une carte partageant un badge avec la carte défaussée.)
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+
+        <!--CORPORATIONS-->
+        <ul class="myUL" style="clear: both">
+
+          <!--CDF Corporations-->
+
+          <li
+            id="#CDF22"
+            onclick="getClickedCard();"
+            class="filterDiv corporation wildTag CdFTag"
+          >
+            <div class="tag tag1 tag-wild"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox">
+                <div class="corporationEffectBoxLabel">EFFET</div>
+                <div class="defauss-corp" style="margin-left: 80px; position: absolute"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+
+                <div class="description"
+                  style="text-align: center; margin-top: 40px"
+                >
+                  Effet : Copiez l'effet ou l'action d'une des cartes corporation défaussées 
+                  par vos adversaires (Les productions, ressources et effets de départ 
+                  ne sont pas pris en compte).
+                </div>
+              </div>
+              <span style="
+                  font-size: 18px;
+                  margin-top: 20px;
+                  color: orangered;
+                  font-family: 'Times New Roman';
+                  font-weight: normal;
+                  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333,
+                    0px -1px #333333, 6px 3px 5px grey;
+                ">
+                LUDOPHILES<br /> d'Asnières et d'ailleurs 
+              </span>
+              <br />
+              <br />
+
+              <div class="resource money" style="margin-left: 60px">50</div>
+              <div class="description" style="text-align: center">
+                Crédit de départ 50 M€.
+              </div>
+            </div>
+          </li>
+
+          <li
+            id="#CDF23"
+            onclick="getClickedCard();"
+            class="filterDiv corporation buildingTag CdFTag"
+          >
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 185px">
+                <div class="corporationEffectBoxLabel" style="margin-bottom: 10px">ACTION</div>
+                <div class="red-arrow"></div>
+                <div class="resource card">
+                  <div class="card-icon tag-building"></div>
+                </div>
+                *
+                <div class="description"
+                  style="text-align: center; margin-top: 0px"
+                >
+                  Action : Jouez une carte de votre main, vous pouvez utiliser de l'acier 
+                  comme si c'etait une carte bâtisseur pour la jouer.
+                </div>
+              </div>
+              <span style="
+                  font-size: 24px;
+                  margin-left: 20px;
+                  color: #c9380e;
+                  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333,
+                    0 -1px #333333, 2px 2px 2px black;
+                  display: inline-block;
+                  -webkit-transform: scale(1.5, 1); /* Safari and Chrome */
+                  -moz-transform: scale(1.5, 1); /* Firefox */
+                  -ms-transform: scale(1.5, 1); /* IE 9 */
+                  -o-transform: scale(1.5, 1); /* Opera */
+                  transform: scale(1.5, 1); /* W3C */
+                ">Guilde<br /> Ouvrière</span>
+              <br />
+              <br />
+              <div class="resource money" style="margin-left: 10px; margin-right: 5px;">24</div>
+              10
+              <div class="resource steel" style="margin-right: 10px"></div>
+              <div class="production-box production-box-size2">
+                <div class="steel production"></div>
+                <div class="steel production"></div>
+              </div>
+              <div class="description" style="text-align: center">
+                (Vous commencez avec 24 M€ et 10 aciers. Augmentez votre production d'acier de 2.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            id="#CDF24"
+            onclick="getClickedCard();"
+            class="filterDiv corporation CdFTag"
+          >
+            <div class="tag tag1 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 170px">
+                <div class="corporationEffectBoxLabel">EFFET</div>
+                <span class="resource-tag" style="
+                    background: linear-gradient(
+                      to bottom right,
+                      green,
+                      yellow,
+                      red
+                    );
+                ">&nbsp;</span>
+                = X 
+                <span class="resource-tag" style="
+                    background: linear-gradient(
+                      to bottom right,
+                      green,
+                      yellow,
+                      red
+                    );
+                ">&nbsp;</span>
+                * : 
+                <div class="resource money">X</div>
+                <div class="description"
+                  style="text-align: center; margin-top: 0px"
+                >
+                  (Effet : à chaque fois que vous jouez une carte avec un badge, 
+                  gagnez 1 M€ par badge identique en votre possession<br /> (max 3 M€ par carte).)
+                </div>
+              </div>
+              <span style="
+                  font-size: 18px;
+                  color: rgb(223, 16, 16);
+                  font-family: 'Times New Roman';
+                  font-weight: normal;
+                  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333,
+                    0px -1px #333333, 6px 3px 5px grey;
+              ">
+              WORLD SERIES </span>
+              <br />
+              - of -
+              <span style="
+                  font-size: 30px;
+                  color: rgb(0, 0, 0);
+                  font-family: 'Times New Roman';
+                  font-weight: normal;
+                  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333,
+                    0px -1px #333333, 6px 3px 5px grey;
+                ">
+              MARS</span>
+              <br />
+
+              <div class="resource money" style="margin-left: 40px; margin-right: 5px;">35</div>
+              <div class="resource card red-outline"></div>
+              *
+              <div class="description" style="text-align: center">
+                (Vous commencez avec 35 M€. Pour votre première action, révelez autant de carte 
+                de la pioche qu'il y a de joueurs. 
+                Prenez en une et distribuez une à chaque joueur.)
+              </div>
+            </div>
+          </li>
+          
+
+          <li
+            id="#CDF25"
+            onclick="getClickedCard();"
+            class="filterDiv corporation CdFTag"
+          > 
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="tag tag1 tag-science"></div>
+            <div class="tag tag2 tag-plant"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 130px">
+                <div class="corporationEffectBoxLabel" style="margin-bottom: 2px">EFFET</div>
+                <div class="resource-tag tag-plant" style="margin-left: -10px;"></div>
+                /
+                <div class="resource-tag tag-science"></div>
+                : 
+                <div class="resource money" style="margin-right: 15px;">-1</div>
+                <div class="tile greenery-tile" 
+                style="background-size: 35px 34px; width: 35px; height: 34px; margin-right: 0px"></div>
+                :
+                <div class="resource money">3</div>
+                <div class="description"
+                  style="text-align: center; margin-top: 0px"
+                >
+                  (Effet : Le coût de vos cartes science et plante est réduit de 1.<br />
+                  Effet : À chaque fois que vous placez une tuile forêt, vous gagnez 3 M€.)
+                </div>
+              </div>
+              <span style="
+                  font-size: 30px;
+                  font-weight: bold;
+                  color: seagreen;
+                  font-family: Arial, sans-serif;
+                  letter-spacing: 2px;
+                  text-align: center;
+                  text-shadow: 0 0 1px limegreen, 0 2px 2px greenyellow;
+              ">
+              Green<br />Power</span>
+              <br />
+              <div class="resource money">48</div>
+              <div class="description" style="text-align: center; margin-top: -40px; margin-left: 50px">
+                (Vous commencez<br /> avec 48 M€.)
+              </div>
+            </div>
+          </li>
+
+
+          <li
+            id="#CDF26"
+            onclick="getClickedCard();"
+            class="filterDiv corporation CdFTag"
+          > 
+            <div class="tag tag1 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 150px">
+                <div class="corporationEffectBoxLabel">ACTION/EFFET</div>
+                <div class="red-arrow"></div>
+                <div class="resource card-blue"></div>
+                *  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :*
+                
+                <span style="font-weight: bold;">x2</span>
+                <div class="description"
+                  style="text-align: center; margin-top: 0px"
+                >
+                  (Action : Déplacez une de vos cartes à effet ici. 
+                  S'il y avait déjà une carte, enlevez là avant.<br />
+                  Effet : L'effet de la carte placée ici est doublé.)
+                </div>
+              </div>
+              <div class="factorum" style="margin-bottom: -5px;">
+              GUILDE DES</div>
+              <div class="factorum" 
+              style="font-size: 40px;margin-bottom: 0px;">VOLEURS</div>
+              <br />
+              <div class="resource money">50</div>
+              <div class="description" style="text-align: center; margin-top: -40px">
+                (Vous commencez<br /> avec 50 M€.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            id="#CDF27"
+            onclick="getClickedCard();"
+            class="filterDiv corporation CdFTag"
+          > 
+            <div class="tag tag1 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 130px">
+                <div class="corporationEffectBoxLabel" style="margin-bottom: 2px">EFFET</div>
+                <div class="tile temperature-tile red-outline" 
+                style="width: 11px;height: 37px; background-size: 11px 37px;margin-bottom: 5px"></div>
+                /
+                <div class="tile oxygen-tile red-outline"
+                style="width: 37px;height: 37px; background-size: 37px 37px;margin-bottom: 5px"></div>
+                /
+                <div class="tile ocean-tile red-outline"
+                style="width: 32px;height: 37px; background-size: 32px 37px;margin-bottom: 5px"></div>
+                :
+                <div class="resource science" style="margin-bottom: 5px; margin-right: 15px"></div>
+                OU - 
+                <div class="resource science" style="margin-bottom: 5px"></div>
+                + (
+                <div class="resource steel" style="margin-bottom: 5px"></div>
+                OU
+                <div class="resource plant" style="margin-bottom: 5px"></div>
+                )
+                <div class="description"
+                  style="text-align: center; margin-top: -5px"
+                >
+                  (Effet : Chaque fois qu'un paramètre global est augmenté 
+                  par n'importe quel joueur, ajoutez 1 ressource Science sur cette carte 
+                  ou retirez 1 ressource Science de cette carte pour gagner au choix 
+                  1 plante ou 1 acier.)
+                </div>
+              </div> 
+              <span style="
+                  font-size: 20px;
+                  font-weight: normal;
+                  color: rgb(0, 180, 0);
+                  letter-spacing: 2px;
+                  margin-left: -5px;
+                  text-shadow: -1px 0 #404040, 0 1px #404040, 1px 0 #404040,
+                    0 -1px #404040, 5px 5px 5px grey;
+                ">
+                SOLEIL<br /> VERT</span>
+              
+              <div class="resource money">43</div>
+              <div class="production-box production-box-size2">
+                <div class="production steel"></div>
+                <div class="production plant"></div>
+              </div>
+              <div class="description" style="text-align: center">
+                (Vous commencez avec 43 M€. Augmentez vos productions d'acier 
+                et de plantes de 1 chacune.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            id="#CDF28"
+            onclick="getClickedCard();"
+            class="filterDiv corporation buildingTag CdFTag"
+          >
+            <div class="tag tag1 tag-building"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="corporationLabel">CORPORATION</div>
+            <div class="CdF-icon corporation-icon"></div>
+            <div class="contentCorporation">
+              <div class="corporationEffectBox" style="margin-top: 170px">
+                <div class="corporationEffectBoxLabel" style="margin-bottom: 0px">ACTION</div>
+                <div class="red-arrow"></div>
+                DÉPLACEZ
+                <div class="tile grey-tile"></div>*
+                <div class="description"
+                  style="text-align: center; margin-top: -5px"
+                >
+                  (Action : Déplacez une de vos tuiles sur une zone adjacente vide 
+                  non réservée, en respectant les restrictions de placement, et récupérez les bonus de placements comme si vous y placiez une tuile.)
+                </div>
+              </div>
+              <span class="manutech" style="
+                  font-size: 20px;
+                  color: #e63900;
+                  text-shadow: 6px 3px 5px grey;
+                ">
+                DESER<span style="font-size: 30px;">T</span>RON
+              </span>
+              <br />
+              <br />
+              <div class="resource money" style="margin-left: 10px; margin-right: 5px;">42</div>
+              <div class="production-box" style="margin-left: 5px;">
+                <div class="energy production"></div>
+              </div>
+              <div class="resource card" style="margin-left: 8px;">
+                <div class="card-icon empty-tile-small"></div>
+                <div class="card-icon ocean-tile" 
+                style="margin-left: 38px; font-size: 30px; padding-left: 1px; background-repeat: no-repeat;"
+                >X</div>
+              </div>
+              
+              <div class="description" style="text-align: center;margin-top: -6px;">
+                (Vous commencez avec 42 M€. Augmentez votre production d'énergie de 1. 
+                En tant que première action, piochez une carte posant une tuile non océan.)
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+
+        <!--PRELUDES-->
+        <ul class="myUL" style="clear: both">
+
+          <!--CDF PRELUDES-->
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel earthTag"
+            >
+            <div class="title background-color-prelude">Compromis</div>
+            <div class="tag tag1 tag-earth"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-prel">#CDF16</div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+              -2
+              <div class="rating tile"></div>
+              <div class="production-box" style="margin-left: 20px">
+                <div class="production money">+8</div>
+              </div>
+              <div class="description">
+                (Votre NT est diminué de 2. Augmentez votre production de M€ de 8.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel"
+            >
+            <div class="title background-color-prelude">Espionnage Industriel</div>
+            <div class="tag tag1 tag-CdF"></div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-prel">#CDF17</div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+
+              <div class="defauss-prel" style="margin-left: 80px; position: absolute"></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+              <br />
+              <br />
+              <br />
+              VOUS POUVEZ JOUER UNE CARTE PRÉLUDE défaussée par les autres joueurs.
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel earthTag"
+            >
+            <div class="title background-color-prelude">Prospection Commerciale</div>
+            <div class="tag tag1 tag-earth"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-prel">#CDF18</div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+              <div class="production-box" style="margin-right: 20px">
+                <div class="production money">1</div>
+              </div>
+              <div class="resource money">-X</div>
+               + X
+               <div class="resource card"></div>
+               *
+               <div class="description" style="position: absolute; margin-top: -60px; margin-left: 90px">
+                (Mini 3)
+              </div>
+              <div class="description">
+                (Augmentez votre production de M€ de 1. Dépensez n'importe quelle quantité de M€ (minimum 3 M€) pour piocher 
+                un même nombre de cartes. GARDEZ 3 DE CES CARTES EN MAIN ET DÉFAUSSEZ LES AUTRES.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel powerTag"
+            >
+            <div class="title background-color-prelude">Générateurs Industriels</div>
+            <div class="tag tag1 tag-power"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-prel">#CDF19</div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+              <div class="production-box production-box-size2" style="margin-right: 20px">
+                <div class="production energy"></div>
+                <div class="production energy"></div>
+              </div>
+              <div class="resource card" style="margin-right: 10px">
+                <div class="card-icon tag-building"></div>
+              </div>
+              <div class="resource card">
+                <div class="card-icon tag-building"></div>
+              </div>
+              <div class="description">
+                (Augmentez de 2 votre production d'énergie. Révelez des cartes de la pioche 
+                jusqu'à avoir 2 cartes avec un badge Batisseur, ajoutez ces cartes 
+                à votre main et défaussez les autres.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel wildTag"
+            >
+            <div class="title background-color-prelude">Seconde Chance</div>
+            <div class="tag tag1 tag-wild"></div>
+            <div class="tag tag2 tag-CdF"></div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-prel">#CDF20</div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+              <div class="production-box" style="margin-right: 20px">
+                <div class="production money">3</div>
+              </div>
+               -X
+               <div class="resource card" style="margin-right: 5px"></div>
+               +X
+               <div class="resource card"></div>
+              <div class="description">
+                (Défaussez vous d'autant de cartes que vous voulez puis 
+                piochez en le même nombre. Augmentez votre production de M€ de 3.)
+              </div>
+            </div>
+          </li>
+
+          <li
+            onclick="getClickedCard();"
+            class="filterDiv CdFTag carte-prel plantTag buildingTag"
+            >
+            <div class="title background-color-prelude">Projet Ébène</div>
+            <div class="prelude-label">PRÉLUDE</div>
+            <div class="number num-low-prel">#CDF21</div>
+            <div class="tag tag1 tag-plant"></div>
+            <div class="tag tag2 tag-building"></div>
+            <div class="tag tag3 tag-CdF"></div>
+            <div class="CdF-icon preludeCard-icon"></div>
+            <div class="content">
+              <div class="tile greenery-tile"></div>
+              :
+              <div class="resource wild"></div>
+              <div class="description">
+                (Effet : Lorsque vous placez une tuile forêt, 
+                gagnez 1 ressource standard de votre choix.)
+              </div>
+              <div class="tile greenery-tile"></div>
+              <div class="description" style="margin-left: 25px">
+                (Placez une tuile forêt.)
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+
+        <button
+          id="button-load-more"
+          class="button button2 btn-load-more"
+          onClick="displayCards()"
+        >
+          CHARGER PLUS
+        </button>
+      </div>
+      <div class="side-icon scroll-top-arrow" onclick="toTop()">⬆</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/odometer.js"></script>
+    <script src="js/myscripts-CdF.js"></script>
+  </body>
+</html>
+
+
+

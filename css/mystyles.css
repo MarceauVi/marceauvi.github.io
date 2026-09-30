@@ -1641,7 +1641,7 @@ li.global-card::before {
 .greenery-tile {
   background-image: url(../images/tiles/greenery.png);
   background-size: 50px 49px;
-  width: 49px;
+  width: 50px;
   height:49px;
   filter:none;
 }

@@ -1641,7 +1641,7 @@ li.global-card::before {
 .greenery-tile {
   background-image: url(../images/tiles/greenery.png);
   background-size: 50px 49px;
-  width: 50px;
+  width: 49px;
   height:49px;
   filter:none;
 }
@@ -2068,19 +2068,13 @@ li.global-card::before {
   background-repeat: no-repeat;
 }
 
-.card-face {
-  background: linear-gradient(
-    #ddd 20%,
-    #74aedb 20%,
-    #74aedb 80%,
-    #ddd 80%,
-    #ddd 100%
-  );
-  font-size: 14px;
-  line-height: 40px;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+.card-blue {
+  background: url("../images/resources/Blue_Normal.png");
   height: 40px;
+  width: 30px;
+  background-size: 30px 40px;
+  vertical-align: middle;
+  filter:none;
 }
 
 .card-icon {

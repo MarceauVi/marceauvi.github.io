@@ -2,7 +2,7 @@
 origin_projects= 15;
 origin_corporations= 7;
 origin_preludes= 6;
-origin_globals=0;
+origin_globals=2;
 // 591 total without young corpo and with colony tiles
 PROJECTS = origin_projects;
 CORPORATIONS = origin_corporations;

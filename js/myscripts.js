@@ -590,14 +590,14 @@ function w3RemoveClass(element, name) {
 function toggleContentDiv() {
   document.getElementById("content").classList.toggle("active");
   if (document.getElementById("content").classList.contains("active")) {
-    containerHeight = containerHeight + contentFiltersCurrent + 20; //20 for the margins
+    containerHeight = containerHeight + contentFiltersCurrent + 30; //30 for the margins
     document.getElementById("buttonsContainer-body").style.height =
       containerHeight + "px";
     setTimeout(function () {
       $("#contentFilters").fadeIn(200);
     }, 100);
   } else {
-    containerHeight = containerHeight - contentFiltersCurrent - 20;
+    containerHeight = containerHeight - contentFiltersCurrent - 30;
     document.getElementById("contentFilters").style.display = "none"; //hides the range inputs div
     document.getElementById("buttonsContainer-body").style.height =
       containerHeight + "px";

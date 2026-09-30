@@ -1688,6 +1688,13 @@ li.global-card::before {
   background-size: 30px 34px;
 }
 
+.grey-tile {
+  background-image: url(../images/tiles/Grey_Light.png);
+  /* width: 30px;
+  height: 34px;
+  background-size: 30px 34px; */
+}
+
 .grey-tile-small {
   background-image: url(../images/tiles/Grey_Light.png);
   width: 30px;

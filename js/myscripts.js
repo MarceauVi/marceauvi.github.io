@@ -120,13 +120,9 @@ function filterFunction(id) {
   clickedElementID = document.getElementById(id);
   if (clickedElementID != null) {
     clickedElementID.classList.toggle("active");
-    console.log(document.querySelectorAll("button.active.pack"));
     if (document.querySelectorAll("button.active.pack").length==10){
-      
-      console.log("ICIIIII");
       document.getElementById("promos").classList.add("active");
     }else {
-      console.log("LAAAAA");
       document.getElementById("promos").classList.remove("active");
     }
   }

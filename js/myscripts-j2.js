@@ -111,6 +111,11 @@ function filterFunction(id) {
   clickedElementID = document.getElementById(id);
   if (clickedElementID != null) {
     clickedElementID.classList.toggle("active");
+    if (document.querySelectorAll("button.active.pack").length==6){
+      document.getElementById("promos").classList.add("active");
+    }else {
+      document.getElementById("promos").classList.remove("active");
+    }
   }
 
   x = document.querySelectorAll(".filterDiv");

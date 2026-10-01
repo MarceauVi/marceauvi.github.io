@@ -523,6 +523,9 @@ function clearInput() {
   document.getElementById("subfilterReqs").style.display = "none"; //hides the range inputs div
   document.getElementById("btn-selectedCards").classList.add("disabled"); //hide the selected cards button
   document.getElementById("sortButtons").reset(); // reset sort button
+  if (document.getElementById("revealPromos").classList.contains("active")) {
+    togglePromoPacks();//desactivate RevealPromos button if it was active
+  }
   sortByID(); //reset project cards order per ID
 
   //resets the range inputs

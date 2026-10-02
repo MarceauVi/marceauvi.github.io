@@ -2071,7 +2071,16 @@ li.global-card::before {
 }
 
 .card-blue {
-  background: url("../images/resources/Blue_Normal.png");
+  background: url("../images/resources/Blue_Normal_small.png");
+  height: 40px;
+  width: 30px;
+  background-size: 30px 40px;
+  vertical-align: middle;
+  filter:none;
+}
+
+.card-blue-resources {
+  background: url("../images/resources/Blue_with_Resources_small.png");
   height: 40px;
   width: 30px;
   background-size: 30px 40px;

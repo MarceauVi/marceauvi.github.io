@@ -2029,6 +2029,9 @@ li.global-card::before {
 .multiRes {
   background-image: url(../images/resources/Multi_Resources.png);
 }
+.bronze_cube {
+  background-image: url(../images/resources/Bronze_Cube.png);
+}
 
 .card {
   background: url("../images/resources/card.png");

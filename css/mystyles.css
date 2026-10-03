@@ -1874,12 +1874,10 @@ li.global-card::before {
 }
 
 .fleet {
-  background-image: url(../images/tiles/trade.png);
+  background-image: url(../images/tiles/Trade_Fleet.png);
   height: 40px;
-  width: 48px;
-  background-size: 48px;
-  filter: invert(1) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5))
-    drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.5));
+  width: 40px;
+  background-size: 40px;
 }
 
 /**************Resources***********/

@@ -1897,6 +1897,9 @@ li.global-card::before {
   filter: drop-shadow(0px 0px 1px black);
   vertical-align: middle;
 }
+.resource-point {
+  margin-left: -5px;
+}
 
 .resource-tag {
   position: relative;

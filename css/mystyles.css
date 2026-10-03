@@ -1841,19 +1841,22 @@ li.global-card::before {
   background-size: 50px 40px;
 }
 
+
 .globals-box {
-  width: 100px;
+  /* 406 132 */
+  width: 120px;
+  height: 39px;
+  background-size: 120px 39px;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: normal; 
   text-shadow: none;
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 17px;
+  display: inline-block;
   vertical-align: middle;
-  padding-top: 5px;
+  padding-top: 1px;
   border-radius: 5px;
-  height: 40px;
-  background-image: url(../images/requisites/min_big.png);
-  background-size: 114px 60px;
-  background-position: -9px -9px;
+  background-image: url(../images/misc/SPblank.png);
+  background-repeat: no-repeat;
 }
 
 .colony {
@@ -3452,4 +3455,9 @@ input[type="radio"]:checked + label {
 
 .tile-glued{
   margin-left: -7px;
+}
+
+.reduce-size{
+  display:inline-block;
+  transform: scale(0.8);
 }

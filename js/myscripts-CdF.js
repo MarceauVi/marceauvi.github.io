@@ -708,7 +708,7 @@ function selectCard(clickedCard) {
     //showing or removing the CTA button and updating its url
     if (selectedCards.length > 0) {
       document.getElementById("btn-selectedCards").href =
-        "https://marceauvi.github.io/CdF-cards-list" + selectedCards;
+        "https://marceauvi.github.io/liste-des-cartes-CdF" + selectedCards;
       document.getElementById("selectedCardsAmount").innerHTML =
         selectedCardsAmount;
       document.getElementById("btn-selectedCards").classList.remove("disabled");

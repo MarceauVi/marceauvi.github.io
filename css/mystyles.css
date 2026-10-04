@@ -1841,8 +1841,25 @@ li.global-card::before {
   background-size: 50px 40px;
 }
 
-
 .globals-box {
+  /* 406 132 */
+  width: 120px;
+  height: 39px;
+  background-size: 120px 39px;
+  font-size: 20px;
+  line-height: 15px;
+  margin-right: 6px;
+  font-weight: normal; 
+  text-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 5px;
+  background-image: url(../images/requisites/min_big_no_border.png);
+  background-repeat: no-repeat;
+}
+
+.sp-box {
   /* 406 132 */
   width: 120px;
   height: 39px;

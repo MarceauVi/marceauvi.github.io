@@ -1829,9 +1829,9 @@ li.global-card::before {
 
 .defauss-prel{
   background-image: url(../images/resources/defauss_prel.png);
-  width: 50px;
+  width: 56px;
   height: 40px;
-  background-size: 50px 40px;
+  background-size: 56px 40px;
 }
 
 .defauss-corp{

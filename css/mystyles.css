@@ -1836,9 +1836,9 @@ li.global-card::before {
 
 .defauss-corp{
   background-image: url(../images/resources/defauss_corp.png);
-  width: 50px;
+  width: 65px;
   height: 40px;
-  background-size: 50px 40px;
+  background-size: 65px 40px;
 }
 
 .globals-box {

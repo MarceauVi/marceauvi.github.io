@@ -1508,6 +1508,16 @@ li.global-card::before {
   margin-top: 148px;
 }
 
+.points-vermin{
+  width: 80px;
+  height: 53px;
+  background-size: 120px;
+  background-position: -6px -30px;
+  margin-top: 172px;
+  margin-left: 143px;
+  line-height: 20px;
+}
+
 .description {
   font-size: 11px;
   line-height: 13px;
@@ -3502,8 +3512,17 @@ input[type="radio"]:checked + label {
   display:inline-block;
   transform: scale(0.7);
 }
+.reduce-size-plus-plus{
+  display:inline-block;
+  transform: scale(0.5);
+}
 
 .small-container * {
   margin-top: 1px;
   margin-bottom: 1px;
+}
+
+.medium-container * {
+  margin-top: 2px;
+  margin-bottom: 3px;
 }

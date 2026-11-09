@@ -4,7 +4,7 @@ origin_corporations= 47;
 origin_preludes= 71;
 origin_colonies=11;
 origin_globals=36;
-// 592 total without young corpo and with colony tiles
+// 581 total without young corpo (1) and without colony tiles (11)
 PROJECTS = origin_projects;
 CORPORATIONS = origin_corporations;
 PRELUDES = origin_preludes;
@@ -806,7 +806,7 @@ function selectCard(clickedCard) {
     //showing or removing the CTA button and updating its url
     if (selectedCards.length > 0) {
       document.getElementById("btn-selectedCards").href =
-        "https://marceauvi.github.io/liste-des-cartes" + selectedCards;
+        "https://marceauvi.github.io/liste-des-cartes#-" + selectedCards;
       document.getElementById("selectedCardsAmount").innerHTML =
         selectedCardsAmount;
       document.getElementById("btn-selectedCards").classList.remove("disabled");
